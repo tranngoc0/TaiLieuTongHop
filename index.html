@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1YRQ9N2W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0Q1YRQ9N2W');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDYDOC - Thư viện tài liệu học tập</title>
-    
+    <meta name="description" content="STUDYDOC - Kho tài liệu học tập miễn phí dành cho học sinh THPT. Tìm kiếm, tải xuống và đóng góp tài liệu dễ dàng.">
+    <meta name="theme-color" content="#4f46e5">
+
     <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    
     <!-- Custom Styles -->
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -70,6 +63,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            pointer-events: none;
         }
         .star {
             position: absolute;
@@ -96,29 +90,29 @@
     <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <i class="fas fa-book-open text-2xl text-indigo-600"></i>
+                <i class="fas fa-book-open text-2xl text-indigo-600" aria-hidden="true"></i>
                 <a href="index.html" class="text-xl font-bold text-slate-800 cursor-pointer">STUDYDOC</a>
             </div>
-            <nav class="hidden md:flex items-center space-x-6">
+            <nav class="hidden md:flex items-center space-x-6" role="navigation" aria-label="Main Navigation">
                 <a href="index.html" class="text-indigo-600 font-bold">Trang chủ</a>
                 <div class="relative group">
-                    <button class="text-slate-600 hover:text-indigo-600 font-medium flex items-center py-2">
-                        Thư viện <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    <button class="text-slate-600 hover:text-indigo-600 font-medium flex items-center py-2" aria-haspopup="true" aria-expanded="false">
+                        Thư viện <i class="fas fa-chevron-down ml-2 text-xs" aria-hidden="true"></i>
                     </button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-40 z-50 border border-slate-200">
-                        <a href="lop10.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 10</a>
-                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 11</a>
-                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 12</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-40 z-50 border border-slate-200" role="menu">
+                        <a href="lop10.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50" role="menuitem">Lớp 10</a>
+                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50" role="menuitem">Lớp 11</a>
+                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50" role="menuitem">Lớp 12</a>
                     </div>
                 </div>
                 <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-indigo-600 font-medium">Nhóm Zalo</a>
                  <a href="#upload" onclick="app.showPage('page-upload')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors shadow-sm hover:shadow-md interactive-element">
-                    <i class="fas fa-upload mr-2"></i>Tải lên tài liệu
+                    <i class="fas fa-upload mr-2" aria-hidden="true"></i>Tải lên tài liệu
                 </a>
             </nav>
-            <button class="md:hidden text-2xl" id="mobileMenuButton"><i class="fas fa-bars"></i></button>
+            <button class="md:hidden text-2xl" id="mobileMenuButton" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200">
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200" role="menu" aria-hidden="true">
              <a href="index.html" class="block px-4 py-3 text-indigo-700 bg-indigo-50 font-semibold">Trang chủ</a>
              <a href="lop10.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 10</a>
              <a href="lop11.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 11</a>
@@ -132,13 +126,14 @@
     <main>
         <!-- Home Page -->
         <section id="page-home" class="hero-space flex flex-col min-h-screen">
-            <div class="stars"></div>
+            <div class="stars" aria-hidden="true"></div>
             <div class="container mx-auto px-4 text-center relative z-10 pt-20 pb-12 md:pt-28 md:pb-16">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Tìm kiếm tài liệu học tập</h1>
-                <p class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Khám phá kho tàng kiến thức miễn phí dành cho học sinh THPT.</p>
+                <!-- ID đã được thêm vào h1 và p -->
+                <h1 id="hero-title" class="text-4xl md:text-5xl font-extrabold mb-4 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Tìm kiếm tài liệu học tập</h1>
+                <p id="hero-subtitle" class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Khám phá kho tàng kiến thức miễn phí dành cho học sinh THPT.</p>
                 <div class="search-box max-w-2xl mx-auto bg-indigo-600 rounded-full shadow-lg p-1 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-indigo-400/50 transition-all duration-300">
-                    <i class="fas fa-search text-indigo-200 px-4"></i>
-                    <input type="text" id="homeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-indigo-200 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong toàn bộ thư viện...">
+                    <i class="fas fa-search text-indigo-200 px-4" aria-hidden="true"></i>
+                    <input type="text" id="homeSearchInput" aria-label="Tìm kiếm tài liệu" class="w-full bg-transparent text-white text-lg placeholder-indigo-200 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong toàn bộ thư viện...">
                 </div>
             </div>
             
@@ -154,7 +149,7 @@
             <div class="container mx-auto px-4 max-w-3xl">
                 <h1 class="text-4xl font-bold text-center mb-4 text-slate-800">Tải lên tài liệu</h1>
                 <p class="text-slate-600 text-center mb-8">Thêm nhiều tài liệu cùng một lúc cho một lớp và môn học cụ thể.</p>
-                <form id="uploadForm" class="bg-white p-8 rounded-xl shadow-md border space-y-6">
+                <form id="uploadForm" class="bg-white p-8 rounded-xl shadow-md border space-y-6" aria-label="Form tải lên">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b">
                         <div>
                             <label for="docGrade" class="block text-sm font-medium text-gray-700 mb-1">Chọn lớp</label>
@@ -187,10 +182,10 @@
 
                     <div class="flex items-center justify-between pt-4">
                         <button type="button" id="add-entry-btn" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-lg transition-colors interactive-element">
-                            <i class="fas fa-plus mr-2"></i>Thêm tài liệu
+                            <i class="fas fa-plus mr-2" aria-hidden="true"></i>Thêm tài liệu
                         </button>
                         <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 interactive-element">
-                            <i class="fas fa-cogs mr-2"></i> Tạo mã JSON
+                            <i class="fas fa-cogs mr-2" aria-hidden="true"></i> Tạo mã JSON
                         </button>
                     </div>
                 </form>
@@ -199,12 +194,12 @@
     </main>
 
     <!-- Guide Button -->
-    <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element">
-        <i class="fas fa-question text-2xl"></i>
+    <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element" aria-label="Hướng dẫn">
+        <i class="fas fa-question text-2xl" aria-hidden="true"></i>
     </button>
 
     <!-- MODALS SECTION -->
-    <div id="modal-container"></div>
+    <div id="modal-container" aria-live="polite"></div>
 
     <script>
     const app = {
@@ -214,16 +209,34 @@
             await this.loadDocuments();
             this.attachEventListeners();
             this.handleRouting();
-            this.addDocumentEntry(); 
-            this.createShootingStars();
+            this.addDocumentEntry();
+            if (document.getElementById('page-home').classList.contains('hidden') === false) {
+                this.scheduleStars();
+            }
         },
 
+        // *** ĐÃ CẬP NHẬT: Thêm bộ lọc dữ liệu trùng lặp ***
         async loadDocuments() {
             try {
-                const response = await fetch('tailieu.json');
+                const response = await fetch('tailieu.json', { cache: 'no-cache' });
                 if (!response.ok) throw new Error('Network response was not ok.');
                 const data = await response.json();
-                this.documents = data.documents;
+                
+                const seenUrls = new Set();
+                const uniqueDocuments = (data.documents || []).filter(doc => {
+                    if (!doc.url || doc.url.trim() === '') {
+                        return false;
+                    }
+                    const isDuplicate = seenUrls.has(doc.url);
+                    if (!isDuplicate) {
+                        seenUrls.add(doc.url);
+                        return true;
+                    }
+                    return false;
+                });
+                
+                this.documents = uniqueDocuments;
+
             } catch (error) {
                 console.error('Không thể tải tệp tailieu.json:', error);
                 this.documents = [];
@@ -239,6 +252,8 @@
             if(page) page.classList.remove('hidden');
             window.scrollTo(0, 0);
             document.getElementById('mobileMenu').classList.add('hidden');
+
+            if (pageId === 'page-home') this.scheduleStars();
         },
         
         handleRouting() {
@@ -253,7 +268,7 @@
             const container = document.getElementById(containerId);
             container.innerHTML = '';
             if (docs.length === 0) {
-                container.innerHTML = '<p class="text-slate-500 col-span-full text-center">Không tìm thấy tài liệu nào phù hợp.</p>';
+                container.innerHTML = '<p class="text-slate-200 col-span-full text-center">Không tìm thấy tài liệu nào phù hợp.</p>';
                 return;
             }
             docs.forEach((doc, index) => {
@@ -269,7 +284,7 @@
                         <h3 class="text-lg font-bold text-slate-900 leading-snug truncate" title="${doc.title}">${doc.title}</h3>
                     </div>
                     <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="block text-center mt-auto w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-lg transition duration-300 shadow-sm hover:shadow-md interactive-element">
-                        <i class="fas fa-download mr-2"></i> Tải xuống
+                        <i class="fas fa-download mr-2" aria-hidden="true"></i> Tải xuống
                     </a>`;
                 container.appendChild(card);
             });
@@ -281,7 +296,7 @@
             entryDiv.className = 'p-4 border rounded-lg bg-slate-50 relative document-entry';
             entryDiv.innerHTML = `
                 <button type="button" class="absolute top-2 right-2 text-slate-400 hover:text-red-500 remove-entry-btn" title="Xóa mục này">
-                    <i class="fas fa-times-circle"></i>
+                    <i class="fas fa-times-circle" aria-hidden="true"></i>
                 </button>
                 <div class="space-y-4">
                     <div>
@@ -305,22 +320,61 @@
         },
 
         attachEventListeners() {
-            document.getElementById('mobileMenuButton').addEventListener('click', () => {
-                document.getElementById('mobileMenu').classList.toggle('hidden');
+            document.getElementById('mobileMenuButton').addEventListener('click', (ev) => {
+                const menu = document.getElementById('mobileMenu');
+                menu.classList.toggle('hidden');
+                const expanded = menu.classList.contains('hidden') ? 'false' : 'true';
+                ev.currentTarget.setAttribute('aria-expanded', expanded);
+                menu.setAttribute('aria-hidden', expanded === 'false');
             });
 
+            // *** ĐÃ CẬP NHẬT: Logic tìm kiếm trang chủ thông minh hơn ***
+            let searchTimer = null;
             document.getElementById('homeSearchInput').addEventListener('input', (e) => {
-                const query = e.target.value.toLowerCase();
+                clearTimeout(searchTimer);
+                const query = e.target.value.trim().toLowerCase();
+                
                 const resultsContainer = document.getElementById('homeSearchResults');
+                const heroTitle = document.getElementById('hero-title');
+                const heroSubtitle = document.getElementById('hero-subtitle');
+
                 if (!query) {
                     resultsContainer.classList.add('hidden');
+                    heroTitle.classList.remove('hidden');
+                    heroSubtitle.classList.remove('hidden');
+                    document.getElementById('homeSearchGrid').innerHTML = ''; // Xóa kết quả cũ
                     return;
                 }
-                const results = this.documents.filter(doc => doc.title.toLowerCase().includes(query) || doc.subject.toLowerCase().includes(query));
-                resultsContainer.classList.remove('hidden');
-                this.renderDocuments(results, 'homeSearchGrid');
+                
+                heroTitle.classList.add('hidden');
+                heroSubtitle.classList.add('hidden');
+
+                searchTimer = setTimeout(() => {
+                    // Tạo một biểu thức chính quy (regex) để tìm kiếm query như một từ hoàn chỉnh.
+                    // Điều này giúp phân biệt 'hóa' và 'khóa'.
+                    const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                    const regex = new RegExp('\\b' + escapedQuery + '\\b', 'i');
+
+                    const results = this.documents.filter(doc => {
+                        const subjectLower = (doc.subject || '').toLowerCase();
+                        const titleLower = (doc.title || '').toLowerCase();
+
+                        // Ưu tiên 1: Môn học khớp chính xác với từ khóa tìm kiếm.
+                        if (subjectLower === query) {
+                            return true;
+                        }
+
+                        // Ưu tiên 2: Tiêu đề hoặc môn học chứa từ khóa tìm kiếm như một từ riêng biệt.
+                        return regex.test(titleLower) || regex.test(subjectLower);
+                    });
+
+                    resultsContainer.classList.remove('hidden');
+                    this.renderDocuments(results, 'homeSearchGrid');
+                }, 200);
             });
-            
+
+            window.addEventListener('hashchange', () => this.handleRouting());
+
             document.getElementById('add-entry-btn').addEventListener('click', () => this.addDocumentEntry());
 
             document.getElementById('uploadForm').addEventListener('submit', (e) => {
@@ -330,8 +384,8 @@
                 
                 const newDocs = [];
                 document.querySelectorAll('.document-entry').forEach(entry => {
-                    const title = entry.querySelector('.doc-title').value;
-                    const url = entry.querySelector('.doc-url').value;
+                    const title = entry.querySelector('.doc-title').value.trim();
+                    const url = entry.querySelector('.doc-url').value.trim();
                     if (title && url) {
                         newDocs.push({ grade, subject, title, url });
                     }
@@ -342,10 +396,7 @@
                     return;
                 }
 
-                const jsonString = newDocs.map(doc => 
-                    JSON.stringify(doc, null, 4)
-                ).join(',\n') + ',';
-
+                const jsonString = JSON.stringify(newDocs, null, 4);
                 this.showCopyModal(jsonString);
             });
         },
@@ -356,31 +407,56 @@
                     <p class="font-bold">Tạo mã thành công!</p>
                     <p>Sao chép đoạn mã dưới đây và dán vào cuối danh sách tài liệu trong tệp <code>tailieu.json</code> của bạn.</p>
                 </div>
-                <textarea readonly class="w-full h-48 p-2 border rounded-md bg-gray-100 font-mono text-xs">${jsonString}</textarea>
-                <button onclick="app.copyToClipboard(this)" class="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 interactive-element">
-                    <i class="fas fa-copy mr-2"></i> Sao chép vào Clipboard
+                <textarea readonly id="jsonOutput" class="w-full h-48 p-2 border rounded-md bg-gray-100 font-mono text-xs">${jsonString}</textarea>
+                <button id="copyJsonBtn" class="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 interactive-element">
+                    <i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard
                 </button>
             `;
             this.openModal('copyJsonModal', 'Mã JSON để cập nhật', 'fas fa-code', content);
+            setTimeout(() => {
+                const btn = document.getElementById('copyJsonBtn');
+                if (btn) btn.addEventListener('click', () => this.copyToClipboard(btn));
+            }, 50);
         },
 
-        copyToClipboard(button) {
-            const textarea = button.previousElementSibling;
-            textarea.select();
-            document.execCommand('copy');
-            button.innerHTML = '<i class="fas fa-check mr-2"></i> Đã sao chép!';
-            setTimeout(() => {
-                button.innerHTML = '<i class="fas fa-copy mr-2"></i> Sao chép vào Clipboard';
-            }, 2000);
+        async copyToClipboard(button) {
+            const textarea = document.getElementById('jsonOutput');
+            const text = textarea ? textarea.value : '';
+            try {
+                await navigator.clipboard.writeText(text);
+                button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
+                setTimeout(() => {
+                    button.innerHTML = '<i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard';
+                }, 2000);
+            } catch (err) {
+                textarea.select();
+                document.execCommand('copy');
+                button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
+                setTimeout(() => {
+                    button.innerHTML = '<i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard';
+                }, 2000);
+            }
         },
         
+        scheduleStars() {
+            if (this._starsCreated) return;
+            const create = () => { this.createShootingStars(); this._starsCreated = true; };
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(create, { timeout: 2000 });
+            } else {
+                setTimeout(create, 500);
+            }
+        },
+
         createShootingStars() {
             const container = document.querySelector('.stars');
             if (!container) return;
-            for (let i = 0; i < 15; i++) {
+            const count = Math.min(12, Math.max(6, Math.floor(window.innerWidth / 120)));
+            for (let i = 0; i < count; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
-                star.style.width = `${Math.random() * 3 + 1}px`;
+                const size = (Math.random() * 3 + 1).toFixed(2);
+                star.style.width = `${size}px`;
                 star.style.height = star.style.width;
                 star.style.top = `${Math.random() * 100}%`;
                 star.style.left = `${Math.random() * 100}%`;
@@ -423,10 +499,10 @@
             modalElement.id = modalId;
             modalElement.className = 'fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4';
             modalElement.innerHTML = `
-                <div class="bg-white text-slate-800 rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200">
+                <div class="bg-white text-slate-800 rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200" role="dialog" aria-modal="true" aria-labelledby="${modalId}-title">
                     <div class="flex justify-between items-center p-4 border-b border-slate-200">
-                        <h2 class="text-xl font-bold flex items-center"><i class="${modalData.icon} mr-3 text-indigo-600"></i> ${modalData.title}</h2>
-                        <button class="close-btn text-slate-500 hover:text-slate-800 text-2xl">&times;</button>
+                        <h2 id="${modalId}-title" class="text-xl font-bold flex items-center"><i class="${modalData.icon} mr-3 text-indigo-600" aria-hidden="true"></i> ${modalData.title}</h2>
+                        <button class="close-btn text-slate-500 hover:text-slate-800 text-2xl" aria-label="Đóng">&times;</button>
                     </div>
                     <div class="p-6 overflow-y-auto">${modalData.content}</div>
                 </div>`;
@@ -440,8 +516,7 @@
         }
     };
 
-    app.init();
+    document.addEventListener('DOMContentLoaded', () => app.init());
     </script>
 </body>
 </html>
-
