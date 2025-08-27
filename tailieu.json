@@ -1,117 +1,82 @@
 {
-  "documents": [
-    {
-    "grade": "Lớp 12",
-    "subject": "Sinh học",
-    "title": "Phác Đồ Sinh Tập 5 Bộ Đề 9+ Thầy Trương Công Kiên PDF.pdf",
-    "url": "https://drive.google.com/file/d/1osVrh1sjHXCt26hakNy9hGEh2NhzWoaQ/view"
+  "documents":  
+  [
+  {
+    "grade": "12",
+    "subject": "Sinh",
+    "title": "Nền tảng Sinh Học 12 chương trình mới PDF Thầy Trương Công Kiên",
+    "url": "https://drive.google.com/file/d/1B1OTNcciEBTpQP9YWUybJLfRjWSagd6t/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Sinh học",
-    "title": "Phác Đồ Sinh Tập 4 Toán Lai Xác Suất Và Phả Hệ Thầy Trương Công Kiên PDF.pdf",
-    "url": "https://drive.google.com/file/d/1QjShdF7qLkIGU8_my8i-m48rBg11J9wQ/view"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Sinh học",
-    "title": "Phác Đồ Sinh Tập 3 Bài Tập Vận Dụng Cao Thầy Trương Công Kiên PDF.pdf",
-    "url": "https://drive.google.com/file/d/18t76Jb0WPf_tPaoeaaM7bGArlxNiwpou/view"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Sinh học",
-    "title": "Phác Đồ Sinh Tập 2 Quy Luật Di Truyền Thầy Trương Công Kiên PDF.pdf",
-    "url": "https://drive.google.com/file/d/1bKHSzewCYs-JEUYUe9xSSwDE2cD5TDus/view"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Sinh học",
-    "title": "Phác đồ Sinh Tập 1 Trọng Tâm Lý Thuyết Thầy Trương Công Kiên .pdf",
-    "url": "https://drive.google.com/file/d/1RpymR6anbSNmu-0pxIgYanlZv-A2_so7/view"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Tiếng Anh",
-    "title": "BỔ TRỢ KIẾN THỨC TIẾNG ANH 12, CÔ VŨ THỊ MAI PHƯƠNG.pdf",
-    "url": "https://drive.google.com/file/d/1QclGG9Quy5bdiT3sPR6BTp8O8rYEphLn/view"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Tiếng Anh",
-    "title": "[ Cô Vũ Mai Phương ] Tổng ôn trọng điểm Ngữ pháp - Theo định hướng thi THPT 2026.pdf",
-    "url": "https://drive.google.com/file/d/1PSlbSDkr_3R5x0jPDm5a7Ja0RHBZqgFr/view"
-  },
-  {
-    "grade": "Lớp 10, 11, 12",
-    "subject": "Toán học",
+    "grade": "Tổng hợp",
+    "subject": "Toán",
     "title": "Chinh Phục Toán Thực Tế 10 - 11 - 12 (DPAD).pdf",
     "url": "https://drive.google.com/file/d/1zN4HeYtqOBUAXKqPCWOBh8yRvx6lnQ6c/view"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Vật lí",
+    "grade": "11",
+    "subject": "Lí",
     "title": "KHÓA NỀN TẢNG VẬT LÝ 11",
     "url": "https://docs.google.com/spreadsheets/d/1F0N1OQSh_F_mbD5ypeZfOiezlQUrjJTVEbBK9jQeHBM/edit?gid=0#gid=0"
   },
   {
-    "grade": "2K7 (Lớp 12)",
-    "subject": "Hóa học",
+    "grade": "11",
+    "subject": "Hóa",
     "title": "THẦY NAP 2K7",
     "url": "https://docs.google.com/spreadsheets/d/16fvFWny2cHNHbsWt5FHbdM0X8NJ1XwH0IUd2_wlSyPE/edit?gid=0#gid=0"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Vật lí",
+    "grade": "11",
+    "subject": "Lí",
     "title": "EBOOK BẢN ĐỒ CÔNG THỨC VẬT LÝ 11 SGK MỚI, THẦY VŨ NGỌC ANH.pdf",
     "url": "https://drive.google.com/file/d/14p3ZNOThmuYZ963egxoKiw6v74p4T8K2/view"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Tổng hợp",
+    "grade": "11",
+    "subject": "Tổng Hợp",
     "title": "Tổng Ôn Lớp 11",
     "url": "https://docs.google.com/spreadsheets/u/0/d/178xu_lg216j6qvzfv2j92UmEWiH_lIRkdvfB3aJt-lg/htmlview?fbclid=IwQ0xDSwMVExpleHRuA2FlbQIxMAABHpyRzVsDfNPOdE6p9DzILtDnoTQ5r8A7e1RY22SPlBWOdRiElkN6B-ZDpsU__aem_19IKeLxU7L5NTlQ2Apdliw"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Sinh học",
+    "grade": "11",
+    "subject": "Sinh",
     "title": "Full lí thuyet sinh 11 (1).pdf",
     "url": "https://drive.google.com/file/d/1J47PSx2Yy4AEloNeMDuE4mYVSWHaZ55P/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "Tư duy Toán 12 PDF - Ngọc Huyền LB.pdf",
     "url": "https://drive.google.com/file/d/1sjxw6pgD5dPni8JmIDuq1Zt9NLdcpPoQ/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "Toán thực tế 12 có đáp án và lời giải chi tiết: Đặng Việt Đông & Ngọc Huyền LB.pdf",
     "url": "https://drive.google.com/file/d/1Qwor4bwnqm2VqnFCjGI_M9SI9g3SI4rz/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học & Vật lí",
+    "grade": "12",
+    "subject": "Tổng Hợp",
     "title": "ĐỀ CƯƠNG TRỌNG ĐIỂM HỌC KÌ 1 - TOÁN & LÝ 12",
     "url": "https://docs.google.com/spreadsheets/d/1-7aSjHluKPnP-ekgZwMhvMls605ufXN-WEkF9Y4OEqM/edit?gid=0#gid=0"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán, Lý, Anh",
+    "subject": "Tổng Hợp",
     "title": "ÔN TẬP HỌC KÌ 1 - TOÁN, LÝ, ANH - MAPSTUDY",
     "url": "https://docs.google.com/spreadsheets/d/1_pcxJ8TRA-eyEzoYSHjXBZPdZZnKkz5EdqufJE9xt_A/edit?gid=0#gid=0"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Cày Lí Thuyết 360° Vật Lí 12 📚𝙱𝚇𝙻",
     "url": "https://drive.google.com/file/d/1WR1PLyDnwRHSVYCaDwYkLRqXeNiGYno0/view"
   },
   {
-    "grade": "ĐGNL",
-    "subject": "ĐGNL",
-    "title": "BỘ ĐỀ ÔN ĐGNL 2026 - KSCL THÁNG 8 - MAPSTUDUY",
+    "grade": "HSA",
+    "subject": "HSA",
+    "title": "[ĐGNL] BỘ ĐỀ ÔN ĐGNL 2026 - KSCL THÁNG 8 - MAPSTUDUY",
     "url": "https://docs.google.com/spreadsheets/d/1Di-QeLfKflapCOs5pdSN7bsoNOcwE6r5q9MPJDccRgk/edit?fbclid=IwY2xjawMWj_tleHRuA2FlbQIxMABicmlkETFYN0Q4WkhOOFVSQ2dSa3puAR79pn24sQsfap8gRR78VWBbm3zFNsQKUnJRlfEojm3C1702SIUoH7g6iBcYiA_aem_o3oJHt45ortd402j5rOckA&gid=0#gid=0"
   },
   {
@@ -122,349 +87,349 @@
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Tổng Hợp",
     "title": "tôi hẹn gặp mình sau chuyến phiêu lưu .pdf",
     "url": "https://drive.google.com/file/d/1e1O2qTFnNdScPWb-u3U44r3S-eWPH915/view?fbclid=IwY2xjawIMbpBleHRuA2FlbQIxMAABHcEh4CTbta8CLw6QGUF5lnL3eyiAOv8WPVI9rsFAK39UnknrVhDYhnlxjw_aem_D5PEO6dBBdMB2B4V7yLZRg"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "200 câu hỏi lý thuyết từ trường.pdf",
     "url": "https://drive.google.com/file/d/1CI5bXkYeeN3anOcqvYPBVLdV7zYlRNQh/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "CẤP TỐC 10 NGÀY VĂN CÔ SM",
     "url": "https://docs.google.com/spreadsheets/d/1ZXL17O-XurJe6pVwNfmbKqklzXxIm3VzfJT49MjlR-w/edit?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "CHUYỆN NGƯỜI CON GÁI NAM XƯƠNG - LỚP VĂN CHỊ GIÁO MAI ANH",
+    "subject": "Văn",
+    "title": "[HLĐ] CHUYỆN NGƯỜI CON GÁI NAM XƯƠNG - LỚP VĂN CHỊ GIÁO MAI ANH",
     "url": "https://docs.google.com/presentation/d/13mwlC5nTdXrhc0MenIA9Oe7A27d2dOXc/mobilepresent?slide=id.p1"
   },
   {
-    "grade": "Lớp 10, 11, 12",
-    "subject": "Tổng hợp",
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "115 Đề Ôn Tập Trúng Tủ Học Kì 1 - Lớp 10, 11, 12 Toán + Lý + Hóa + Anh (Map Study).xlsx",
     "url": "https://docs.google.com/spreadsheets/d/1gfTVn2MzTALVjkhMnQySrNRat8P13XLM/edit?usp=sharing&ouid=115415129337790853117&rtpof=true&sd=true"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Lịch sử",
+    "grade": "11",
+    "subject": "Sử",
     "title": "So tay su 11.pdf",
     "url": "https://drive.google.com/file/d/1kHRscqXXVGtbGswIvIPVPuncPc63lsWq/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "EBOOK TOÁN THPT - EMPIRE TEAM.pdf",
     "url": "https://drive.google.com/file/d/1JG0q8Jw6X_2bH3EPJG3TOfofPMq4jZm7/view?fbclid=IwY2xjawL0K5hleHRuA2FlbQIxMABicmlkETFiRW9FWkduRXFISkVRZ3BQAR6ymVmlJdFp4elHxuaEdsc05v-SPD28zwwEWjdmCkxwvIkSo5MqZ_48hR-SqA_aem_TnHV9kUVsKW_BXp1wAae4Q"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "grade": "10",
+    "subject": "Toán",
     "title": "100 CÂU TRẮC NGHIỆM HÀM SỐ LƯỢNG GIÁC | ANH GIÁO KID",
     "url": "https://docs.google.com/spreadsheets/d/1MjQZtfx6cs8LG7bLmffx27bPJWeM9YZEcYNVpvF6eks/edit?usp=sharing"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Toán học",
+    "grade": "11",
+    "subject": "Toán",
     "title": "Toán- thầy Đỗ Văn Đức lớp 11",
     "url": "https://docs.google.com/spreadsheets/d/1YLGFkFaoHLexNZZl5J7Q-gsEsBf0XeWeg6fEdfdwjRM/htmlview?hl=vi#gid=0"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "tai-lieu-nlxh-co-suong-mai.pdf",
     "url": "https://drive.google.com/file/d/1HVw3i2HtebylPq93k2CBoYxhwQPZ5_5u/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Ôn thi",
+    "subject": "Tổng Hợp",
     "title": "TÀI LIỆU ÔN THI THPT CHƯƠNG TRÌNH CŨ",
     "url": "https://drive.google.com/file/d/1nS-bBs8qWjEdBUExq1sI7rsf8-nMHtnc/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "Số tay NLXH .pdf",
     "url": "https://drive.google.com/file/d/1ZaeB67eRFfKYvoZvzR5PsHQcloXTd95k/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "SỔ TAY MỘT SỐ VẤN ĐỀ LÍ LUẬN VĂN HỌC CƠ BẢN CÓ THỂ ÁP DỤNG TRONG NGHỊ LUẬN VĂN HỌC.pdf",
     "url": "https://drive.google.com/file/d/1Dp_bj5fl_1PsvQeebw450zjuBkiXeBin/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "pha bay doc hieu.pdf",
     "url": "https://drive.google.com/file/d/1lGIs4m4AgNSrpDAqP7AThcPv_HqzQhdt/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "MÔN VĂN.pdf",
     "url": "https://drive.google.com/file/d/1SX10uHPALl9iz1j2C6i6Dc0BCbl5l5VY/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "ki-nang-chung-viet-doan-van-va-bai-van.pdf",
     "url": "https://drive.google.com/file/d/1t8US4y366Scsrd9aKsw9VxEbYfU4jj_7/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "KỸ NĂNG VIẾT ĐOẠN VĂN NLVH 200 CHỮ",
     "url": "https://drive.google.com/file/d/1syyPCST6zBnro6Fqrvwb0dophRYKzI0n/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "KĨ NĂNG VIẾT BÀI VĂN NLVH 600 CHỮ",
     "url": "https://drive.google.com/file/d/1vmd96SjXX_BfFMD0YRYEdt0lNORG4jot/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "KĨ NĂNG ĐỌC HIỂU VĂN BẢN THỂ LOẠI THƠ VÀ TRUYỆN TRỮ TÌNH LÃNG MẠN.pdf",
     "url": "https://drive.google.com/file/d/1TSViOIgXeanH6-oD590XmvqDuC6nYGTH/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "Kĩ năng đọc hiểu văn bản thể loại kí.pdf",
     "url": "https://drive.google.com/file/d/1kIo_eCqZcRouOUJJkrTOFRjitbFny5p0/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "Kĩ năng đọc hiểu ngữ liệu dạng văn bản thông tin",
     "url": "https://drive.google.com/file/d/1Vw1FlYsnQm2UqdH68UOEPnn4FtIv3X6p/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "HVCSM -LIVE 06 - MỞ KẾT NLXH.pdf",
+    "subject": "Văn",
+    "title": "HVCSM -LIVE 06 - MỞ KẾT NLXH.pdf",
     "url": "https://drive.google.com/file/d/1XMwBk2R9Lq3GUPfyiERIYhXdE14nvj_F/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "HVCSM - TỔNG HỢP KIẾN THỨC THỂ LOẠI.pdf",
+    "subject": "Văn",
+    "title": "HVCSM - TỔNG HỢP KIẾN THỨC THỂ LOẠI.pdf",
     "url": "https://drive.google.com/file/d/1Z8ueVAwdpJnV3NFg9nhJVVoe6LwkGNBx/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "HVCSM - LIVE 08 - NÂNG CẤP DIỄN ĐẠT.pdf",
     "url": "https://drive.google.com/file/d/1_M9skjBzm8CKYRlWq74R1BwGj8ZM9Om1/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "HVCSM - LIVE 01 - LUYỆN TẬP ĐỌC HIỂU.pdf",
     "url": "https://drive.google.com/file/d/1TyS-XrojKnz7WnJdIJSbxGmBlLI_rhFS/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "HVCSM - CÁC DẠNG BÀI NLXH THƯỜNG GẶP",
+    "subject": "Văn",
+    "title": "HVCSM - CÁC DẠNG BÀI NLXH THƯỜNG GẶP",
     "url": "https://drive.google.com/file/d/1hBqNNhy_8lrJU4bdLEewK57Dw7dDpvbC/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "HVCSM  - MEGALIVE 1905.pdf",
     "url": "https://drive.google.com/file/d/1_j9zCbk7eR-kqx97BNaWHMUBLS5Pilvi/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "HVCSM  - MEGALIVE 1905 dap an.pdf",
     "url": "https://drive.google.com/file/d/1WTKmofx0kmXSZMTGVRWrdp1N7CRpMkpD/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "EBOOK SỔ TAY HƯỚNG DẪN HỌC TẬP KHOÁ LIVESTREAM TOÀN DIỆN 2026, VĂN CÔ SƯƠNG MAI.pdf",
+    "subject": "Văn",
+    "title": "EBOOK SỔ TAY HƯỚNG DẪN HỌC TẬP KHOÁ LIVESTREAM TOÀN DIỆN 2026, VĂN CÔ SƯƠNG MAI.pdf",
     "url": "https://drive.google.com/file/d/1XU0IvzNe7RGtEKkgf4SwQk2wffVIIQCf/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "Dẫn chứng nlxh văn",
     "url": "https://drive.google.com/file/d/12uwHn-oO9gOjiEhKy0hIHrsENAmZSvpS/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "9 lỗi thường gặp khi viết NLVH và gợi ý cách khắc phục.pdf",
     "url": "https://drive.google.com/file/d/1saIO9zSVUA8Py6sj4cD__zcdQK9wVnuI/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "[HVCSM] TỔNG HỢP THÔNG TIN VỀ CÁC CHỦ ĐỀ CẦN LƯU Ý CHO BÀI NLXH (1).pdf",
+    "subject": "Văn",
+    "title": "[HVCSM] TỔNG HỢP THÔNG TIN VỀ CÁC CHỦ ĐỀ CẦN LƯU Ý CHO BÀI NLXH (1).pdf",
     "url": "https://drive.google.com/file/d/1GBvgSjMR3JVkgk0dOz5XRR9JOgZkWpLS/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "[HVCSM] TỔNG HỢP 10 ĐỀ TRƯỜNG - SỞ MỚI NHẤT.pdf",
+    "subject": "Văn",
+    "title": "[HVCSM] TỔNG HỢP 10 ĐỀ TRƯỜNG - SỞ MỚI NHẤT.pdf",
     "url": "https://drive.google.com/file/d/1Uat2FqPT8bv5abnwFx01Ixy5IMmlKKke/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "[HVCSM] Sổ tay dẫn chứng nghị luận xã hội.pdf",
+    "subject": "Văn",
+    "title": "[HVCSM] Sổ tay dẫn chứng nghị luận xã hội.pdf",
     "url": "https://drive.google.com/file/d/1gc_zPjNAqreAI7UIsbllGkgDf93OgjFc/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "[HVCSM] KIẾN THỨC TRỌNG TÂM ÔN TẬP PHẦN ĐỌC HIỂU.pdf",
+    "subject": "Văn",
+    "title": "[HVCSM] KIẾN THỨC TRỌNG TÂM ÔN TẬP PHẦN ĐỌC HIỂU.pdf",
     "url": "https://drive.google.com/file/d/11N5u_T7l5mRTUov2PgzxdwBxFtjgvuxU/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "[HVCSM] Kĩ năng đọc hiểu văn bản thể loại kịch.pdf",
+    "subject": "Văn",
+    "title": "[HVCSM] Kĩ năng đọc hiểu văn bản thể loại kịch.pdf",
     "url": "https://drive.google.com/file/d/1xibQ9CxqXRw1POuP7k0KTfnMzSvZcoVw/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
-    "title": "BÀI TẬP TỔNG HỢP KHÍ LÍ TƯỞNG.pdf",
-    "url": "https://drive.google.com/file/d/18PYhJnFbx3WKiDuQhbC_b3XItxJhywA/view?"
+    "subject": "Lí",
+    "title": "0209. BÀI TẬP TỔNG HỢP KHÍ LÍ TƯỞNG.pdf",
+    "url": "https://drive.google.com/file/d/18PYhJnFbxZ3WKiDuQhbC_b3XItxJhywA/view?"
   },
   {
-    "grade": "ĐGNL",
-    "subject": "ĐGNL",
+    "grade": "HSA",
+    "subject": "HSA",
     "title": "20 đề ĐGNL ĐHQG HN.pdf",
     "url": "https://drive.google.com/file/d/1UW8sq6ZOWeVnHV0AdJsITLBuR6nCbW2H/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi HSA",
+    "grade": "HSA",
     "subject": "HSA",
     "title": "LỘ TRÌNH KHÓA TỔNG ÔN LUYỆN ĐỀ TOÀN DIỆN HSA - 2026 - HOCMAI",
     "url": "https://docs.google.com/spreadsheets/d/1-gq2f-ArSHaEAS-hNva17dbGHj2UAHq-vqp6gseq_t4/edit?usp=sharing"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA Sinh học",
+    "grade": "HSA",
+    "subject": "Sinh",
     "title": "Tổng ôn TSA phần Tư duy khoa học giải quyết vấn đề (môn Sinh học).pdf",
     "url": "https://drive.google.com/file/d/1vMS6JzcxfETDlxBmxu60_jaXxGwFM3Tu/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "180 chủ đề Tư duy khoa học & Giải quyết vấn đề.pdf",
     "url": "https://drive.google.com/file/d/1hCjIiRDaRuLbrb4257T1ajMHY4tqTDic/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "Bộ Đề Trọng Tâm - Khoa Học.pdf",
     "url": "https://drive.google.com/file/d/1qLDzdEJjcttumb_I5BunBjTa_xcwbUI4/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "Bộ Đề Trọng Tâm - Tư Duy Đọc Hiểu.pdf",
     "url": "https://drive.google.com/file/d/1pdVlWsCYawNRKynyU9_-1yHkNNwPr679/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA Toán học",
+    "grade": "HSA",
+    "subject": "Toán",
     "title": "Lời giải Chinh phục 80+  TSA bộ đề trọng tâm Tư Duy Toán Học PDF.pdf",
     "url": "https://drive.google.com/file/d/1l-5Gwnh1zUl4lriqJKzjWQianNF_8vsi/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA Toán học",
+    "grade": "HSA",
+    "subject": "Toán",
     "title": "Bộ Đề Trọng Tâm - Tư Duy Toán Học.pdf",
     "url": "https://drive.google.com/file/d/1iLWwzWF1wvfFM-BUMpVBb6dsS5kCTCGM/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "Cẩm nang đánh giá tư duy Bách khoa Hà Nội 2025 pdf.pdf",
     "url": "https://drive.google.com/file/d/12Yyl5ael1JTxcrQYN7k7UL_MNjVw5YeT/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi",
-    "subject": "Khoa học",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "BO 20 DE KHOA HOC - PHAN DE.pdf",
     "url": "https://drive.google.com/file/d/1APvFu7TksJsTIPUL7_RW1Ai6uiuwB2i5/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Địa lí",
-    "title": "Chiến lược bứt phá 9+ Địa lí thầy Trần Văn Tài.pdf",
+    "grade": "Tổng hợp",
+    "subject": "Địa Lý",
+    "title": "Chiến lược bứt phá 9+ Địa lí thầy Trần Văn Tài.pdf",
     "url": "https://drive.google.com/file/d/13dhKWiBhBHOjsL8S4GB0AK-znXHH-hXW/view"
   },
   {
-    "grade": "ĐGNL",
-    "subject": "Toán học",
+    "grade": "HSA",
+    "subject": "Toán",
     "title": "21 Đề Thực Chiến ĐGNL ĐHQG TP.HCM - Phần Toán Học.pdf",
     "url": "https://drive.google.com/file/d/1mKibpMvINgP0XW3AppM0Vsg_EtY4ayv_/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi HSA",
+    "grade": "HSA",
     "subject": "HSA",
     "title": "10 Đề Thực Chiến Kỳ Thi Đánh Giá Năng Lực HSA Mapstudy.pdf",
     "url": "https://drive.google.com/file/d/10U2AV1TMCkkY2jOIOYYyrWt_B10U4SyY/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "EBOOK LÀM CHỦ KIẾN THỨC 12 MÔN HOÁ HỌC TẬP 2 HOÁ VÔ CƠ, THẦY NGUYỄN ANH PHONG.pdf",
     "url": "https://drive.google.com/file/d/1H98dvCDyNk0lg_NXsyI4WYlYBellG12G/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "lam chu kien thuc hoa12 tap 1 (1).pdf",
     "url": "https://drive.google.com/file/d/1E8ffUzTjs2DTynT5jOpmpqvgIRITZZsd/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "TỔ HỢP XÁC SUẤT.pdf",
     "url": "https://drive.google.com/file/d/1pSanAYDlG-SX5g6FVaC8hlD4Dms2aguc/view?usp=drivesdk"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "1200 cau hoi ly thuyet hoa.pdf",
     "url": "https://drive.google.com/file/d/10e1wWa1e7T_mmn9SG6kgZ91v1nPcd02b/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Công phá vật lý 3 (lớp 12).pdf",
     "url": "https://drive.google.com/file/d/1gzgieKNzj9Y3cbvE-Q_QDZQADLzaKg6w/view?usp=drivesdk"
   },
   {
-    "grade": "THCS",
-    "subject": "Toán học",
-    "title": "TỔNG HỢP KIẾN THỨC HÌNH HỌC THCS .pdf",
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "TỔNG HỢP KIẾN THỨC HÌNH HỌC THCS .pdf",
     "url": "https://drive.google.com/file/d/10mx769mb9axKEYHhQPnlWqudz1Z1-MIv/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Chuyên đề Từ Trường và Vật Lí Hạt Nhân Tập 2 Vật Lí 12 Thầy Vũ Hoàng Quân PDF.pdf",
     "url": "https://drive.google.com/file/d/11MyOwCurj43IFv0jOlDeP-dKauNkcjin/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Chuyên đề Vật Lí Nhiệt và Khí Lí Tưởng Tập 1 Vật Lý 12 Thầy Vũ Hoàng Quân PDF.pdf",
     "url": "https://drive.google.com/file/d/1pwGi58cJrJqlf1ewa_CzukYaEzqqOvaK/view?usp=drivesdk"
   },
@@ -475,129 +440,99 @@
     "url": "https://drive.google.com/file/d/1m91e2mv6PxLMJ3aQbZuCyoESgCbXUn4P/view?fbclid=IwY2xjawMDodVleHRuA2FlbQIxMABicmlkETFFWDRIZkk3MXVpSDFPaHhyAR7NkAN-9UgYHtr_WaSUZ8RrtdzZntp8V3luExAuD1vH4xMcmSrbjJOMVgWXlA_aem_EOTXjbSLgIRkXYmKvVh54w"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "EBOOK CHINH PHỤC TỪ A-Z ĐẠT ĐIỂM TỐI ĐA TOÁN 12 HÌNH, THẦY NGUYỄN TIẾN ĐẠT",
     "url": "https://drive.google.com/file/d/1pqlGZKQ5ckrGNzCPhXWNZa5TAhyBgVYw/view?usp=sharing"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "KNOCK OUT - TỔNG ÔN & LUYỆN ĐỀ TOÁN 12 - CÔ NGỌC HUYỀN LB 📚𝙱𝚇𝙻.pdf",
     "url": "https://drive.google.com/file/d/17KTfZJImXytOZMhCBbZbDcnzhFjGzEQA/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "tôi hẹn gặp mình sau chuyến phiêu lưu .pdf",
-    "url": "https://drive.google.com/file/d/1e1O2qTFnNdScPWb-u3U44r3S-eWPH915/view?usp=drivesdk"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "CHIẾN LƯỢC 10/10 ĐỌC HIỂU - CÔ SƯƠNG MAI 📚𝙱𝚇𝙻",
     "url": "https://drive.google.com/file/d/1yNT7MfBTkleP18-J4aJQNjgF4bDLcmeg/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "TỪ VIẾT ĐÚNG TỚI VIẾT HAY - CÔ SƯƠNG MAI 📚𝙱𝚇𝙻.pdf",
     "url": "https://drive.google.com/file/d/1Q7pV8Wg9h60HsvgG_gYmVLhkMBEVgBO4/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "TẬP 1 NGOÀI KIA RỰC RỠ BAO NHIÊU.pdf",
+    "subject": "Văn",
+    "title": "TẬP 1 NGOÀI KIA RỰC RỠ BAO NHIÊU.pdf",
     "url": "https://drive.google.com/file/d/11Y7p95MvePJ1iPc0QnoBnCix8qr4ZS9A/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "TẬP 2 - BÊN TRONG TA RỘNG RÃ THẾ NÀO.pdf",
+    "subject": "Văn",
+    "title": "TẬP 2 - BÊN TRONG TA RỘNG RÃ THẾ NÀO.pdf",
     "url": "https://drive.google.com/file/d/1rkgHpDXZ4WCqTO_de3xO692uawk7l8G7/view?usp=drivesdk"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Toán",
     "title": "TSA - Công thức lượng giác.pdf",
     "url": "https://drive.google.com/file/d/1ZzUU53MxshapM9Z2Doz4jHwRmsXHlQaT/view"
   },
   {
-    "grade": "V-ACT",
-    "subject": "V-ACT",
+    "grade": "VACT",
+    "subject": "VACT",
     "title": "BỘ ĐỀ THÂU TÓM TOÀN BỘ KIẾN THỨC 10, 11 CẦN CÓ ĐỂ SẴN SÀNG HÀNH TRANG V-ACT CHO 2K8 XUẤT PHÁT SỚM.pdf",
     "url": "https://drive.google.com/file/d/1vEXxHKZFQmKfG890UAK8JmZrXotzRzpV/view?usp=sharing"
   },
   {
-    "grade": "2K8",
-    "subject": "Tổng hợp",
+    "grade": "10",
+    "subject": "Tổng Hợp",
     "title": "VIEW FULL KHOÁ 2K8",
     "url": "https://docs.google.com/spreadsheets/d/1SeVw7fIoI8eX5t9xe7ff0x1Truj_l5QKRXoxSmSA0D8/edit?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "PHONG TOẢ VẬT LÝ 12 KHÍ LÝ TƯỞNG 2026 - THẦY VNA.pdf",
     "url": "https://drive.google.com/file/d/1k_jLlam2BE11xcHjpR8Xp4SH_PfE-ptF/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Phong tỏa Vật Lí 12 Vật Lí Nhiệt chương trình mới PDF Thầy Vũ Ngọc Anh.pdf",
     "url": "https://drive.google.com/file/d/13x0gdBea4XEt_GP8hvqgkdBdm7urnC3z/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "Tổng hợp",
+    "subject": "Lí",
     "title": "LẬP TRÌNH TƯ DUY KHÍ LÝ TƯỞNG VNA.pdf",
     "url": "https://drive.google.com/file/d/1xfv4P77DXkQ6-w7vXxD_14P7AxegIHoz/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "Tổng hợp",
+    "subject": "Lí",
     "title": "LẬP TRÌNH TƯ DUY VẬT LÝ NHIỆT VNA.pdf",
     "url": "https://drive.google.com/file/d/12U4PD4riNiHh0CO_CMvA6YQ_Gf6OWCWd/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Lập Trình Tư Duy Từ Trường & Hạt Nhân PDF - Vật Lý 12.pdf",
     "url": "https://drive.google.com/file/d/15QjEStrJRiA0P59m_VOjNxYQ9-UAR0Wx/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
-    "title": "Cày Lí Thuyết 360° Vật Lí 12 📚𝙱𝚇𝙻",
-    "url": "https://drive.google.com/file/d/1WR1PLyDnwRHSVYCaDwYkLRqXeNiGYno0/view?usp=drivesdk"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
-    "title": "LẬP TRÌNH TƯ DUY VẬT LÝ NHIỆT VNA.pdf",
-    "url": "https://drive.google.com/file/d/12U4PD4riNiHh0CO_CMvA6YQ_Gf6OWCWd/view?usp=drivesdk"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
-    "title": "LẬP TRÌNH TƯ DUY KHÍ LÝ TƯỞNG VNA.pdf",
-    "url": "https://drive.google.com/file/d/1xfv4P77DXkQ6-w7vXxD_14P7AxegIHoz/view?usp=drivesdk"
-  },
-  {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "SÁCH VẬT LÝ NHIỆT MỚI THẦY VNA.pdf",
     "url": "https://drive.google.com/file/d/1Rli_Rz8fig8Go5ytYQMy0g8JiC3qqdzH/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
-    "title": "PHONG TOẢ VẬT LÝ 12 KHÍ LÝ TƯỞNG 2026 - THẦY VNA.pdf",
-    "url": "https://drive.google.com/file/d/1k_jLlam2BE11xcHjpR8Xp4SH_PfE-ptF/view?usp=drivesdk"
-  },
-  {
     "grade": "Tổng hợp",
     "subject": "Tiếng Anh",
-    "title": "VIDEO NGỮ PHÁP TRỌN ĐỜI.pdf",
+    "title": "01. VIDEO NGỮ PHÁP TRỌN ĐỜI.pdf",
     "url": "https://drive.google.com/file/d/1AyZweMDeKaNK4eLa3Y7FHSMDQ4SVajq0/view?usp=sharing&usp=embed_facebook"
   },
   {
@@ -608,103 +543,85 @@
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Tổng Hợp",
     "title": "SÁCH VCNV 2025 - VCNV.pdf",
     "url": "https://drive.google.com/file/d/1jlQAfUF39XIs-xmvta_C3sNgcGxYrLBp/view?usp=sharing"
   },
   {
-    "grade": "2K5",
-    "subject": "Lịch sử",
+    "grade": "Tổng hợp",
+    "subject": "Sử",
     "title": "ok - File sách câu hỏi trắc nghiệm lịch sử cô hương 2025.pdf",
     "url": "https://drive.google.com/file/d/113NdBLV3sjZ4ESnhBuBtGYwTS8-bXXsx/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
-    "title": "Chương 2_Bài 3_Biểu thức tọa độ và các phép toán Vectơ_Toán 12_CTST_Đề bài.pdf",
+    "grade": "12",
+    "subject": "Toán",
+    "title": "Chương 2_Bài 3_Biểu thức tọa độ và các phép toán Vectơ_Toán 12_CTST_Đề bài.pdf",
     "url": "https://drive.google.com/file/d/1NRxjlszMQlWIde08DAbfNuuQqSZuU2rB/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Sinh học",
-    "title": "Full lí thuyet sinh 11 (1).pdf",
-    "url": "https://drive.google.com/file/d/1J47PSx2Yy4AEloNeMDuE4mYVSWHaZ55P/view?usp=drivesdk"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
-    "title": "Chương 2_Bài 2_Tọa độ vectơ trong không gian_Toán 12_CTST_Đề bài.pdf",
+    "grade": "12",
+    "subject": "Toán",
+    "title": "Chương 2_Bài 2_Tọa độ vectơ trong không gian_Toán 12_CTST_Đề bài.pdf",
     "url": "https://drive.google.com/file/d/1oFSlc945JuCf5FMgh8yzXwFnyW1Is2vn/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "Tổng hợp",
+    "subject": "Toán",
     "title": "[toanthaycu.com]_Tuyển tập 30 Đề Vip ôn luyện TN THPT 2025_Đề bài.pdf",
     "url": "https://drive.google.com/file/d/1OyR68i2DWbTHwtdbtQsMUlnNodATXAXd/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "Full Khóa Học + Kho Tài Liệu Free 10, 11, 12 + Sinh Viên.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/1eXSCHiBjeUREe-K2PD9x-gtp4tWxhKDw/edit?usp=sharing&ouid=105861021578168007082&rtpof=true&sd=true&usp=embed_facebook"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Lịch sử",
+    "subject": "Sử",
     "title": "09.TỔNG KHỞI NGHĨA THÁNG TÁM 1945.pdf",
     "url": "https://drive.google.com/file/d/1d48AuwaO4DGDRKJ_uqbosiGOGMJEMvXk/view?usp=sharing"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "1. EBOOK TOÁN 12 HÀM SỐ VÀ ỨNG DỤNG 2025, THẦY NGUYỄN PHAN TIẾN",
     "url": "https://drive.google.com/file/d/1phuwfbELzWVKe6TtrYqCcpsDu-saWZ3c/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "3. EBOOK TOÁN 12 TOẠ ĐỘ VECTOR PHƯƠNG TRÌNH MẶT PHẲNG, ĐƯỜNG THẲNG, MẶT CẦU 2025, THẦY NGUYỄN PHAN TIẾN.pdf",
     "url": "https://drive.google.com/file/d/1pa8PL4rTcoGkpSDdMp7bpLPyNNJ0lPbn/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "2. EBOOK TOÁN 12 NGUYÊN HÀM, TÍCH PHÂN 2025, THẦY NGUYỄN PHAN TIẾN.pdf",
     "url": "https://drive.google.com/file/d/1nGOlRgATO54IMFiN0WeYbnkHEam7d0xA/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 11",
-    "subject": "Vật lí",
-    "title": "KHÓA NỀN TẢNG VẬT LÝ 11",
-    "url": "https://docs.google.com/spreadsheets/d/1F0N1OQSh_F_mbD5ypeZfOiezlQUrjJTVEbBK9jQeHBM/edit?usp=sharing"
-  },
-  {
     "grade": "Tổng hợp",
-    "subject": "Lịch sử",
-    "title": "09.TỔNG KHỞI NGHĨA THÁNG TÁM 1945.pdf",
-    "url": "https://drive.google.com/file/d/1d48AuwaO4DGDRKJ_uqbosiGOGMJEMvXk/view?usp=sharing"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Sinh học",
+    "subject": "Sinh",
     "title": "Về đích lý thuyết Sinh học THPT.pdf",
     "url": "https://drive.google.com/file/d/10bBykjZNOfgLkojKQW1XVRaw10XWlJcj/view?usp=sharing"
   },
   {
-    "grade": "Ôn thi ĐGNL",
-    "subject": "ĐGNL",
+    "grade": "HSA",
+    "subject": "HSA",
     "title": "LỘ TRÌNH LUYỆN THI ĐGNL ĐHQG HÀ NỘI - KHÓA 2K8",
     "url": "https://docs.google.com/spreadsheets/d/1KlQdzECYM_SEy5MNLKxAoWKRTHYYweCgCwCpTaK-QAE/edit?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "Nâng cao toán học ( moon )",
     "url": "https://drive.google.com/file/d/1G4NZvhqLTjHzN9cHCVsIcd2vyztINUOh/view?safe=active&usp=sharing"
   },
   {
-    "grade": "Ôn thi V-ACT",
-    "subject": "V-ACT",
+    "grade": "VACT",
+    "subject": "VACT",
     "title": "LỘ TRÌNH TRÌNH KHÓA DGNL VAC - T - EMPRITEAM 2026",
     "url": "https://docs.google.com/spreadsheets/d/13KG0_KrsbkITjed6ai33isYrg1V3aSfwP41owPkm-lg/edit?usp=sharing"
   },
@@ -716,25 +633,25 @@
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tiếng Nhật",
+    "subject": "Tổng Hợp",
     "title": "[Tailieutiengnhat.net]_tu-hoc-tieng-nhat-cho-nguoi-moi-bat-dau.pdf",
     "url": "https://drive.google.com/file/d/1P1JVQPMy_q0K8Gmo9lNunOoj6Z8UoPi_/view?zarsrc=30"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tiếng Nhật",
+    "subject": "Tổng Hợp",
     "title": "Tiếng nhật dành cho người mới bắt đầu-Tập 1.pdf",
     "url": "https://drive.google.com/file/d/1ct_g3raDVl7ZmEtL1yjW-lZCi2eRRraA/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "CẤP TỐC TOÁN MOON.pdf",
     "url": "https://drive.google.com/file/d/1SLp4JWs22yjU4TL_B-0_48SRaYu0ed5p/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tiếng Hàn",
+    "subject": "Tổng Hợp",
     "title": "TỪ VỰNG TOPIK THEO CHỦ ĐỀ.pdf",
     "url": "https://drive.google.com/file/d/1uWjHyFAgK1jNm6iNn74-gE-QWD77hFpz/view"
   },
@@ -746,49 +663,49 @@
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
-    "title": "10 buổi lấy gốc hình học",
+    "subject": "Toán",
+    "title": "10 buổi lấy gốc hình học ",
     "url": "https://drive.google.com/file/d/1Hub8akxUQWlaATF85acojiTJ0uHUNKAE/view?usp=drivesdk"
   },
   {
-    "grade": "2K8",
-    "subject": "Toán học",
+    "grade": "10",
+    "subject": "Toán",
     "title": "EBOOK BỘ ĐỀ TEST TRÌNH THEO BÀI ĐỘC QUYỀN CHO 2K8, HỌC BÁ 12A3, ANH SHIPPER TOÁN.pdf",
     "url": "https://drive.google.com/file/d/1zG2ImJnhFxRMzrWFT-cR7w8VdowIMDu7/view"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "21 de thuc chien tu duy khoa hoc.pdf",
     "url": "https://drive.google.com/file/d/1tHFlCbj73d9M4AzuMdpPHkh_pOGeb1ta/view"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
     "title": "21 de thuc chien su dung ngon ngu.pdf",
     "url": "https://drive.google.com/file/d/1tefOHbrnY-zYAm5Ge4w_ifZfHKfUcGJM/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "sotayvatly.pdf",
     "url": "https://drive.google.com/file/d/1ecpOb2QOq6kS9rCQyHsIiFkbszoS0nvc/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "so-tay-kien-thuc-8-chu-de-trong-tam-on-thi-tn-thpt-mon-toan.pdf",
     "url": "https://drive.google.com/file/d/1RbMoLnmc9uGV2r7ssOiQ3mXDQ3YoWtm7/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "TỔNG ÔN NẮM CHẮC 8+ VẬT LÍ 12 - IPCLASS.pdf",
     "url": "https://drive.google.com/file/d/1WrBOZGoYYfRFUUosdVn55EOqMQAAG_L0/view?usp=drive_link"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tiếng Anh",
+    "subject": "Tổng Hợp",
     "title": ".pdf",
     "url": "https://drive.google.com/file/d/1sdr_j9Nq2UJB_cf1UchTyXNhSERoLhxQ/view"
   },
@@ -800,529 +717,457 @@
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "LTQ - DA Tuyển tập Thí Nghiệm Và Mô Hình Vật Lí Nhiệt.pdf",
     "url": "https://drive.google.com/file/d/1nKaJzYTS29ACzg1uq5dGTYlfj1fdVcZL/view?fbclid=IwY2xjawMLZLZleHRuA2FlbQIxMABicmlkETFucE1uOHBzU1ZqZFppeGEwAR71Dc21nYFJt3tQwRcWll2gInEN2fQWdw5DwrG8QhwmobyIBnou5jQBC9zJmA_aem_DD8M4isdfK46SVV1jBrBRw"
   },
   {
-    "grade": "2K6 (Lớp 12)",
-    "subject": "Toán học",
+    "grade": "Tổng hợp",
+    "subject": "Toán",
     "title": "[Ngọc Huyền LB] BON 2026-STEP 2-Theme 1.pdf",
-    "url": "https://drive.google.com/file/d/1rljMsdbS8DecklP3gzz1jrZZQUnC_jw_/view"
+    "url": "https://drive.google.com/file/d/1rljMsdbS_DecklP3gzz1jrZZQUnC_jw_/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "Tổng hợp",
+    "subject": "Lí",
     "title": "100 CÂU KHÍ LÍ TƯỞNG HAY - LẠ - KHÓ - THẦY VNA.pdf",
     "url": "https://drive.google.com/file/d/1_XJz0Oe5vMa_kohmr1sqcTY_pho-rxpf/view?usp=drive_link"
   },
   {
     "grade": "Tổng hợp",
     "subject": "Tiếng Anh",
-    "title": "SACHHOC.COM] 90 ngay lam chu ngu phap tieng anh.pdf",
+    "title": "[SACHHOC.COM] 90 ngay lam chu ngu phap tieng anh.pdf",
     "url": "https://drive.google.com/file/d/1uK55BKYxwI_hcG9m9v12cjcZouEFh4ze/view?usp=drivesdk"
-  },
-  {
-    "grade": "2K8",
-    "subject": "Tổng hợp",
-    "title": "VIEW FULL KHOÁ 2K8",
-    "url": "https://docs.google.com/spreadsheets/d/1SeVw7fIoI8eX5t9xe7ff0x1Truj_l5QKRXoxSmSA0D8/edit?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
     "subject": "Tiếng Anh",
     "title": "QUÀ TẶNG TÀI LIỆU TIẾNG ANH",
-    "url": "https://docs.google.com/spreadsheets/u/0/d/1E1nMtbjyg_XzmYNiuc0C3IpunHMLEbad2Yr7V9seuCs/htmlview"
+    "url": "https://docs.google.com/spreadsheets/d/1E1nMtbjyg_XzmYNiuc0C3IpunHMLEbad2Yr7V9seuCs/htmlview"
   },
   {
-    "grade": "2K6",
-    "subject": "Hóa học",
+    "grade": "Tổng hợp",
+    "subject": "Hóa",
     "title": "TỔNG ÔN HÓA HỌC 2026 TẬP 1.pdf",
     "url": "https://drive.google.com/file/d/1ytYk04DK-E5rMtd3esxZZq7qtFOMhM3y/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "lý thầy vũ tuấn anh",
     "url": "https://docs.google.com/spreadsheets/d/1IQFHG3M_2E-LCIeZhn0pB3pTL8ZMQwI6FyU5x2t0bFw/edit?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "MÔN TOÁN THẦY NGUYỄN ĐẶNG ÁI",
     "url": "https://docs.google.com/spreadsheets/d/1k6M4u74_JzHZFnobZMmyPGlWtJie9Ir3R8dLD7NsWWE/edit?usp=drivesdk"
   },
   {
-    "grade": "V-ACT",
-    "subject": "ĐGNL",
+    "grade": "VACT",
+    "subject": "VACT",
     "title": "ĐỀ KSCL THÁNG 8 - KÌ THI ĐGNL V-ACT.pdf",
     "url": "https://drive.google.com/file/d/1c_oneisP8NuuZss_LwuU0GlbSdaG_Zrw/view?fbclid=IwY2xjawMKcEZleHRuA2FlbQIxMABicmlkETEybmpwcnIxNlA1TVlsNkV3AR5Une-cHfDbj29rGKMUcJEAErUyN4yqJfuyxWGc9V5hz2NaK6tkUou_A-l3vg_aem_vMmBCRzirB1t_6mU4X6y7Q"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "EBOOK TỔNG ÔN TOÀN DIỆN LÝ THUYẾT HOÁ HỌC 12, THẦY PHẠM VĂN TRỌNG.pdf",
     "url": "https://drive.google.com/file/d/1suPFZp0t8-9t-A_dQoVdD57TIki__K4A/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Khoa học tự nhiên",
+    "subject": "Tổng Hợp",
     "title": "Bộ 15 đề khoa học tự nhiên lý hóa sinh (ĐỀ)(Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1T1muhXh6r4ox39UjZxZyZXl915VHjy1S/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Khoa học tự nhiên",
+    "subject": "Tổng Hợp",
     "title": "Bộ 15 đề khoa học tự nhiên lý hóa sinh (KEY)(Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1YcjZhxqNJuQtoYFGi0MLuIB6V-qK5EPQ/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "(A5) bản đồ công thức hóa học 12 (Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1FkKDcG2oHNd43C7i1h0nVETp9t8T-7ha/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "Lí thuyết & Công thức học kì I - Toán 12 (Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1DtGSS_QQD1DUXX0ljYXwpES4guCdjqTi/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Lí thuyết & Công thức học kì I - Vật Lý 12 (Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/19K2R0c7Cp-9I6w9SUCi_Bba7WKEzAGb4/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "30 BÀI TOÁN HÀM SỐ KINH ĐIỂN - CÓ ĐÁP ÁN CHI TIẾT - THẦY ĐỖ VĂN ĐỨC(Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1fl4CYkMPSj7MzlXah9diLpCfa7hmzEew/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Tổng hợp",
+    "grade": "12",
+    "subject": "Tổng Hợp",
     "title": "600 Câu Trắc Nghiệm Đúng Sai - Full 8 Chương Lớp 12(Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1HIWqc4q7d22PkAyix3njsibm3ffH_Pka/view?usp=drivesdk"
   },
   {
-    "grade": "2025",
-    "subject": "Toán học",
+    "grade": "Tổng hợp",
+    "subject": "Toán",
     "title": "20 CÂU HÀM SỐ - PHÁT TRIỂN TỪ ĐỀ THI THPT 2025 | ANH GIÁO KID.pdf",
     "url": "https://drive.google.com/file/d/1rik4cX8z6U7LI3DHIoKheaUukYHlh2sQ/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "CHƯƠNG 3. HỢP CHẤT CHỨA NITROGEN (BẢN HS).pdf",
     "url": "https://drive.google.com/file/d/1Fc_nXnyKALu0cdSHgpmvNvuHGE1EEKcu/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "CHƯƠNG 2. CARBOHYDRATE (BẢN HS).pdf",
     "url": "https://drive.google.com/file/d/1FgatbYkAEHWPCJw_jJm_UomIKOq9A8zF/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Tổng Hợp Lý Thuyết Và Công Thức Trọng Tâm Vật Lý 12 (Thầy Vật Lý Hà Đông).pdf",
     "url": "https://drive.google.com/file/d/13HI_27wUSzL9XoX6JZuG2Qri4ruf9aGh/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "CÁC DẠNG NLXH PHỔ BIẾN LIÊN QUAN ĐẾN TUỔI TRẺ.pdf",
+    "subject": "Văn",
+    "title": "CÁC DẠNG NLXH PHỔ BIẾN LIÊN QUAN ĐẾN TUỔI TRẺ.pdf",
     "url": "https://drive.google.com/file/d/1n1_3MkjOg4PYpSe7UNQpIOTbphKGaH7E/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "Tư Duy Toán 12 (Cô Ngọc Huyền LB - GS.TS Cung Thế Anh)(Khoahocshare).pdf",
     "url": "https://drive.google.com/file/d/1U8dqNWISHNEJxvXVqECXBVnz5TTcfxzm/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "Lấy Gốc Siêu Tốc Môn Hóa.pdf",
     "url": "https://drive.google.com/file/d/1l5totGRk1Nj9_ai-fUKc4zAv9T9XgO4e/view"
   },
   {
-    "grade": "Lớp 12",
+    "grade": "12",
     "subject": "Tiếng Anh",
-    "title": "Tuyển tập đề thi học sinh giỏi Tiếng anh 12.pdf",
+    "title": "Tuyển tập đề thi học sinh giỏi Tiếng anh 12.pdf",
     "url": "https://drive.google.com/file/d/10ViLyic4VzQKrp02exkF6COIrLQdJRdD/view?fbclid=IwAR0uZByWmaKkEhWFhmlwinhsdeL7EIzvQ6sO7CbKXPjn62l1r1OAPsUgBvI"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "CÔNG THỨC NGUYÊN HÀM TÍCH PHÂN - EMPIRE.pdf",
     "url": "https://drive.google.com/file/d/1j-yeTZt2F0oXfIOpEz6WXjISlPy7oEqZ/view?usp=drive_link"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "120 Câu Trắc Nghiệm - Tổng Ôn Chương Hàm Số.pdf",
     "url": "https://drive.google.com/file/d/1AxjCE1eMzn6NwYsAePpZnrUSURAzjzS9/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
-    "title": "SHARE] - TỔNG HỢP TÀI LIỆU ĐGNL, ĐGTD, THPT",
+    "subject": "Tổng Hợp",
+    "title": "[SHARE] - TỔNG HỢP TÀI LIỆU ĐGNL, ĐGTD, THPT",
     "url": "https://docs.google.com/spreadsheets/u/0/d/11jLuOG3s91DxNC1tqxf7msIrBhDzQl8QIz7IBP5Zpq4/htmlview#gid=870212487"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "grade": "HSA",
+    "subject": "Toán",
     "title": "Chuỗi Live luyện thi ĐGNL - Thầy Đỗ Văn Đức",
     "url": "https://docs.google.com/spreadsheets/u/0/d/1ew0udys3n51G95xt899lT20KvaxWAN_wlYis02X7Tzk/htmlview#gid=891834841"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
-    "title": "120 Câu Trắc Nghiệm - Tổng Ôn Chương Hàm Số.pdf",
-    "url": "https://drive.google.com/file/d/1AxjCE1eMzn6NwYsAePpZnrUSURAzjzS9/view?usp=sharing"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "Tài liệu THPT",
     "url": "https://docs.google.com/spreadsheets/d/12xi3etilKIHopcW-zqt6zyY7yVP5MsqCSmLTR-tse7E/edit?usp=sharing"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "ĐGNL",
+    "grade": "HSA",
+    "subject": "HSA",
     "title": "TĂNG TỐC Luyện Đề  Đại Học Quốc gia TP.HCM",
     "url": "https://drive.google.com/file/d/1uYCDzt4C_AUkXe-ekUgXwxjdw5kX7B7Q/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "TẬP 1 NGOÀI KIA RỰC RỠ BAO NHIÊU.pdf",
-    "url": "https://drive.google.com/file/d/11Y7p95MvePJ1iPc0QnoBnCix8qr4ZS9A/view?usp=drivesdk"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Văn học",
-    "title": "TẬP 2 - BÊN TRONG TA RỘNG RÃ THẾ NÀO.pdf",
-    "url": "https://drive.google.com/file/d/1rkgHpDXZ4WCqTO_de3xO692uawk7l8G7/view?usp=drivesdk"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
-    "title": "TT KYA - SÁCH CHO NGƯỜI MỚI BẮT ĐẦU",
+    "subject": "Tổng Hợp",
+    "title": "TT KYA - SÁCH CHO NGƯỜI MỚI BẮT ĐẦU ",
     "url": "https://docs.google.com/spreadsheets/d/1v7cetyIkRVm1QrnEZJe8R-zUGwIAyACUOz4BLSj_tWA/edit?usp=drivesdk"
   },
   {
-    "grade": "Lớp 10, 11, 12",
-    "subject": "Toán học",
-    "title": "Chinh Phục Toán Thực Tế 10 - 11 - 12 (DPAD).pdf",
-    "url": "https://drive.google.com/file/d/1zN4HeYtqOBUAXKqPCWOBh8yRvx6lnQ6c/view"
-  },
-  {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "Thay_Vu_Tuan_Anh._300_cau_Khi_ly_tuong.pdf",
     "url": "https://drive.google.com/file/d/14vdL2Gse7nd_j2pFisSqzqw8yL5yvUH9/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Toán học",
+    "grade": "12",
+    "subject": "Toán",
     "title": "[ĐVĐ] - Bộ công thức giải nhanh Toán 12.pdf",
     "url": "https://drive.google.com/file/d/1U93EAkFrJWSBOCe4wEVq5AZgSaWmMhkx/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "200 Câu Hỏi Bao Quát Toàn Bộ Chương Vật Lý Nhiệt (Thầy Vũ Tuấn Anh).pdf",
     "url": "https://drive.google.com/file/d/1rnSPN1aPcX8WPt1RojGhX0da50UqU6bh/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "Nền tảng toán học tập 1.pdf",
     "url": "https://drive.google.com/file/d/1CZ6jJc980E2rPieJzpsdwLbJKwBb1NUz/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
     "subject": "Tiếng Anh",
-    "title": "21 NGÀY XÂY NỀN TIẾNG ANH- BIÊN SOẠN CÔ PHẠM LIỄU.pdf",
+    "title": "21 NGÀY XÂY NỀN TIẾNG ANH- BIÊN SOẠN CÔ PHẠM LIỄU.pdf",
     "url": "https://drive.google.com/file/d/1vInmQLA2xmwKFxSw-USm1JWrvhJ4itmb/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "TL",
     "url": "https://docs.google.com/spreadsheets/d/12oRDbaiPqI6-U6tm1h4PCNJ_n3hZ-A1WdNf4gLt4NlY/edit?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "3. Ebook Bứt phá 9+cô Sương Mai.pdf",
     "url": "https://drive.google.com/file/d/1qNymYKovqvEKkf7NKe1kty0pcijgq5md/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "3. Ebook 200 Văn hình ảnh trong Nghị luận xã hội.pdf",
     "url": "https://drive.google.com/file/d/1a1fMkg_qal2COM9atfFa6y_D1D4pITjW/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "15. Cách viết đoạn văn bàn về một khía cạnh của vấn đề và dạng bàn về một vấn đề khái quát.pdf",
     "url": "https://drive.google.com/file/d/1g-n8om6G94oEZLfi6ZRhdz6HVTs6WaWG/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "7 PHƯƠNG PHÁP VIẾT HAY NGHỊ LUẬN XÃ HỘI, PHẠM MINH NHẬT.pdf",
     "url": "https://drive.google.com/file/d/1Hl3bKBqMf5pr8oFcdOfgp9R9wWd-Tn0V/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "4. Ebook 150+ Dẫn chứng Nghị luận xã hội.pdf",
     "url": "https://drive.google.com/file/d/1KPyXJvaEc74_2EulceKV1whPknH-82B2/view"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Lịch sử",
+    "grade": "11",
+    "subject": "Sử",
     "title": "500bt tong on lich su-05122025114354.pdf",
     "url": "https://drive.google.com/file/d/1-jFwfSEemLY6kHeyPefwGOR4hksWd_fa/view"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Tiếng Anh",
+    "grade": "TOEIC",
+    "subject": "TOEIC",
     "title": "Full bộ từ vựng ôn thi TOEIC từ 0- 990",
     "url": "https://drive.google.com/file/d/1lZ0NKDWByOHGxR9hifXQ7534KAKAm5g2/view"
   },
   {
-    "grade": "2K8",
-    "subject": "Toán học",
-    "title": "EBOOK BỘ ĐỀ TEST TRÌNH THEO BÀI ĐỘC QUYỀN CHO 2K8, HỌC BÁ 12A3, ANH SHIPPER TOÁN.pdf",
-    "url": "https://drive.google.com/file/d/1zG2ImJnhFxRMzrWFT-cR7w8VdowIMDu7/view"
-  },
-  {
     "grade": "Tổng hợp",
-    "subject": "Địa lí",
-    "title": "Địa lí.pdf",
+    "subject": "Địa Lý",
+    "title": "Địa lí.pdf",
     "url": "https://drive.google.com/file/d/15cuWoZgmVbnv48g40AuN4EWwVlNeDnAQ/view?usp=drive_link"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Địa lí",
+    "subject": "Địa Lý",
     "title": "CÂU HỎI TRẮC NGHIỆM ĐỊA LÝ VỀ NGÀNH KINH TẾ.pdf",
     "url": "https://drive.google.com/file/d/1ZTP7zYCCt8Xig5ZnRBuhO_orAjKAap81/view"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Lịch sử",
+    "grade": "12",
+    "subject": "Sử",
     "title": "TÓM TẮT LÝ THUYẾT LỊCH SỬ 12.pdf",
     "url": "https://drive.google.com/file/d/1ALVZwn-g-BgZca2jVgXY58gDdCahRO14/view?usp=drivesdk&usp=embed_facebook"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "TỔNG ÔN KIẾN THỨC HỮU CƠ LỚP 12 -THẦY NGUYỄN ANH PHONG.pdf",
     "url": "https://drive.google.com/file/d/1M1KHA_JoG_o5TUAxeLNlwetHylI7EdQz"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "100 Câu Hỏi Lý Thuyết Phong Tỏa Chương Ester Hóa Học 12 (Thầy Nguyễn Anh Phong).pdf",
     "url": "https://drive.google.com/file/d/1k1bAlv8EgzYyyzai5e3ACj1A4i_rLtAR/view?zarsrc=31"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "SÁCH_LÀM_CHỦ_KIẾN_THỨC_12_MÔN_HOÁ_HỌC_TẬP_2_HOÁ_VÔ_CƠ_THẦY_NGUYỄN.pdf",
     "url": "https://drive.google.com/file/d/1HVZxjc4jtjxW5vo_ZdT7NlXuBihUGI2s/view?usp=drive_link&zarsrc=31&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "SÁCH_LÀM_CHỦ_KIẾN_THỨC_12_MÔN_HOÁ_HỌC_TẬP_1_HOÁ_HỮU_CƠ_THẦY_NGUYỄN.pdf",
     "url": "https://drive.google.com/file/d/1sqDiKcZw0rOrtaUkTnVrlzchAJdNm1Zl/view?zarsrc=31"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "HÓA VÔ CƠ TẬP 3_HOÀNG NHÂM.pdf",
     "url": "https://drive.google.com/file/d/1ZcodNiqUk-veejFUsBauPJuFkl4kMqBp/view?zarsrc=31"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "HÓA VÔ CƠ TẬP 2_HOÀNG NHÂM.pdf",
     "url": "https://drive.google.com/file/d/1kroBulG2d5m6imEuCajo-30CXDV2PT9q/view?zarsrc=31"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "HÓA VÔ CƠ TẬP 1_HOÀNG NHÂM.pdf",
     "url": "https://drive.google.com/file/d/158Zoinc5Sv-sdekkiIo28cs2MvEuWhoy/view?zarsrc=31"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tiếng Anh",
-    "title": "QUÀ TẶNG TÀI LIỆU TIẾNG ANH",
-    "url": "https://docs.google.com/spreadsheets/u/0/d/1E1nMtbjyg_XzmYNiuc0C3IpunHMLEbad2Yr7V9seuCs/htmlview"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
-    "title": "THƯ VIỆN SÁCH",
+    "subject": "Tổng Hợp",
+    "title": "THƯ VIỆN SÁCH ",
     "url": "https://docs.google.com/spreadsheets/d/1OUEPWetGrgtRMW1M5dUVH42Tr3sB652YOphiXTAjkL0/edit?gid=648538023#gid=648538023"
   },
   {
-    "grade": "Tổng hợp",
-    "subject": "Hóa học",
-    "title": "CHƯƠNG 2. CARBOHYDRATE (BẢN HS).pdf",
-    "url": "https://drive.google.com/file/d/1FgatbYkAEHWPCJw_jJm_UomIKOq9A8zF/view?usp=drivesdk&usp=embed_facebook"
-  },
-  {
-    "grade": "ĐGNL",
-    "subject": "Hóa học",
-    "title": "10 ĐỀ HÓA HỌC - ĐGNL ĐHQG TP.HCM - CHUẨN CẤU TRÚC MỚI NĂM 2025 - MAPSTUDY",
+    "grade": "HSA",
+    "subject": "Hóa",
+    "title": " 10 ĐỀ HÓA HỌC - ĐGNL ĐHQG TP.HCM - CHUẨN CẤU TRÚC MỚI NĂM 2025 - MAPSTUDY",
     "url": "https://docs.google.com/spreadsheets/d/1LjtPxQeVsdOyTg26VPL0ugskg_baO4NhDT2xIzf6aVA/edit?gid=0"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
-    "title": "TỔ HỢP XÁC SUẤT.pdf",
-    "url": "https://drive.google.com/file/d/1pSanAYDlG-SX5g6FVaC8hlD4Dms2aguc/view?usp=drivesdk"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "CHIA SẺ TÀI LIỆU-RINKEY-2k7-2k8-2k9",
     "url": "https://docs.google.com/spreadsheets/d/1iUlSW7H902ucrVVAgFi6SyvHfxsgXwlcqOy5m7KLkOU/edit?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "45 Mô Hình Vật Lí Thực Tế 📚𝙱𝚇𝙻.pdf",
     "url": "https://drive.google.com/file/d/1hXzutEP6hwH3fqE2fzz0sxFQNifFQyfk/view?usp=drivesdk"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "HSA",
     "title": "EBOOK BỘ ĐỀ THỰC CHIẾN ĐÁNH GIÁ TƯ DUY - TSA BÍ QUYẾT CHINH PHỤC 80+ ĐỀ SỐ 01-10 (PART 1), TRUNG TÂM ILP (1).pdf",
     "url": "https://drive.google.com/file/d/1hbly0Kv5czU7AM0mjsMj15LOKssYL80v/view?usp=sharing&usp=embed_facebook&usp=embed_facebook"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "HSA",
     "title": "ĐÁP ÁN THI THỬ TSA-BKHN SỐ 06.docx",
     "url": "https://docs.google.com/document/d/15HdhkpUNqURWRtWIERfdTx1hOVN8mGdy/edit?usp=drivesdk&ouid=101424942461030991047&rtpof=true&sd=true"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
-    "title": "1000 CÂU LÍ THUYẾT TRỌNG TÂM VẬT LÍ NHIỆT & KHÍ LÍ TƯỞNG",
+    "subject": "Lí",
+    "title": "1000 CÂU LÍ THUYẾT TRỌNG TÂM VẬT LÍ NHIỆT & KHÍ LÍ TƯỞNG ",
     "url": "https://docs.google.com/spreadsheets/d/1RedO-KgZ1sX8PHTRkOtxLOpHZM99_4KLcwR5BbyMJtg/htmlview"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Toán",
     "title": "9. EBOOK 200 CÂU HỎI THỰC TẾ VÀ NÂNG CAO TRONG ĐỀ TRƯỜNG SỞ 2025",
     "url": "https://drive.google.com/file/d/1PyAn3x3f0GwnZPZFuwJmhFzD_dMdLgD5/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Vật lí",
+    "subject": "Lí",
     "title": "Tuyển Chọn Các Bài Tập Vật Lý Định Tính, Định Lượng, Thí Nghiệm,Thực Hành Thực Tế  (Thầy Chu Văn Biên).pdf",
     "url": "https://drive.google.com/file/d/1-hOORK9Zvuf7uycKTztBmD646lc9-iPt/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Địa lí",
-    "title": "CÂU HỎI TRẮC NGHIỆM ĐỊA LÝ VỀ NGÀNH KINH TẾ.pdf",
-    "url": "https://drive.google.com/file/d/1ZTP7zYCCt8Xig5ZnRBuhO_orAjKAap81/view?usp=embed_facebook"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Địa lí",
-    "title": "Địa lí.pdf",
-    "url": "https://drive.google.com/file/d/15cuWoZgmVbnv48g40AuN4EWwVlNeDnAQ/view?usp=drive_link&usp=embed_facebook"
-  },
-  {
-    "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "68 CÔNG THỨC GIẢI NHANH BÀI TẬP TRẮC NGHIỆM HÓA HỌC (1).pdf",
     "url": "https://drive.google.com/file/d/1wgQIwkYuHGiwDCX2WLIw7sk_e_NU2CKd/view?fbclid=IwZXh0bgNhZW0CMTEAAR2Qnq73BEKNYgRCc5Lt6vPvN-vb9U6J-Jkr-e6KH1_xNAQPJFZdN0FRMjM_aem_W1uTp4trRlJRh9meG1c8Hg"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "Ebook Tổng Ôn Từ A-Z Hóa Học 12 ( Thầy Phạm Thắng TYHH ).pdf",
     "url": "https://drive.google.com/file/d/1HSciMnIq89SQxM7POTgIfG311SFCLUYA/view?fbclid=IwZXh0bgNhZW0CMTEAAR3DU4Op4YlEXuLs-b59cyJfcZH-l2hCLxSIqEDUz2WiUXAEvanwFFJZ2eE_aem_8jNNUBG8qgnD_4-BbDnc5w"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Sinh học",
+    "grade": "12",
+    "subject": "Sinh",
     "title": "tong-hop-toan-bo-cong-thuc-sinh-hoc-12.pdf",
     "url": "https://drive.google.com/file/d/1PA34JwsA1i-95gOl08EWqzpA7z2_BquV/view?fbclid=IwZXh0bgNhZW0CMTEAAR2Wn88IhKYaR-GyVlMaJzwiF924MZQ-ZbnmodbTXUug8UVpSTce9QdfOWI_aem_DT77le7WhhAkAYEU8_k6VQ"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Hóa học",
+    "subject": "Hóa",
     "title": "EBOOK GIẢI PHÁP NAP LÀM CHỦ LÝ THUYẾT VẬN DỤNG CAO MÔN HOÁ HỌC, NGUYỄN ANH PHONG.pdf",
     "url": "https://drive.google.com/file/d/18zGrmGvwAsbgh-UjmEpI8ME_okv1QSGU/view?fbclid=IwZXh0bgNhZW0CMTEAAR2Xtu1K7JJ8_DAfHVrYjz4hvlMJu-9j2FbK2B4ebcA5JDu-9nvnniG291o_aem_GszCUOebgw2JAOGSJ222MA"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "Share tài liệu Sử Địa Anh Nhím",
     "url": "https://docs.google.com/spreadsheets/u/0/d/1XsVpJAFcfGrZpx1-OW2neXtZ7gbMgfPeIZEqxkcGY_4/htmlview"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Văn học",
+    "subject": "Văn",
     "title": "NLXH-NLVH",
     "url": "https://docs.google.com/spreadsheets/d/1v_r66DNh5dFJ5eFm04Lh0Qo1U58iJvbvgHG2zkvdP9Q/htmlview"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "dap an dung sai.pdf",
     "url": "https://drive.google.com/file/d/1hsKpxXwPAa4G-_JEdjRJY8jvFhHnT-xv/view?fbclid=IwY2xjawLRjvVleHRuA2FlbQIxMABicmlkETFCeUtISHhyVTNhQ2t1Z2d6AR7MjsQdE6D5ygKj7H14W5_pq6vK_9heZabIU8aZ_0x2XR1-HKeLuqcJfjdocA_aem_bNIDkxidjegFXkg0cJb5tA"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
-    "title": "Công phá vật lý 3 (lớp 12).pdf",
-    "url": "https://drive.google.com/file/d/1gzgieKNzj9Y3cbvE-Q_QDZQADLzaKg6w/view"
-  },
-  {
-    "grade": "Ôn thi HSA",
-    "subject": "HSA Văn",
+    "grade": "HSA",
+    "subject": "Văn",
     "title": "HSA. VĂN. ĐỀ LUYỆN 3.docx",
     "url": "https://docs.google.com/document/d/1vFmQ0cDr-XCg9kr5Izsvxbuagz8fKrkM/edit?usp=sharing&ouid=117339968996103901479&rtpof=true&sd=true"
   },
   {
-    "grade": "Ôn thi HSA",
-    "subject": "HSA Văn",
+    "grade": "HSA",
+    "subject": "Văn",
     "title": "HSA. VĂN. ĐỀ LUYỆN 2.docx",
     "url": "https://docs.google.com/document/d/1ZVDBHLQUPhq-hYUTAhJWwjYxNdutFzW-/edit?usp=sharing&ouid=117339968996103901479&rtpof=true&sd=true"
   },
   {
-    "grade": "Ôn thi HSA",
-    "subject": "HSA Văn",
+    "grade": "HSA",
+    "subject": "Văn",
     "title": "HSA. VĂN. ĐỀ LUYỆN 1.docx",
     "url": "https://docs.google.com/document/d/1KuzK-IyAxUs8xsxbMT6HrD4sCpQkzmb9/edit?usp=sharing&ouid=117339968996103901479&rtpof=true&sd=true"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "Tổng hợp",
+    "subject": "Hóa",
     "title": "CHƯƠNG 4. POLYMER - THPTQG 2025.pdf",
     "url": "https://drive.google.com/file/d/1rIDZYqN0rRgFqoSFirx371zFEAbHfyHS/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "1020 Câu Lý Thuyết Hóa Lớp 12 Ôn Tập Trong Hè Thầy Phạm Văn Trọng",
     "url": "https://docs.google.com/spreadsheets/d/1CKoexk3lN8Uxk-pL0na2nwaHvqEBVjXvVZXXVl-IZ60/edit?usp=drivesdk"
   },
@@ -1333,62 +1178,50 @@
     "url": "https://docs.google.com/spreadsheets/d/1yBlE8EPBq9g1dKhQSKbXwkaR6ZA1tPascJ5NwLD5fAk/edit?gid=1033472951#gid=1033472951"
   },
   {
-    "grade": "ĐGNL",
-    "subject": "Toán học",
-    "title": "21 Đề Thực Chiến ĐGNL ĐHQG TP.HCM - Phần Toán Học.pdf",
-    "url": "https://drive.google.com/file/d/1mKibpMvINgP0XW3AppM0Vsg_EtY4ayv_/view?usp=drivesdk"
-  },
-  {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Phong Tỏa Vật Lí Lớp 12 Chương Trình Mới - Khí Lí Tưởng (Thầy Vũ Ngọc Anh).pdf",
     "url": "https://drive.google.com/file/d/1EpLdE_YMLjcgvs-srM_ghs7s69GgHxp9/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Địa lí",
+    "grade": "12",
+    "subject": "Địa Lý",
     "title": "Đột Phá Tư Duy Địa Lí 12 - Tập 1 (WinBook).pdf",
     "url": "https://drive.google.com/file/d/1qipxY0XDSp_C55Omj7lXHrW9TMCAsxQz/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
+    "grade": "12",
+    "subject": "Hóa",
     "title": "Tổng Ôn Từ A-Z Hóa Học 12 (Thầy Phạm Thắng TYHH).pdf",
     "url": "https://drive.google.com/file/d/1p0kzeVWJznDfkMdlWTf9zdIWGA3OkOHG/view?usp=drivesdk"
   },
   {
-    "grade": "2025",
-    "subject": "Địa lí",
+    "grade": "Tổng hợp",
+    "subject": "Địa Lý",
     "title": "25 Đề Địa Lí Trọng Tâm 2025 (Thầy Đàm Thanh Tùng).pdf",
     "url": "https://drive.google.com/file/d/1QvkEGJ6C3w1XGoKIw9zUG0wsKJABQrXe/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
-    "title": "Tư Duy Giải Các Bài Toán Thực Tế SSS Study.pdf",
+    "subject": "Toán",
+    "title": "Tư Duy Giải Các Bài Toán Thực Tế SSS Study.pdf",
     "url": "https://drive.google.com/file/d/1DSn5p_0kgICLnvcw5tGyVq_DAzxMxkAl/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tiếng Anh",
-    "title": "GIẢI THÍCH NGỮ PHÁP TIẾNG ANH (MAI LAN HƯƠNG) 📚𝙱𝚇𝙻",
-    "url": "https://drive.google.com/file/d/1GWan5xPlyJIi73wBsYB5pS1oq3--Bwbj/view?usp=drivesdk"
-  },
-  {
-    "grade": "THCS",
-    "subject": "Tổng hợp",
+    "subject": "Tổng Hợp",
     "title": "TÀI LIỆU THCS",
     "url": "https://docs.google.com/spreadsheets/d/15zttQpSoWpGt5vbT3Ih5yZVhEzypS1AUCfQ7FT0dkbI/edit?fbclid=IwY2xjawLtxqVleHRuA2FlbQIxMABicmlkETFYNzBMZkNVNEdpeDdnMHBGAR4MzrEhW1KjKI13zcKbejCSx5BZ5i_FZA_Ar7_UjYNH_3srjGMN7Y7XQRX-xg_aem_v1c21lcm-QgfHbHUdQKYDw&gid=1329726070#gid=1329726070"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Vật lí",
+    "grade": "12",
+    "subject": "Lí",
     "title": "Trắc Nghiệm Đúng Sai Vật Lí 12 Chương Trình Mới (Thầy Vũ Hoàng Quân).pdf",
     "url": "https://drive.google.com/file/d/1dHUbIaFj45zZiPYtlX6AlWc86TZw585J/view?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Lịch sử",
+    "grade": "12",
+    "subject": "Sử",
     "title": "LSCS - FULL SƠ ĐỒ TƯ DUY LỊCH SỬ 12.pdf",
     "url": "https://drive.google.com/file/d/1fGjrCyD8loGoAXQtq4FNErYXIb1uzLJB/view?fbclid=IwY2xjawKz39JleHRuA2FlbQIxMQABHq_S6s6Z79U8_C-lKYTlce6v2ppkwabyxbPdJ1skSbYH5iw89EFzxP5MPMfa_aem_cLcwRBhCqe6ibwHCKPVY_A&zarsrc=31"
   },
@@ -1400,93 +1233,699 @@
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Địa lí",
+    "subject": "Địa Lý",
     "title": "Sô tay kiến thức Địa Lí PDF Địa Lí Thầy Tài.pdf",
     "url": "https://drive.google.com/file/d/1__cW61qavnOcvV8uGgZ5_i9eEhRmqa19/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Địa lí",
+    "subject": "Địa Lý",
     "title": "Chiến Lược Bứt Phá 9+ Địa Lí - Thầy Tài.pdf",
     "url": "https://drive.google.com/file/d/1pyfNYbb8REVGlONfB29li-AKNj0vHqNO/view?fbclid=IwY2xjawLC7apleHRuA2FlbQIxMQABHoD4TPiKlYLkV88BTziUB5CNQzqhjjZEeyDlnnN2PNGIHJ_3ofC70mrP1NO2_aem_aICtWqX6QNcw23g76_5bUA"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Lịch sử & Địa lí",
+    "subject": "Tổng Hợp",
     "title": "100 câu hỏi vận dụng & vận dụng cao Lịch Sử và Địa Lí Quốc Sử Quán - Địa Lí Thầy Tài",
     "url": "https://docs.google.com/spreadsheets/d/1EVouAA8wEreEKiTNmSNmY81KMHkOW44lt6cWj0V7FfY/edit?gid=0#gid=0"
   },
   {
-    "grade": "Lớp 10, 11, 12",
-    "subject": "Toán học",
+    "grade": "Tổng hợp",
+    "subject": "Toán",
     "title": "EBOOK SỔ TAY KIẾN THỨC TOÁN HỌC 10,11,12 (CHƯƠNG TRÌNH MỚI)",
     "url": "https://drive.google.com/file/d/1cIua0DzfpItYNuj51p8dBvaaP3u_qC1k/view?usp=embed_facebook"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "XPS",
+    "subject": "Tổng Hợp",
     "title": "ĐÁP ÁN EBOOK NHẬP MÔN XPS.pdf",
     "url": "https://drive.google.com/file/d/1ur09mf_pymR97d3ib1HI9UZSkhgCNGEa/view?usp=drive_link"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "XPS",
+    "subject": "Tổng Hợp",
     "title": "EBOOK NHẬP MÔN XUẤT PHÁT SỚM.pdf",
-    "url": "https://drive.google.com/file/d/14PSKhg12zL68gKHRYcMfLFC4ubnd8v/view?usp=drivesdk"
+    "url": "https://drive.google.com/file/d/14PSKhg3E12zL68gKHRYcMfLFC4ubnd8v/view?usp=drivesdk"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
+    "subject": "Toán",
     "title": "KHÓA ANH SHIPPER",
-    "url": "https://docs.google.com/spreadsheets/d/1hHL2U3msnN95NkrktVbhAAOaMSm_Yqcs7Tj2tOrfIQ/edit?usp=drivesdk"
+    "url": "https://docs.google.com/spreadsheets/d/1hHL2U3msnN95NkrktVbhAAOaMSm_YFqcs7Tj2tOrfIQ/edit?usp=drivesdk"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Lịch sử",
+    "grade": "12",
+    "subject": "Sử",
     "title": "1260 câu hỏi trắc nghiệm LS 12 📚𝙱𝚇𝙻",
     "url": "https://drive.google.com/file/d/1IxfMDjluxIRe2wiD37YbUakbuqOOmX-F/view?fbclid=IwY2xjawLAYG5leHRuA2FlbQIxMABicmlkETF6dnRUUU00Q2F4bkV2N25RAR4tbh4VSwAoZQeEE9qqnliNDs-7wWUR-mxwsJrDXKuqmJIxvz2Q-ziakztRPQ_aem_GRfFMMk6EubQGxNC3IiOZQ"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Toán học",
-    "title": "120 Câu Trắc Nghiệm - Tổng Ôn Chương Hàm Số.pdf",
-    "url": "https://drive.google.com/file/d/1AxjCE1eMzn6NwYsAePpZnrUSURAzjzS9/view"
-  },
-  {
-    "grade": "Tổng hợp",
     "subject": "Tiếng Anh",
     "title": "336 Bài tập điền từ TA + Đáp án (Phần 1).pdf",
-    "url": "https://drive.google.com/file/d/1aEJeHs292JSowB3tjYwr7zZjmVDiKLq/view?usp=sharing"
+    "url": "https://drive.google.com/file/d/1aEJeHsD292JSowB3tjYwr7zZjmVDiKLq/view?usp=sharing"
   },
   {
     "grade": "Tổng hợp",
     "subject": "Tiếng Anh",
-    "title": "-Cô-Vũ-Mai-Phương-50-Bài-Đọc-điền-Đọc-hiểu-theo-Định-hướng-thi-THPT-ĐGNL-năm-2025.pdf",
+    "title": "-Cô-Vũ-Mai-Phương-50-Bài-Đọc-điền-Đọc-hiểu-theo-Định-hướng-thi-THPT-ĐGNL-năm-2025.pdf",
     "url": "https://drive.google.com/file/d/1QPPmJOnICIPBHqDAz8GKwMQfvqqevd6C/view"
   },
   {
-    "grade": "Ôn thi TSA",
-    "subject": "TSA",
+    "grade": "HSA",
+    "subject": "HSA",
     "title": "TSA.2025.ĐỀ THI TỔNG HỢP SỐ 01(ĐỀ).pdf",
     "url": "https://drive.google.com/file/d/1_MbCMClsm5uDOvAX9McXUzNmjik2wEKb/view?fbclid=IwY2xjawFGv31leHRuA2FlbQIxMAABHVvutVp9nvcp_L9ucTLo5psmDf29ugmvqoWwjf8u6D9BVaSFdNIwiSVydA_aem_rKriPCoKd1Z_t3qhOWhdrQ"
   },
   {
-    "grade": "Ôn thi",
-    "subject": "Khoa học",
-    "title": "BO 20 DE KHOA HOC - PHAN DE.pdf",
-    "url": "https://drive.google.com/file/d/1APvFu7TksJsTIPUL7_RW1Ai6uiuwB2i5/view"
+    "grade": "12",
+    "subject": "Hóa",
+    "title": "VỞ GHI BÀI HÓA HỌC 12 - CHƯƠNG 1,2,3.pdf",
+    "url": "https://drive.google.com/file/d/1eSdCp2oxRLA-UEwKhLldBpGeGVsYJRdj/view?usp=sharing"
+  },
+  {
+    "grade": "12",
+    "subject": "Hóa",
+    "title": "612 CÂU LÝ THUYẾT HOÁ - SERIES 68 CÂU LÝ THUYẾT ",
+    "url": "https://docs.google.com/spreadsheets/d/1zdcl0ogvntLfu1WBHccqZbLEPK7xfjspHVjllsxkl8E/edit?gid=0#gid=0"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "1. EBOOK STEP 1 NỀN TẢNG TOÁN 12 SEASON 2026 CÔ NGỌC HUYỀN LB.pdf",
+    "url": "https://drive.google.com/file/d/19xqDktRu3IdNA-fGFYLWm_979OLaJ_g0/view"
   },
   {
     "grade": "Tổng hợp",
-    "subject": "Tổng hợp",
-    "title": "THƯ VIỆN SÁCH",
-    "url": "https://docs.google.com/spreadsheets/d/1OUEPWetGrgtRMW1M5dUVH42Tr3sB652YOphiXTAjkL0/edit?gid=648538023#gid=648538023"
+    "subject": "Toán",
+    "title": "EBOOK 230 BÀI TOÁN ỨNG DỤNG THỰC TẾ FREE.pdf",
+    "url": "https://drive.google.com/file/d/1PWgiIJV4QMg3QDY-9Gt1jBKyv8duzOjB/view?fbclid=IwY2xjawMCMglleHRuA2FlbQIxMABicmlkETE1RElIVmdycVJXeEtrOFJoAR5uOVOGBppv2DGnB323I0f1QZYKD14l-QZ_gwQWkpxZCeKdsaIQTBOHklcj1g_aem_3_Mb_47pxj7ZAVfcpfg48g"
   },
   {
-    "grade": "Lớp 12",
-    "subject": "Hóa học",
-    "title": "VỞ GHI BÀI HÓA HỌC 12 - CHƯƠNG 1,2,3.pdf",
-    "url": "https://drive.google.com/file/d/1eSdCp2oxRLA-UEwKhLldBpGeGVsYJRdj/view?usp=sharing"
+    "grade": "IELTS",
+    "subject": "IELTS",
+    "title": "Tổng hợp video giải đề Writing của anh Huy The Forum ",
+    "url": "https://docs.google.com/spreadsheets/d/1qldZHeV6vqc-oqOpaLYDKXTkFRmA4c3TOxqtni3N-fM/edit?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "[FREE] TÀI LIỆU ÔN THI THPTQG MÔN TIẾNG ANH",
+    "url": "https://docs.google.com/spreadsheets/d/1REn3n1zuFOPCX7SzApxAesVQeGbeZ4-lkqMV17lNpQc/edit?fbclid=IwY2xjawLioGBleHRuA2FlbQIxMQABHp7vLpVnjNI4n_uxVi2gkeT7PAo-MlvKqIpRkoyceggv_-uO9_sO2J2Vxhoa_aem_sqCD4YOCF07pw1ofMWceVQ&gid=0#gid=0"
+  },
+  {
+    "grade": "12",
+    "subject": "Sử",
+    "title": "ok - SƠ ĐỒ TƯ DUY LỊCH SỬ 12 BỘ CÁNH DIỀU .pdf",
+    "url": "https://drive.google.com/file/d/15qWQPISZaKqDApEPnOZ5i0j2OvwbcWR8/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "Tuyển tập mở bài-kết bài-dẫn chứng nlxh.pdf",
+    "url": "https://drive.google.com/file/d/1GezDjcuCvBxyl70nBy_PNd-NaR1sM4UH/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "Tổng Ôn - Luyện Thi Môn Lịch Sử Chương Trình Mới (Moon).pdf",
+    "url": "https://drive.google.com/file/d/1F0zCru894tki6pJG_PBIKYFljdw4Irlu/view?usp=drive_link"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "Định-dạng-đề-thi-sát-hạch-Tiếng-Anh-1.pdf",
+    "url": "https://drive.google.com/file/d/1JgOOg5X7F8ubY-irEtrbjk0iUirWw-A4/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "BỘ 50 ĐỀ HSG TIẾNG ANH MỚI NHẤT.pdf",
+    "url": "https://drive.google.com/file/d/1O2ZumbGpaQrmgOjned2MtvYdIJ0I_M4i/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "Tổng ôn ngữ văn-rinkey .pdf",
+    "url": "https://drive.google.com/file/d/1roukX1D9wF0M-F5U58cEpagIjEtAnAeC/view?usp=drivesdk"
+  },
+  {
+    "grade": "12",
+    "subject": "Tổng Hợp",
+    "title": "KHÓA HỌC DRIVE 12 FREE",
+    "url": "https://docs.google.com/spreadsheets/d/1OFybi3heLnYPlQueovkbJ0KOV3chFqTqdjRIfKcvzYU/edit?usp=drivesdk"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "Toán 12 (đề).pdf",
+    "url": "https://drive.google.com/file/d/1d6pX_FQSOZn_e1dz3EUWAxVmZR-yPpDg/view?usp=drive_link"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "Chương 2. Tọa độ vecto.pdf",
+    "url": "https://drive.google.com/file/d/1y1eJO5avLRg2TqHvt6ssE4RFCzl5BaxL/view?usp=drive_link"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "Sách - Bí Kíp Giải Toán Góc Và Khoảng Cách.pdf",
+    "url": "https://drive.google.com/file/d/1h_Ur6oPwuW80l4mDNeoVcMjiW2SXsbvi/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "LÝ THUYẾT BÀI TẬP TO V - GERUNDS - CÔ PHẠM LIỄU",
+    "url": "https://docs.google.com/spreadsheets/d/1NWIxBfxVkBahvmBEYyuwH3S8u8yheLOJc0_rj-7DnWE/edit?usp=sharing"
+  },
+  {
+    "grade": "12",
+    "subject": "Tiếng Anh",
+    "title": "FULL TỪ VỰNG CHƯƠNG TRÌNH TIẾNG ANH LỚP 12.pdf",
+    "url": "https://drive.google.com/file/d/1XUX5mlEXV-Vtm8Rt7Sapf6NbwZwI7KL0/view?fbclid=IwY2xjawL9c5lleHRuA2FlbQIxMABicmlkETFDcFhPUlQwMFh1M2hRbjFFAR4fhfbhMdHuO53UekOd6jvguap9d_PobrFILB7VNu7cX1MCHF5IeifrZGOAZA_aem_inEfiFQcv60I94bRtzpQ5A"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "[ Cô Vũ Mai Phương ] Phát triển Đề chính thức năm 2025_ Trọng điểm Ngữ pháp (Phần 2).pdf",
+    "url": "https://drive.google.com/file/d/1gwbi4ux5EDPEYPVwBGbK6DDmhfULN9E7/view?fbclid=IwY2xjawL9hU5leHRuA2FlbQIxMABicmlkETFCd29wa0RpWVowVGI4OTE3AR67DD_Q3QIRB6NV0h3XeLN1mob583HwyFEZO6eesdwksGiIsixY4DfqC3t_xA_aem_QdZiqXFrqiM1u3RGuuXwXg"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "FULL BỘ CÔNG THỨC + LÝ THUYẾT TOÁN THPT SGK MỚI.pdf",
+    "url": "https://drive.google.com/file/d/1e4Z0f7YverP0KIH5PbHPEw0Yccz2YBY-/view?usp=sharing"
+  },
+  {
+    "grade": "12",
+    "subject": "Lí",
+    "title": "EBOOK CHINH PHỤC KIẾN THỨC VẬT LÝ 12 TẬP 1 VẬT LÝ NHIỆT, KHÍ LÝ TƯỞNG, IPCLASS.pdf.pdf",
+    "url": "https://drive.google.com/file/d/1HWO9RjPdu0rPp6GY73C46aW5kYgdVGfr/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Tổng Hợp",
+    "title": "BO 20 DE KHOA HOC - PHAN DAP AN.pdf",
+    "url": "https://drive.google.com/file/d/1AQVen9AYtNYw6x0VMws_aA_Th6umA6p7/view?usp=embed_facebook"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "EBOOK TOÁN 12 NGUYÊN HÀM, TÍCH PHÂN 2025.pdf",
+    "url": "https://drive.google.com/file/d/1upcDG9op2LuVwuOXfaa0Lm1IFqPWIoox/view?usp=drivesdk"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "EBOOK TOÁN 12 HÀM SỐ VÀ ỨNG DỤNG 2025.pdf",
+    "url": "https://drive.google.com/file/d/1eajqA-g7CnWA7x1SDhesUkBIIodTn1Ud/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "Tư Duy Giải Các Bài Toán Thực Tế (Thầy Nguyễn Tiến Đạt).pdf",
+    "url": "https://drive.google.com/file/d/1HMZW3uMTF47p0uJq-3JxyuDu8fW53572/view?fbclid=IwY2xjawLgAZhleHRuA2FlbQIxMABicmlkETFSdkRSUk1qcktSM1A1eHV2AR7YUxRNng3evagasYcJVS0g-_zWSFqqvVTEZbtHaI7NqfUCxPHVlsEZz0ey4w_aem_Ww7kuzHgGGn62bl5FMrSSA"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "BỘ 200 CÂU KĨ NĂNG - LOGO.pdf",
+    "url": "https://drive.google.com/file/d/1g0IeHSCx8KfO6xvFGHBrK1hTyLdl0WRQ/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "Ứng Dụng Hàm Số Giải Bài Toán Thực Tế.pdf",
+    "url": "https://drive.google.com/file/d/1oUAFFtIMMe3eRfumEUG9CzwzNMpp2Ye4/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "Casio Từ A-Z Thầy Đạt.pdf",
+    "url": "https://drive.google.com/file/d/1mAv48Ew0VshZKUbfB3DjYIOXVtQK51HV/view?usp=sharing"
+  },
+  {
+    "grade": "12",
+    "subject": "Lí",
+    "title": "69 câu mô hình thực tế Nhiệt, Khí - Vật lí 12.pdf",
+    "url": "https://drive.google.com/file/d/1OFUP8Pw0xR5WdWzWDv5TxvD9AaSXAqqw/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[429200]_[Bản đọc thử]_NÂNG CAO TOÁN HỌC.pdf",
+    "url": "https://drive.google.com/file/d/1qQcHk1uI5wyesQqAtyyQcP8KUfjZzp6y/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "EBOOK 15 PHÚT HỌC TỪ VỰNG ĐỌC HIỂU TIẾNG ANH MỖI NGÀY TẬP 2, CÔ PHẠM LIỄU.pdf",
+    "url": "https://drive.google.com/file/u/0/d/1zDN429_bCOCfYK9rktRTwIwEHzNqV7-k/view?usp=drive_link&pli=1&usp=embed_facebook"
+  },
+  {
+    "grade": "12",
+    "subject": "Hóa",
+    "title": "ĐỀ CƯƠNG ÔN TẬP HOÁ HKI LỚP 12.pdf",
+    "url": "https://drive.google.com/file/d/1Y4lEtv1_A1g2mNHlBWXZg0gcSur0ay4F/view"
+  },
+  {
+    "grade": "12",
+    "subject": "Sinh",
+    "title": "Tai lieu Tom tat ly thuyet Sinh 12.pdf",
+    "url": "https://drive.google.com/file/d/1huLKXvgJE68Eq_tkDjkbtQA8pJDqGHGW/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "336 Bài tập điền từ TA + Đáp án (Phần 6).pdf",
+    "url": "https://drive.google.com/file/d/1EPK2d6pRZm2X4zLq9tv_SAqPQIj8bi2J/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "LSCS - TỔNG HỢP SỰ KIỆN.pdf",
+    "url": "https://drive.google.com/file/d/1WtLca8ZyMGpSLOZGzWBiQx64YL8aFR8a/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "336 Bài tập điền từ TA + Đáp án (Phần 4).pdf",
+    "url": "https://drive.google.com/file/d/1cpZLf4HHuGbYNT4trH2gLX9vcpn9dnj2/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "NHỮNG MỞ BÀI HAY VÀ MỚI LẠ.docx",
+    "url": "https://docs.google.com/document/d/1RQzol_KtJb54stO9P1gRLPvyxGjjnnN_/edit?usp=sharing&ouid=109303803029260200940&rtpof=true&sd=true"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "130-BAI-NLXH-CUA-THU-KHOA-KHOI-C-TOÀN-QUOC-2024.pdf",
+    "url": "https://drive.google.com/file/d/1OHmQx1r92q2hg4MlhysJ2FBA_W9aECuf/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Địa Lý",
+    "title": "LÀM CHỦ MÔN ĐỊA TRONG 30 NGÀY, VŨ QUỐC LỊCH.pdf",
+    "url": "https://drive.google.com/file/d/1kFJBRGQNWTcaImw8Lq3RzzfFF_Kr7WoD/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "Cẩm nang cấu trúc tiếng anh - Trang Anh.pdf",
+    "url": "https://drive.google.com/file/d/1NChu7d-enVCVT_G097zOGmPKyRe-hxZl/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "Các chuyên đề ngữ pháp Tiếng Anh theo sơ đồ tư duy",
+    "url": "https://drive.google.com/file/d/1vGEDLJKP7GjZKPRrE8tGVwNyaEvUQn7A/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[Ngọc Huyền LB] 6 ngày nắm trọn hàm số.pdf",
+    "url": "https://drive.google.com/file/d/1x1Xcz4eJ-JAZsYLOGn65Yw4C1lsG71rS/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "70 Đề Đọc Hiểu Môn Ngữ Văn - Có Đáp Án Chi Tiết (Thầy Phạm Minh Nhật).pdf",
+    "url": "https://drive.google.com/file/d/1yYWkrW4SY5OLsoPPMpWzPqsXTfDASZve/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "30 chủ đề từ vựng tiếng anh tập 2 - Trang Anh.pdf",
+    "url": "https://drive.google.com/file/d/1N8UNiQUpaGn7MjEURN6rRf9k675uA9vf/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "Bộ câu hỏi VD-VDC ôn thi THPTQG môn Toán (File đề).pdf",
+    "url": "https://drive.google.com/file/d/1oQq1iNx_2fGd94yrwRMJ5uINAQc9Wrk8/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "Rèn Kỹ Năng Làm Bài Trắc Nghiệm Từ Vựng Môn Tiếng Anh cô Mai Phương - PDF.pdf",
+    "url": "https://drive.google.com/file/d/1vFvfmkkI1RDBqeLMgpXBx1wE5wIX5j8i/view"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "[MEGALIVE 01] 6 ĐỀ KIỂM TRA TOÀN DIỆN NỀN TẢNG HÀM SỐ 12.pdf",
+    "url": "https://drive.google.com/file/d/1A8yTJK2R16hbzp--3Q2T85YVV-3I6j44/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": " Sách tổng ôn Ngữ pháp cô Trang Anh  (1)' với bạn.pdf",
+    "url": "https://drive.google.com/file/d/1eEZnWv4uU7ECPTWYc9WV1o4xdWvrpyRs/view"
+  },
+  {
+    "grade": "12",
+    "subject": "Tổng Hợp",
+    "title": "Có bìa - 600 Câu Trắc Nghiệm Đúng Sai - Full 8 Chương Lớp 12.pdf",
+    "url": "https://drive.google.com/file/d/1EyNlsebQ-Tyji5EqRXKk61a0gzbz9CWU/view?usp=drivesdk"
+  },
+  {
+    "grade": "12",
+    "subject": "Tổng Hợp",
+    "title": "COMBO 20 ĐỀ KIỂM TRA TOÀN DIỆN ĐẦU NĂM - MÔN TOÁN - LÝ - HÓA LỚP 12 | MAPSTUDY x NAPSCHOOL",
+    "url": "https://docs.google.com/spreadsheets/d/1XjmruQ6dB7PHn5dgAbrKAG-XaVmEiuCTvvRQMAPM9UQ/edit?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "SSSTUDY | BÀI TOÁN TỰC TẾ ỨNG DỤNG ĐẠO HÀM",
+    "url": "https://docs.google.com/spreadsheets/d/1Mm_lVxvdAdQ_v1o6bN-4gBFZjYPQhL8f_u_1Ss9LAC4/edit?gid=0#gid=0"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "23 BÀI TOÁN THỰC TẾ ĐIỂN HÌNH.pdf",
+    "url": "https://drive.google.com/file/d/1XREVC2A8OUftZ5Euj2ks0ejzxuB5Atek/view?usp=drive_link"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "Tập San Mở Rộng Góc Nhìn Và Nâng Cấp Vốn Từ Cho Bài Văn Nghị Luận Xã Hội (Thưởng Thức Sách).pdf",
+    "url": "https://drive.google.com/file/d/1jvkd9o0CMFpBfpJJ1eGayneTIwQ0H63M/view?fbclid=IwY2xjawLUr3ZleHRuA2FlbQIxMQABHiu969vfk8p4GlX_WQ6ckfCF--3PY0ys1Xx84tVoevohpGeiPTp4a0UtbStD_aem_wbhfCP1cZ7Az32CNW5PM4Q"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "Hướng dẫn Ôn thi tốt nghiệp THPT môn Tin học theo chương trình GDPT 2018  - TikTok @thptqg2025.pdf",
+    "url": "https://drive.google.com/file/d/16zH0JcwpdXd_iQvuEoWJZ-tb64FtfeVj/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "KC1 - Phép đếm trong đa giác đều.pdf",
+    "url": "https://drive.google.com/file/d/1wt5M8wtlRCLktlnuS2bWLQyurNoJpqZK/view?fbclid=IwY2xjawLZhBRleHRuA2FlbQIxMABicmlkETF3UDNvajFzbXREQXJyaXN6AR5-BgXUO2Q-nYtZNS0o4q7pv-TQvJ-vWpYXZ5vhvee00fsaUbMdHV_Lha80Rw_aem_ucEW7Ck9BdEahSq44tF1tg"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "ÔN LUYỆN TN THPTQG LỊCH SỬ 📚𝙱𝚇𝙻.pdf",
+    "url": "https://drive.google.com/file/d/1zV3D4-QZyPHuPXXUTtgA-180zQsFQcKD/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "Đột Phá Tư Duy Lịch Sử.pdf",
+    "url": "https://drive.google.com/file/d/15mnNPLmRSoCk5o4XZyj9Vd-IGNBj4gUb/view"
+  },
+  {
+    "grade": "HSA",
+    "subject": "HSA",
+    "title": "[HSA Mega Edu] BỘ ĐỀ TƯ DUY ĐỊNH TÍNH 2025.pdf",
+    "url": "https://drive.google.com/file/d/1-mpnfz5Mcy5RI1aHYpYxAjJeSqTzlUcf/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "TÀI LIỆU 2K8",
+    "url": "https://docs.google.com/spreadsheets/d/1B8amuFkQRY6ayyTE6sO3I9EF1u7Bz0nPi90xMz6AATQ/edit?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "Phân biệt các thể loại văn học .pdf",
+    "url": "https://drive.google.com/file/d/12EUWUhBvjfsCVIYpLWUMRIfEKwqqoqK-/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "SO-TAY-KIEN-THUC-SU-DIA-CONGDAN.pdf",
+    "url": "https://drive.google.com/file/d/14u8MHDC_nzjt-SwZImwhnDF3oR8iaxrY/view"
+  },
+  {
+    "grade": "12",
+    "subject": "Hóa",
+    "title": "2K8 XUẤT PHÁT SỚM HÓA 12 | CDC",
+    "url": "https://docs.google.com/spreadsheets/d/10e2aL8X_tTETxnky4JKOsTwBMNMRkuGg8nS1we_Azz0/edit?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "EBOOK TỰ HỌC 20 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH.pdf",
+    "url": "https://drive.google.com/file/u/0/d/15RXj_qPqBHsiifhERSgZKZzg_s3pG5fS/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "TỪ VỰNG ĐỌC HIỂU CHUYÊN SÂU MÔN TIẾNG ANH CÔ PHẠM LIỄU (Tailieuonthi.edu.vn).pdf",
+    "url": "https://drive.google.com/file/d/1xf-lpc5Ly_iFRqUQdCxFeIC9BDBZngiO/view?usp=drive_link"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "[ Cô Vũ Mai Phương ] Tổng hợp Từ vựng trọng điểm (Từ vựng SGK + Collocation + Phrasal verb+ Từ vựng Trường - Sở thi thử 2025) thi THPT & ĐGNL 2025.pdf",
+    "url": "https://drive.google.com/file/d/1cheFEzh89VKDb-ivuQPpahY80IH8x2k1/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "100 CÂU HỎI TRẮC NGHIỆM LỊCH SỬ.pdf",
+    "url": "https://drive.google.com/file/d/1Qf0S6fRwzh3SNZ2aVcSgHGo1p4yqTRY6/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "325 CÂU HỎI LỊCH SỬ TRẮC NGHIỆM HAY.pdf",
+    "url": "https://drive.google.com/file/d/1oAwbp8uBqKQ5k1iLbM23GZIjot4iA9EQ/view?usp=sharing"
+  },
+  {
+    "grade": "12",
+    "subject": "Sử",
+    "title": "12 chủ đề lịch sử chuyên sâu (cô Hương - AtSchool).pdf",
+    "url": "https://drive.google.com/file/d/1peO3haocAUQ71CEW1HnEF4eqb3rsIrw-/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Toán",
+    "title": "Ôn ĐGNL Toán - ĐHSPHN 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/18FhwQr6T2_BNs_MMsQZRt8NFQJGGkbNa/view?usp=drivesdk"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Lí",
+    "title": "ÔN ĐGNL Vật Lí - ĐHSPHN 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/1QF2TDpHwskJ_-EfEvUvbQpd3O4C3nHl0/view?usp=drivesdk"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Hóa",
+    "title": "Ôn ĐGNL Hóa - ĐHSPHN 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/1_bteEvpz82X0GG3vtDHrLWugB0jG4nPo/view?usp=drivesdk"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Địa Lý",
+    "title": "ÔN ĐGNL Địa Lí - ĐHSPHN 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/18I2IClMTNIn-K6EDAq-xuU98_GjCT4JO/view?usp=drivesdk"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Văn",
+    "title": "ÔN ĐGNL Ngữ Văn - ĐHSPHN 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/1N_GOUmHXJhhyD_FQoSsK324a4w0v9GHP/view?usp=drivesdk"
+  },
+  {
+    "grade": "HSA",
+    "subject": "Sinh",
+    "title": "Ôn ĐGNL Sinh - ĐHSPHN 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/1Cxmx1vkk12yQjOgflrL-6XtHyQUM07Tg/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "DẪN CHỨNG CHO 18 CHỦ ĐỀ NGHỊ LUẬN XÃ HỘI THƯỜNG GẶP NHẤT .docx.pdf",
+    "url": "https://drive.google.com/file/d/1STFHgnF0-15GUWahBvrjJk9qJ6IQlCFn/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Văn",
+    "title": "nghiluanxahoihuongmo (2).pdf",
+    "url": "https://drive.google.com/file/d/106PEHfBcho0gmzqpl2mxdTFVfC9y8GbP/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "ĐVĐ - Chinh phục đề trường sở và góc khoảng cách trong không gian.pdf",
+    "url": "https://drive.google.com/file/d/1wBwqce1SERMm_HKpyW5a3l_PQJXYznUe/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "12",
+    "subject": "Hóa",
+    "title": "EBOOK CHINH PHỤC HOÁ HỮU CƠ LỚP 12 THẦY PHẠM VĂN TRỌNG.pdf",
+    "url": "https://drive.google.com/file/d/1l6S6ztEY90RTM3V59_a2lgerg_6xHtu5/view?usp=drivesdkhttps://drive.google.com/file/d/1l6S6ztEY90RTM3V59_a2lgerg_6xHtu5/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "50 đề mh TN THPT môn Anh (Moon).pdf",
+    "url": "https://drive.google.com/file/d/1M7ddeRDu2f7k9PAFXDE6Esli9RY20GUl/view"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "BREAK THE LIMIT - KIẾN THỨC VDC TOÁN 12 - CÔ HUYỀN LB 📚𝙱𝚇𝙻.pdf",
+    "url": "https://drive.google.com/file/d/1IVFzB3xYzEgK_Z9QCiEEXkhF4Yk1_T_A/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "CHUYÊN ĐỀ 2. CÂU HỎI.pdf",
+    "url": "https://drive.google.com/file/d/1JcJlA91VlJVcJrUNxC1PW7Oi9RkAHN4E/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "CHUYÊN ĐỀ 1. CÂU HỎI.pdf",
+    "url": "https://drive.google.com/file/d/1Zjj_YKS3gcN3q1DxEHvI3U_0YOW75VA6/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "35-de-minh-hoa-luyen-thi-thpt-quoc-gia-2020-mon-tieng-anh.pdf",
+    "url": "https://drive.google.com/file/d/1Q24hnNqfhEhva8WANMy1naEmJ2xnkx9l/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[ĐVĐ] 1000 câu hỏi đúng sai - Câu 1-100 - Phần đề bài.pdf",
+    "url": "https://drive.google.com/file/d/17G-_88Z5cpcSsAL3y2IJYZgLkFvb9_39/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "4. Cụm động từ phrasal verbs (HS).doc",
+    "url": "https://docs.google.com/document/d/1Xiw0UuWuJmpMFeVZM91pbBMZNq3NE9aR/edit?usp=drivesdk&ouid=101424942461030991047&rtpof=true&sd=true"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "TOÁN CÔ NGỌC HUYỀN LB",
+    "url": "https://docs.google.com/spreadsheets/d/1QCptdQ1ZhUi6cQeLXGWHVk1ZLkXhDEoALh37w1TDG7k/edit?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "BỘ 100 CÂU HỎI TRẮC NGHIỆM ĐÚNG SAI -  HÀM SỐ || Thầy Đỗ Văn Đức ",
+    "url": "https://docs.google.com/spreadsheets/d/1WYNxyQ7UWEYWbUIvXJUM-scgBMnzCv0tFvTNMLMMPbA/edit?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[TLOT MIỄN PHÍ GROUP] Tổng hợp lý thuyết Toán THPT FullHD ko che.pdf",
+    "url": "https://drive.google.com/file/d/1Y3yZm5m-eyamakwhdF5nGRmAi8ssuq9k/view"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "1.BLUE-EBOOK TOÁN 12 - CHINH PHỤC HÀM SỐ TỪ A-Z - Anh Giao Kid.pdf",
+    "url": "https://drive.google.com/file/d/1x2-CvoMQiWSbQjE3D4jwW6s5IKs90O0z/view?usp=drivesdk"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "SỔ TAY CÔNG THỨC TOÁN HỌC | TOÁN 11&12",
+    "url": "https://drive.google.com/file/d/1JyCzk6s4nrUvsUM3Pj8BQbt70q2UpXbp/view?usp=drivesdk"
+  },
+  {
+    "grade": "12",
+    "subject": "Toán",
+    "title": "EBOOK TƯ DUY TOÁN 12 CÔ NGỌC HUYỀN LB.pdf",
+    "url": "https://drive.google.com/file/d/1SwU-jE99wOw5LJYgXaFJr6w4CbKNo1t-/view?usp=drivesdk"
+  },
+  {
+    "grade": "10",
+    "subject": "Tổng Hợp",
+    "title": "Khảo sát Nguyễn Khuyến 2k8 mới nhất (đề).pdf.pdf",
+    "url": "https://drive.google.com/file/d/1OCRDj6Qwcarqy46E19uv77x_PjY1n6Yk/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Hóa",
+    "title": "CHƯƠNG 1. ESTER - LIPID (BẢN HS).pdf",
+    "url": "https://drive.google.com/file/d/1FOhjnh8eK5POMy9aGt4kRiHbeQSjIGif/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Địa Lý",
+    "title": "ÔN LUYỆN TN THPTQG ĐỊA LÍ by tailieuonthi 📚𝙱𝚇𝙻",
+    "url": "https://drive.google.com/file/d/1RObSCTNiJ3X0WWjqcS8YPwMPeyU8XlfI/view?usp=drivesdk&usp=embed_facebook"
+  },
+  {
+    "grade": "11",
+    "subject": "Tiếng Anh",
+    "title": "Tiếng Anh 11 Bright.pdf",
+    "url": "https://drive.google.com/file/d/1XByTonCGUPxkO1soKKpdtHfUttO6EOkZ/view?usp=drive_link"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "TOA_DO_VECTO.pdf",
+    "url": "https://drive.google.com/file/d/1lnVOjsYzfxWEg4Wge0tTePGfeE4FsKM_/edit?usp=embed_facebook"
+  },
+  {
+    "grade": "VACT",
+    "subject": "VACT",
+    "title": "EBOOK 15 ĐỀ THỰC CHIẾN ĐÁNH GIÁ NĂNG LỰC V-ACT EMPIRE TEAM.pdf",
+    "url": "https://drive.google.com/file/d/10gwUkbailE-aE6ROKR2oYPkcO7elJbmc/edit?usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "Sach on thi THPT QG  (NCK) xb.pdf",
+    "url": "https://drive.google.com/file/d/18znYw-4fXViK4imrsWmfmAG8rs3Jbcwt/view?usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[ĐVĐ] 52 bài toán Ứng Dụng Tích Phân hay - full đáp án chi tiết.pdf",
+    "url": "https://drive.google.com/file/d/1CvE0RHCtNfDdeGBpGcUU8pS9bTBtvhzE/view?usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "CÂU 51 - 100 - 500 CÂU CHỐNG SAI NGU KINH ĐIỂN.pdf",
+    "url": "https://drive.google.com/file/d/1oFgZ62YS2fZlxBX84oTrNWiyWd7gPrPh/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[ĐVĐ] 60 bài toán chống sai ngu 2024-2025.pdf",
+    "url": "https://drive.google.com/file/d/19x1EciA7S3Uw1tA1Ht1WNhUmamm450ez/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Toán",
+    "title": "[Ngọc Huyền LB] Căn dặn sai ngu buổi 3. Mũ logarit.pdf",
+    "url": "https://drive.google.com/file/d/18mflBj2X6GaxtVMoJzbjAdufc1X_Nl6b/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tiếng Anh",
+    "title": "14 CHỦ ĐỀ TỪ VỰNG MỞ RỘNG THPTQG 2025.pdf",
+    "url": "https://drive.google.com/file/d/1zVQA9Qd0JYBKecPiIBXucdYKaTDVjJ9E/view?usp=sharing"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Tổng Hợp",
+    "title": "Thi thử.pdf",
+    "url": "https://drive.google.com/file/d/1AHKgLD_y0LGZVzHh0ZftFlOicLQ8QVJ4/view"
+  },
+  {
+    "grade": "Tổng hợp",
+    "subject": "Sử",
+    "title": "LÝ THUYẾT VÀ CÂU HỎI TRẮC NGHIỆM KÈM ĐÁP ÁN VIỆT NAM 1954 ĐẾN 1965.pdf",
+    "url": "https://drive.google.com/file/d/1k10129EZ5T-S2R0Jlj3uqA2FMTK6CqqG/view"
   }
-  ]
+]
 }
