@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDYDOC - Thư viện tài liệu học tập</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hidden { display: none; }
+        .group:hover .group-hover\:block { display: block; }
+
+        .hero-space {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .interactive-element {
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+        }
+        .interactive-element:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+        .interactive-element:active {
+            transform: translateY(0px) scale(0.98);
+        }
+
+        @keyframes card-fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card-animate {
+            animation: card-fade-in 0.5s ease-out forwards;
+        }
+
+        /* Shooting Stars */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+            animation: shooting-star 5s linear infinite;
+        }
+        @keyframes shooting-star {
+            from {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+            to {
+                transform: translate(100vw, 100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-book-open text-2xl text-indigo-600"></i>
+                <a href="index.html" class="text-xl font-bold text-slate-800 cursor-pointer">STUDYDOC</a>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-indigo-600 font-bold">Trang chủ</a>
+                <div class="relative group">
+                    <button class="text-slate-600 hover:text-indigo-600 font-medium flex items-center py-2">
+                        Thư viện <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-40 z-50 border border-slate-200">
+                        <a href="lop10.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 10</a>
+                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 11</a>
+                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 12</a>
+                    </div>
+                </div>
+                <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-indigo-600 font-medium">Nhóm Zalo</a>
+                 <a href="#upload" onclick="app.showPage('page-upload')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors shadow-sm hover:shadow-md interactive-element">
+                    <i class="fas fa-upload mr-2"></i>Tải lên tài liệu
+                </a>
+            </nav>
+            <button class="md:hidden text-2xl" id="mobileMenuButton"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200">
+             <a href="index.html" class="block px-4 py-3 text-indigo-700 bg-indigo-50 font-semibold">Trang chủ</a>
+             <a href="lop10.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 10</a>
+             <a href="lop11.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 11</a>
+             <a href="lop12.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 12</a>
+             <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Nhóm Zalo</a>
+             <a href="#upload" onclick="app.showPage('page-upload')" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Tải lên tài liệu</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="page-home" class="hero-space flex flex-col min-h-screen">
+            <div class="stars"></div>
+            <div class="container mx-auto px-4 text-center relative z-10 pt-20 pb-12 md:pt-28 md:pb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Tìm kiếm tài liệu học tập</h1>
+                <p class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Khám phá kho tàng kiến thức miễn phí dành cho học sinh THPT.</p>
+                <div class="search-box max-w-2xl mx-auto bg-indigo-600 rounded-full shadow-lg p-1 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-indigo-400/50 transition-all duration-300">
+                    <i class="fas fa-search text-indigo-200 px-4"></i>
+                    <input type="text" id="homeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-indigo-200 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong toàn bộ thư viện...">
+                </div>
+            </div>
+            
+            <div id="homeSearchResults" class="hidden flex-grow overflow-y-auto pb-16">
+                 <div class="container mx-auto px-4">
+                    <div id="homeSearchGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Page -->
+        <section id="page-upload" class="hidden py-16">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h1 class="text-4xl font-bold text-center mb-4 text-slate-800">Tải lên tài liệu</h1>
+                <p class="text-slate-600 text-center mb-8">Thêm nhiều tài liệu cùng một lúc cho một lớp và môn học cụ thể.</p>
+                <form id="uploadForm" class="bg-white p-8 rounded-xl shadow-md border space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b">
+                        <div>
+                            <label for="docGrade" class="block text-sm font-medium text-gray-700 mb-1">Chọn lớp</label>
+                            <select id="docGrade" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="10">Lớp 10</option>
+                                <option value="11">Lớp 11</option>
+                                <option value="12">Lớp 12</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="docSubject" class="block text-sm font-medium text-gray-700 mb-1">Môn học</label>
+                            <select id="docSubject" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="Toán">Toán</option>
+                                <option value="Tiếng Anh">Tiếng Anh</option>
+                                <option value="Ngữ Văn">Ngữ Văn</option>
+                                <option value="Vật Lý">Vật Lý</option>
+                                <option value="Lịch Sử">Lịch Sử</option>
+                                <option value="Hóa Học">Hóa Học</option>
+                                <option value="Giáo dục kinh tế pháp luật">Giáo dục kinh tế pháp luật</option>
+                                <option value="Sinh Học">Sinh Học</option>
+                                <option value="HSA">HSA</option>
+                                <option value="VACT">VACT</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="document-entries" class="space-y-4">
+                        <!-- Document entry rows will be added here -->
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4">
+                        <button type="button" id="add-entry-btn" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-lg transition-colors interactive-element">
+                            <i class="fas fa-plus mr-2"></i>Thêm tài liệu
+                        </button>
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 interactive-element">
+                            <i class="fas fa-cogs mr-2"></i> Tạo mã JSON
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Guide Button -->
+    <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element">
+        <i class="fas fa-question text-2xl"></i>
+    </button>
+
+    <!-- MODALS SECTION -->
+    <div id="modal-container"></div>
+
+    <script>
+    const app = {
+        documents: [],
+
+        async init() {
+            await this.loadDocuments();
+            this.attachEventListeners();
+            this.handleRouting();
+            this.addDocumentEntry(); 
+            this.createShootingStars();
+        },
+
+        async loadDocuments() {
+            try {
+                const response = await fetch('tailieu.json');
+                if (!response.ok) throw new Error('Network response was not ok.');
+                const data = await response.json();
+                this.documents = data.documents;
+            } catch (error) {
+                console.error('Không thể tải tệp tailieu.json:', error);
+                this.documents = [];
+                this.openModal('errorModal', 'Lỗi tải dữ liệu', 'fas fa-exclamation-triangle', 
+                    '<p>Không thể tải được cơ sở dữ liệu tài liệu. Vui lòng đảm bảo tệp <b>tailieu.json</b> tồn tại và đúng định dạng.</p>'
+                );
+            }
+        },
+
+        showPage(pageId) {
+            document.querySelectorAll('main > section').forEach(page => page.classList.add('hidden'));
+            const page = document.getElementById(pageId);
+            if(page) page.classList.remove('hidden');
+            window.scrollTo(0, 0);
+            document.getElementById('mobileMenu').classList.add('hidden');
+        },
+        
+        handleRouting() {
+            if (window.location.hash === '#upload') {
+                this.showPage('page-upload');
+            } else {
+                this.showPage('page-home');
+            }
+        },
+
+        renderDocuments(docs, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+            if (docs.length === 0) {
+                container.innerHTML = '<p class="text-slate-500 col-span-full text-center">Không tìm thấy tài liệu nào phù hợp.</p>';
+                return;
+            }
+            docs.forEach((doc, index) => {
+                const card = document.createElement('div');
+                card.className = 'bg-white border border-slate-200 rounded-xl shadow-md p-6 flex flex-col interactive-element card-animate';
+                card.style.animationDelay = `${index * 100}ms`;
+                card.innerHTML = `
+                    <div class="flex-grow mb-4 min-w-0">
+                        <div class="flex justify-between items-start mb-3">
+                           <span class="text-xs font-semibold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">${doc.subject}</span>
+                           <span class="text-xs font-medium text-slate-500">Lớp ${doc.grade}</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 leading-snug truncate" title="${doc.title}">${doc.title}</h3>
+                    </div>
+                    <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="block text-center mt-auto w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-lg transition duration-300 shadow-sm hover:shadow-md interactive-element">
+                        <i class="fas fa-download mr-2"></i> Tải xuống
+                    </a>`;
+                container.appendChild(card);
+            });
+        },
+        
+        addDocumentEntry() {
+            const container = document.getElementById('document-entries');
+            const entryDiv = document.createElement('div');
+            entryDiv.className = 'p-4 border rounded-lg bg-slate-50 relative document-entry';
+            entryDiv.innerHTML = `
+                <button type="button" class="absolute top-2 right-2 text-slate-400 hover:text-red-500 remove-entry-btn" title="Xóa mục này">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Tên tài liệu</label>
+                        <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 doc-title" placeholder="Ví dụ: Đề thi cuối kỳ Hóa học 12">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Link Google Drive</label>
+                        <input type="url" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 doc-url" placeholder="Dán link chia sẻ Google Drive vào đây">
+                    </div>
+                </div>
+            `;
+            container.appendChild(entryDiv);
+            entryDiv.querySelector('.remove-entry-btn').addEventListener('click', () => {
+                if (container.children.length > 1) {
+                    entryDiv.remove();
+                } else {
+                    alert("Bạn phải có ít nhất một mục tài liệu.");
+                }
+            });
+        },
+
+        attachEventListeners() {
+            document.getElementById('mobileMenuButton').addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.toggle('hidden');
+            });
+
+            document.getElementById('homeSearchInput').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const resultsContainer = document.getElementById('homeSearchResults');
+                if (!query) {
+                    resultsContainer.classList.add('hidden');
+                    return;
+                }
+                const results = this.documents.filter(doc => doc.title.toLowerCase().includes(query) || doc.subject.toLowerCase().includes(query));
+                resultsContainer.classList.remove('hidden');
+                this.renderDocuments(results, 'homeSearchGrid');
+            });
+            
+            document.getElementById('add-entry-btn').addEventListener('click', () => this.addDocumentEntry());
+
+            document.getElementById('uploadForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const grade = parseInt(document.getElementById('docGrade').value);
+                const subject = document.getElementById('docSubject').value;
+                
+                const newDocs = [];
+                document.querySelectorAll('.document-entry').forEach(entry => {
+                    const title = entry.querySelector('.doc-title').value;
+                    const url = entry.querySelector('.doc-url').value;
+                    if (title && url) {
+                        newDocs.push({ grade, subject, title, url });
+                    }
+                });
+
+                if (newDocs.length === 0) {
+                    alert("Vui lòng điền đầy đủ thông tin cho ít nhất một tài liệu.");
+                    return;
+                }
+
+                const jsonString = newDocs.map(doc => 
+                    JSON.stringify(doc, null, 4)
+                ).join(',\n') + ',';
+
+                this.showCopyModal(jsonString);
+            });
+        },
+        
+        showCopyModal(jsonString) {
+            const content = `
+                <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md mb-4">
+                    <p class="font-bold">Tạo mã thành công!</p>
+                    <p>Sao chép đoạn mã dưới đây và dán vào cuối danh sách tài liệu trong tệp <code>tailieu.json</code> của bạn.</p>
+                </div>
+                <textarea readonly class="w-full h-48 p-2 border rounded-md bg-gray-100 font-mono text-xs">${jsonString}</textarea>
+                <button onclick="app.copyToClipboard(this)" class="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 interactive-element">
+                    <i class="fas fa-copy mr-2"></i> Sao chép vào Clipboard
+                </button>
+            `;
+            this.openModal('copyJsonModal', 'Mã JSON để cập nhật', 'fas fa-code', content);
+        },
+
+        copyToClipboard(button) {
+            const textarea = button.previousElementSibling;
+            textarea.select();
+            document.execCommand('copy');
+            button.innerHTML = '<i class="fas fa-check mr-2"></i> Đã sao chép!';
+            setTimeout(() => {
+                button.innerHTML = '<i class="fas fa-copy mr-2"></i> Sao chép vào Clipboard';
+            }, 2000);
+        },
+        
+        createShootingStars() {
+            const container = document.querySelector('.stars');
+            if (!container) return;
+            for (let i = 0; i < 15; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = `${Math.random() * 3 + 1}px`;
+                star.style.height = star.style.width;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                container.appendChild(star);
+            }
+        },
+
+        modalsData: {
+            guideModal: {
+                title: 'Hướng dẫn sử dụng',
+                icon: 'fas fa-question-circle',
+                content: `
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">🔍 Cách tìm kiếm tài liệu</h3>
+                            <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                                <li>Dùng thanh tìm kiếm ở trang chủ để tìm trong toàn bộ thư viện.</li>
+                                <li>Vào các trang Lớp 10, 11, 12 để xem tài liệu riêng cho từng lớp.</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">📤 Cách cập nhật dữ liệu</h3>
+                            <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                                <li>Nhấn vào nút "Tải lên tài liệu".</li>
+                                <li>Chọn Lớp và Môn học chung cho các tài liệu bạn sắp thêm.</li>
+                                <li>Điền thông tin và nhấn nút "+" để thêm nhiều tài liệu.</li>
+                                <li>Nhấn "Tạo mã JSON", sao chép đoạn mã và dán vào tệp <b>tailieu.json</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                `
+            }
+        },
+
+        openModal(modalId, title, icon, content) {
+            const modalData = this.modalsData[modalId] || { title, icon, content };
+            const modalElement = document.createElement('div');
+            modalElement.id = modalId;
+            modalElement.className = 'fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4';
+            modalElement.innerHTML = `
+                <div class="bg-white text-slate-800 rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200">
+                    <div class="flex justify-between items-center p-4 border-b border-slate-200">
+                        <h2 class="text-xl font-bold flex items-center"><i class="${modalData.icon} mr-3 text-indigo-600"></i> ${modalData.title}</h2>
+                        <button class="close-btn text-slate-500 hover:text-slate-800 text-2xl">&times;</button>
+                    </div>
+                    <div class="p-6 overflow-y-auto">${modalData.content}</div>
+                </div>`;
+            document.getElementById('modal-container').appendChild(modalElement);
+            modalElement.querySelector('.close-btn').addEventListener('click', () => this.closeModal(modalId));
+        },
+
+        closeModal(modalId) {
+            const modalElement = document.getElementById(modalId);
+            if (modalElement) modalElement.remove();
+        }
+    };
+
+    app.init();
+    </script>
+</body>
+</html>

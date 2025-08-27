@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu Lớp 10 - STUDYDOC</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hidden { display: none; }
+        .group:hover .group-hover\:block { display: block; }
+
+        .page-background {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .interactive-element {
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+        }
+        .interactive-element:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+        .interactive-element:active {
+            transform: translateY(0px) scale(0.98);
+        }
+
+        @keyframes card-fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card-animate {
+            animation: card-fade-in 0.5s ease-out forwards;
+        }
+
+        /* Shooting Stars */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+            animation: shooting-star 5s linear infinite;
+        }
+        @keyframes shooting-star {
+            from {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+            to {
+                transform: translate(100vw, 100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-book-open text-2xl text-indigo-600"></i>
+                <a href="index.html" class="text-xl font-bold text-slate-800 cursor-pointer">STUDYDOC</a>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Trang chủ</a>
+                <div class="relative group">
+                    <button class="text-indigo-600 font-bold flex items-center py-2">
+                        Thư viện <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-40 z-50 border border-slate-200">
+                        <a href="lop10.html" class="block px-4 py-2 text-sm text-indigo-700 bg-indigo-50 font-semibold">Lớp 10</a>
+                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 11</a>
+                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 12</a>
+                    </div>
+                </div>
+                <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-indigo-600 font-medium">Nhóm Zalo</a>
+                 <a href="index.html#upload" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors shadow-sm hover:shadow-md interactive-element">
+                    <i class="fas fa-upload mr-2"></i>Tải lên tài liệu
+                </a>
+            </nav>
+            <button class="md:hidden text-2xl" id="mobileMenuButton"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200">
+             <a href="index.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Trang chủ</a>
+             <a href="lop10.html" class="block px-4 py-3 text-indigo-700 bg-indigo-50 font-semibold">Lớp 10</a>
+             <a href="lop11.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 11</a>
+             <a href="lop12.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 12</a>
+             <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Nhóm Zalo</a>
+             <a href="index.html#upload" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Tải lên tài liệu</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-background min-h-screen">
+        <div class="stars"></div>
+        <!-- Grade 10 Page Content -->
+        <section id="page-grade" class="py-16 relative z-10">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1 id="grade-title" class="text-4xl md:text-5xl font-extrabold text-white mb-3" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Tài liệu Lớp 10</h1>
+                    <p class="text-lg text-indigo-100 max-w-2xl mx-auto">Sử dụng thanh tìm kiếm để lọc nhanh hoặc duyệt qua danh sách tài liệu bên dưới.</p>
+                </div>
+                 <div class="search-box max-w-2xl mx-auto mb-16 bg-indigo-500/80 rounded-full shadow-lg p-1 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-indigo-300/50 transition-all duration-300">
+                    <i class="fas fa-search text-indigo-200 px-4"></i>
+                    <input type="text" id="gradeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-indigo-200 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong lớp 10...">
+                </div>
+                <div id="gradeGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Documents will be rendered here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Guide Button -->
+    <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element">
+        <i class="fas fa-question text-2xl"></i>
+    </button>
+
+    <!-- MODALS SECTION -->
+    <div id="modal-container"></div>
+
+    <script>
+    const app = {
+        documents: [],
+        currentGrade: 10,
+
+        async init() {
+            await this.loadDocuments();
+            this.attachEventListeners();
+            this.renderPage();
+            this.createShootingStars();
+        },
+        
+        async loadDocuments() {
+            try {
+                const response = await fetch('tailieu.json');
+                if (!response.ok) throw new Error('Network response was not ok.');
+                const data = await response.json();
+                this.documents = data.documents;
+            } catch (error) {
+                console.error('Không thể tải tệp tailieu.json:', error);
+                this.documents = [];
+                this.openModal('errorModal', 'Lỗi tải dữ liệu', 'fas fa-exclamation-triangle', 
+                    '<p>Không thể tải được cơ sở dữ liệu tài liệu. Vui lòng đảm bảo tệp <b>tailieu.json</b> tồn tại và đúng định dạng.</p>'
+                );
+            }
+        },
+        
+        renderPage() {
+            const gradeDocs = this.documents.filter(doc => String(doc.grade).includes(this.currentGrade));
+            this.renderDocuments(gradeDocs, 'gradeGrid');
+        },
+
+        renderDocuments(docs, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+            if (docs.length === 0) {
+                container.innerHTML = '<p class="text-white col-span-full text-center">Không tìm thấy tài liệu nào phù hợp.</p>';
+                return;
+            }
+            docs.forEach((doc, index) => {
+                const card = document.createElement('div');
+                card.className = 'bg-white border border-slate-200 rounded-xl shadow-md p-6 flex flex-col interactive-element card-animate';
+                card.style.animationDelay = `${index * 100}ms`;
+                card.innerHTML = `
+                    <div class="flex-grow mb-4 min-w-0">
+                        <div class="flex justify-between items-start mb-3">
+                           <span class="text-xs font-semibold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">${doc.subject}</span>
+                           <span class="text-xs font-medium text-slate-500">Lớp ${doc.grade}</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 leading-snug truncate" title="${doc.title}">${doc.title}</h3>
+                    </div>
+                    <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="block text-center mt-auto w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-lg transition duration-300 shadow-sm hover:shadow-md interactive-element">
+                        <i class="fas fa-download mr-2"></i> Tải xuống
+                    </a>`;
+                container.appendChild(card);
+            });
+        },
+
+        attachEventListeners() {
+            document.getElementById('mobileMenuButton').addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.toggle('hidden');
+            });
+            
+            document.getElementById('gradeSearchInput').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const gradeDocs = this.documents.filter(doc => String(doc.grade).includes(this.currentGrade));
+                const results = gradeDocs.filter(doc => doc.title.toLowerCase().includes(query) || doc.subject.toLowerCase().includes(query));
+                this.renderDocuments(results, 'gradeGrid');
+            });
+        },
+        
+        createShootingStars() {
+            const container = document.querySelector('.stars');
+            if (!container) return;
+            for (let i = 0; i < 15; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = `${Math.random() * 3 + 1}px`;
+                star.style.height = star.style.width;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                container.appendChild(star);
+            }
+        },
+        
+        modalsData: {
+            guideModal: {
+                title: 'Hướng dẫn sử dụng',
+                icon: 'fas fa-question-circle',
+                content: `
+                    <div class="space-y-6 text-sm">
+                        <p>Đây là trang tài liệu dành riêng cho <b>Lớp 10</b>.</p>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">🔍 Cách tìm kiếm tài liệu</h3>
+                            <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                                <li>Sử dụng thanh tìm kiếm ở đầu trang để lọc nhanh các tài liệu trong lớp này.</li>
+                                <li>Nhấn "Tải xuống" để mở link tài liệu.</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">📤 Cách tải lên tài liệu</h3>
+                            <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                                <li>Quay về <b>Trang chủ</b> và nhấn vào nút "Tải lên tài liệu".</li>
+                                <li>Làm theo hướng dẫn để đóng góp tài liệu cho cộng đồng.</li>
+                            </ol>
+                        </div>
+                    </div>
+                `
+            }
+        },
+
+        openModal(modalId, title, icon, content) {
+            const modalData = this.modalsData[modalId] || { title, icon, content };
+            const modalElement = document.createElement('div');
+            modalElement.id = modalId;
+            modalElement.className = 'fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4';
+            modalElement.innerHTML = `
+                <div class="bg-white text-slate-800 rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200">
+                    <div class="flex justify-between items-center p-4 border-b border-slate-200">
+                        <h2 class="text-xl font-bold flex items-center"><i class="${modalData.icon} mr-3 text-indigo-600"></i> ${modalData.title}</h2>
+                        <button class="close-btn text-slate-500 hover:text-slate-800 text-2xl">&times;</button>
+                    </div>
+                    <div class="p-6 overflow-y-auto">${modalData.content}</div>
+                </div>`;
+            document.getElementById('modal-container').appendChild(modalElement);
+            modalElement.querySelector('.close-btn').addEventListener('click', () => this.closeModal(modalId));
+        },
+
+        closeModal(modalId) {
+            const modalElement = document.getElementById(modalId);
+            if (modalElement) modalElement.remove();
+        }
+    };
+
+    app.init();
+    </script>
+</body>
+</html>
