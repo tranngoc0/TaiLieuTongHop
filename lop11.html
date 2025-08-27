@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1YRQ9N2W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0Q1YRQ9N2W');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tài liệu Lớp 11 - STUDYDOC</title>
@@ -170,12 +161,28 @@
             this.createShootingStars();
         },
         
+        // *** ĐÃ CẬP NHẬT: Thêm bộ lọc dữ liệu trùng lặp ***
         async loadDocuments() {
             try {
-                const response = await fetch('tailieu.json');
+                const response = await fetch('tailieu.json', { cache: 'no-cache' });
                 if (!response.ok) throw new Error('Network response was not ok.');
                 const data = await response.json();
-                this.documents = data.documents;
+                
+                const seenUrls = new Set();
+                const uniqueDocuments = (data.documents || []).filter(doc => {
+                    if (!doc.url || doc.url.trim() === '') {
+                        return false;
+                    }
+                    const isDuplicate = seenUrls.has(doc.url);
+                    if (!isDuplicate) {
+                        seenUrls.add(doc.url);
+                        return true;
+                    }
+                    return false;
+                });
+                
+                this.documents = uniqueDocuments;
+
             } catch (error) {
                 console.error('Không thể tải tệp tailieu.json:', error);
                 this.documents = [];
@@ -221,11 +228,34 @@
                 document.getElementById('mobileMenu').classList.toggle('hidden');
             });
             
+            // *** ĐÃ CẬP NHẬT: Logic tìm kiếm thông minh hơn ***
+            let searchTimer = null;
             document.getElementById('gradeSearchInput').addEventListener('input', (e) => {
-                const query = e.target.value.toLowerCase();
-                const gradeDocs = this.documents.filter(doc => String(doc.grade).includes(this.currentGrade));
-                const results = gradeDocs.filter(doc => doc.title.toLowerCase().includes(query) || doc.subject.toLowerCase().includes(query));
-                this.renderDocuments(results, 'gradeGrid');
+                clearTimeout(searchTimer);
+                const query = e.target.value.trim().toLowerCase();
+
+                searchTimer = setTimeout(() => {
+                    const gradeDocs = this.documents.filter(doc => String(doc.grade).includes(this.currentGrade));
+
+                    if (!query) {
+                        this.renderDocuments(gradeDocs, 'gradeGrid');
+                        return;
+                    }
+
+                    const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                    const regex = new RegExp('\\b' + escapedQuery + '\\b', 'i');
+
+                    const results = gradeDocs.filter(doc => {
+                        const subjectLower = (doc.subject || '').toLowerCase();
+                        const titleLower = (doc.title || '').toLowerCase();
+
+                        if (subjectLower === query) {
+                            return true;
+                        }
+                        return regex.test(titleLower) || regex.test(subjectLower);
+                    });
+                    this.renderDocuments(results, 'gradeGrid');
+                }, 200);
             });
         },
         
@@ -298,4 +328,3 @@
     </script>
 </body>
 </html>
-
