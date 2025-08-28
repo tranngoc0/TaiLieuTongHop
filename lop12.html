@@ -4,28 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tài liệu Lớp 12 - STUDYDOC</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1YRQ9N2W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0Q1YRQ9N2W');
-</script>
     
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Custom Styles -->
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hidden { display: none; }
@@ -62,7 +49,6 @@
             animation: card-fade-in 0.5s ease-out forwards;
         }
 
-        /* Shooting Stars */
         .stars {
             position: absolute;
             top: 0;
@@ -93,7 +79,6 @@
 </head>
 <body class="bg-slate-100 text-slate-800">
 
-    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -129,10 +114,8 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="page-background min-h-screen">
         <div class="stars"></div>
-        <!-- Grade 12 Page Content -->
         <section id="page-grade" class="py-16 relative z-10">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
@@ -144,18 +127,15 @@
                     <input type="text" id="gradeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-indigo-200 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong lớp 12...">
                 </div>
                 <div id="gradeGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Documents will be rendered here by JavaScript -->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Guide Button -->
     <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element">
         <i class="fas fa-question text-2xl"></i>
     </button>
 
-    <!-- MODALS SECTION -->
     <div id="modal-container"></div>
 
     <script>
@@ -345,5 +325,3 @@
     </script>
 </body>
 </html>
-
-
