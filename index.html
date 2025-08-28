@@ -4,32 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDYDOC - Thư viện tài liệu học tập</title>
-    
     <meta name="description" content="STUDYDOC - Kho tài liệu học tập miễn phí dành cho học sinh THPT. Tìm kiếm, tải xuống và đóng góp tài liệu dễ dàng.">
     <meta name="theme-color" content="#4f46e5">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1YRQ9N2W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-0Q1YRQ9N2W');
-</script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com" defer></script>
-
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Custom Styles -->
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hidden { display: none; }
@@ -66,7 +51,6 @@
             animation: card-fade-in 0.5s ease-out forwards;
         }
 
-        /* Shooting Stars */
         .stars {
             position: absolute;
             top: 0;
@@ -97,7 +81,6 @@
 </head>
 <body class="bg-slate-100 text-slate-800">
 
-    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -133,13 +116,10 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Home Page -->
         <section id="page-home" class="hero-space flex flex-col min-h-screen">
             <div class="stars" aria-hidden="true"></div>
             <div class="container mx-auto px-4 text-center relative z-10 pt-20 pb-12 md:pt-28 md:pb-16">
-                <!-- ID đã được thêm vào h1 và p -->
                 <h1 id="hero-title" class="text-4xl md:text-5xl font-extrabold mb-4 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Tìm kiếm tài liệu học tập</h1>
                 <p id="hero-subtitle" class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Khám phá kho tàng kiến thức miễn phí dành cho học sinh THPT.</p>
                 <div class="search-box max-w-2xl mx-auto bg-indigo-600 rounded-full shadow-lg p-1 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-indigo-400/50 transition-all duration-300">
@@ -155,7 +135,6 @@
             </div>
         </section>
 
-        <!-- Upload Page -->
         <section id="page-upload" class="hidden py-16">
             <div class="container mx-auto px-4 max-w-3xl">
                 <h1 class="text-4xl font-bold text-center mb-4 text-slate-800">Tải lên tài liệu</h1>
@@ -188,7 +167,6 @@
                     </div>
 
                     <div id="document-entries" class="space-y-4">
-                        <!-- Document entry rows will be added here -->
                     </div>
 
                     <div class="flex items-center justify-between pt-4">
@@ -204,12 +182,10 @@
         </section>
     </main>
 
-    <!-- Guide Button -->
     <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element" aria-label="Hướng dẫn">
         <i class="fas fa-question text-2xl" aria-hidden="true"></i>
     </button>
 
-    <!-- MODALS SECTION -->
     <div id="modal-container" aria-live="polite"></div>
 
     <script>
@@ -324,7 +300,6 @@
                 if (container.children.length > 1) {
                     entryDiv.remove();
                 } else {
-                    // Replace alert with a custom modal or a less intrusive notification
                     console.warn("Bạn phải có ít nhất một mục tài liệu.");
                 }
             });
@@ -348,7 +323,6 @@
                 menu.setAttribute('aria-hidden', expanded === 'false');
             });
 
-            // *** ĐÃ SỬA: Logic tìm kiếm chính xác hơn bằng Regex ***
             let searchTimer = null;
             document.getElementById('homeSearchInput').addEventListener('input', (e) => {
                 clearTimeout(searchTimer);
@@ -362,7 +336,7 @@
                     resultsContainer.classList.add('hidden');
                     heroTitle.classList.remove('hidden');
                     heroSubtitle.classList.remove('hidden');
-                    document.getElementById('homeSearchGrid').innerHTML = ''; // Xóa kết quả cũ
+                    document.getElementById('homeSearchGrid').innerHTML = '';
                     return;
                 }
                 
@@ -371,21 +345,17 @@
 
                 searchTimer = setTimeout(() => {
                     const normalizedQuery = this.normalizeString(query);
-                    // Thoát các ký tự đặc biệt trong regex để tránh lỗi
                     const escapedQuery = normalizedQuery.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-                    // Tạo regex để tìm kiếm từ hoàn chỉnh, không phân biệt chữ hoa/thường
                     const regex = new RegExp('\\b' + escapedQuery + '\\b', 'i');
 
                     const results = this.documents.filter(doc => {
                         const normalizedSubject = this.normalizeString(doc.subject || '');
                         const normalizedTitle = this.normalizeString(doc.title || '');
 
-                        // Ưu tiên 1: Môn học khớp chính xác với từ khóa tìm kiếm (sau khi chuẩn hóa)
                         if (normalizedSubject === normalizedQuery) {
                             return true;
                         }
 
-                        // Ưu tiên 2: Tiêu đề hoặc môn học chứa từ khóa tìm kiếm như một từ riêng biệt
                         return regex.test(normalizedTitle) || regex.test(normalizedSubject);
                     });
 
@@ -445,11 +415,9 @@
             const textarea = document.getElementById('jsonOutput');
             const text = textarea ? textarea.value : '';
             try {
-                // Modern clipboard API
                 await navigator.clipboard.writeText(text);
                 button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
             } catch (err) {
-                // Fallback for older browsers
                 try {
                     textarea.select();
                     document.execCommand('copy');
@@ -547,6 +515,3 @@
     </script>
 </body>
 </html>
-
-
-
