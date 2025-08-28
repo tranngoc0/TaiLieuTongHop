@@ -161,7 +161,6 @@
             this.createShootingStars();
         },
         
-        // *** ĐÃ CẬP NHẬT: Thêm bộ lọc dữ liệu trùng lặp ***
         async loadDocuments() {
             try {
                 const response = await fetch('tailieu.json', { cache: 'no-cache' });
@@ -222,17 +221,25 @@
                 container.appendChild(card);
             });
         },
+        
+        normalizeString(str) {
+            if (!str) return '';
+            return str
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .replace(/đ/g, "d");
+        },
 
         attachEventListeners() {
             document.getElementById('mobileMenuButton').addEventListener('click', () => {
                 document.getElementById('mobileMenu').classList.toggle('hidden');
             });
             
-            // *** ĐÃ CẬP NHẬT: Logic tìm kiếm thông minh hơn ***
             let searchTimer = null;
             document.getElementById('gradeSearchInput').addEventListener('input', (e) => {
                 clearTimeout(searchTimer);
-                const query = e.target.value.trim().toLowerCase();
+                const query = e.target.value.trim();
 
                 searchTimer = setTimeout(() => {
                     const gradeDocs = this.documents.filter(doc => String(doc.grade).includes(this.currentGrade));
@@ -242,17 +249,18 @@
                         return;
                     }
 
-                    const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                    const normalizedQuery = this.normalizeString(query);
+                    const escapedQuery = normalizedQuery.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
                     const regex = new RegExp('\\b' + escapedQuery + '\\b', 'i');
 
                     const results = gradeDocs.filter(doc => {
-                        const subjectLower = (doc.subject || '').toLowerCase();
-                        const titleLower = (doc.title || '').toLowerCase();
+                        const normalizedSubject = this.normalizeString(doc.subject || '');
+                        const normalizedTitle = this.normalizeString(doc.title || '');
 
-                        if (subjectLower === query) {
+                        if (normalizedSubject === normalizedQuery) {
                             return true;
                         }
-                        return regex.test(titleLower) || regex.test(subjectLower);
+                        return regex.test(normalizedTitle) || regex.test(normalizedSubject);
                     });
                     this.renderDocuments(results, 'gradeGrid');
                 }, 200);
