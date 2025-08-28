@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu Lớp 10 - STUDYDOC</title>
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1YRQ9N2W"></script>
 <script>
@@ -10,25 +14,26 @@
 
   gtag('config', 'G-0Q1YRQ9N2W');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài liệu Lớp 10 - STUDYDOC</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Be Vietnam Pro', sans-serif; 
+            background-color: #f8fafc;
+        }
         .hidden { display: none; }
         .group:hover .group-hover\:block { display: block; }
 
         .page-background {
-            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
             position: relative;
             overflow: hidden;
         }
@@ -38,7 +43,7 @@
         }
         .interactive-element:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.2);
         }
         .interactive-element:active {
             transform: translateY(0px) scale(0.98);
@@ -47,15 +52,15 @@
         @keyframes card-fade-in {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(25px) scale(0.98);
             }
             to {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateY(0) scale(1);
             }
         }
         .card-animate {
-            animation: card-fade-in 0.5s ease-out forwards;
+            animation: card-fade-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
         }
 
         .stars {
@@ -84,30 +89,44 @@
                 opacity: 0;
             }
         }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
     </style>
 </head>
-<body class="bg-slate-100 text-slate-800">
+<body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+    <header class="bg-white/90 backdrop-blur-lg shadow-md sticky top-0 z-40">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <i class="fas fa-book-open text-2xl text-indigo-600"></i>
-                <a href="index.html" class="text-xl font-bold text-slate-800 cursor-pointer">STUDYDOC</a>
+                <i class="fas fa-book-open text-3xl text-indigo-600" aria-hidden="true"></i>
+                <a href="index.html" class="text-2xl font-bold text-slate-800 cursor-pointer tracking-tight">STUDYDOC</a>
             </div>
             <nav class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Trang chủ</a>
                 <div class="relative group">
-                    <button class="text-indigo-600 font-bold flex items-center py-2">
+                    <button class="text-indigo-600 font-bold flex items-center py-2 border-b-2 border-indigo-600 pb-1">
                         Thư viện <i class="fas fa-chevron-down ml-2 text-xs"></i>
                     </button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-40 z-50 border border-slate-200">
-                        <a href="lop10.html" class="block px-4 py-2 text-sm text-indigo-700 bg-indigo-50 font-semibold">Lớp 10</a>
-                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 11</a>
-                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Lớp 12</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg mt-2 py-2 w-48 z-50 border border-slate-100">
+                        <a href="lop10.html" class="block px-4 py-2 text-sm text-indigo-700 bg-indigo-50 font-semibold rounded-md m-1">Lớp 10</a>
+                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1">Lớp 11</a>
+                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1">Lớp 12</a>
                     </div>
                 </div>
                 <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-indigo-600 font-medium">Nhóm Zalo</a>
-                 <a href="index.html#upload" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors shadow-sm hover:shadow-md interactive-element">
+                 <a href="index.html#upload" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full text-sm transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element">
                     <i class="fas fa-upload mr-2"></i>Tải lên tài liệu
                 </a>
             </nav>
@@ -123,7 +142,7 @@
         </div>
     </header>
 
-    <main class="page-background min-h-screen">
+    <main class="page-background min-h-[calc(100vh-124px)]">
         <div class="stars"></div>
         <section id="page-grade" class="py-16 relative z-10">
             <div class="container mx-auto px-4">
@@ -131,15 +150,22 @@
                     <h1 id="grade-title" class="text-4xl md:text-5xl font-extrabold text-white mb-3" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Tài liệu Lớp 10</h1>
                     <p class="text-lg text-indigo-100 max-w-2xl mx-auto">Sử dụng thanh tìm kiếm để lọc nhanh hoặc duyệt qua danh sách tài liệu bên dưới.</p>
                 </div>
-                 <div class="search-box max-w-2xl mx-auto mb-16 bg-indigo-500/80 rounded-full shadow-lg p-1 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-indigo-300/50 transition-all duration-300">
-                    <i class="fas fa-search text-indigo-200 px-4"></i>
-                    <input type="text" id="gradeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-indigo-200 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong lớp 10...">
+                 <div class="search-box max-w-2xl mx-auto mb-16 bg-white/20 rounded-full shadow-2xl p-2 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-white/50 transition-all duration-300">
+                    <i class="fas fa-search text-white/80 px-4 text-xl"></i>
+                    <input type="text" id="gradeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-white/80 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong lớp 10...">
                 </div>
-                <div id="gradeGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="gradeGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 STUDYDOC. All Rights Reserved.</p>
+            <p class="mt-2">Một sản phẩm dành cho cộng đồng học sinh THPT.</p>
+        </div>
+    </footer>
 
     <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element">
         <i class="fas fa-question text-2xl"></i>
@@ -167,9 +193,7 @@
                 
                 const seenUrls = new Set();
                 const uniqueDocuments = (data.documents || []).filter(doc => {
-                    if (!doc.url || doc.url.trim() === '') {
-                        return false;
-                    }
+                    if (!doc.url || doc.url.trim() === '') return false;
                     const isDuplicate = seenUrls.has(doc.url);
                     if (!isDuplicate) {
                         seenUrls.add(doc.url);
@@ -198,25 +222,31 @@
             const container = document.getElementById(containerId);
             container.innerHTML = '';
             if (docs.length === 0) {
-                container.innerHTML = '<p class="text-white col-span-full text-center">Không tìm thấy tài liệu nào phù hợp.</p>';
+                container.innerHTML = '<p class="text-white col-span-full text-center text-lg">Không tìm thấy tài liệu nào phù hợp.</p>';
                 return;
             }
             docs.forEach((doc, index) => {
+                const cardWrapper = document.createElement('div');
+                cardWrapper.className = 'card-animate';
+                cardWrapper.style.animationDelay = `${index * 80}ms`;
+                
                 const card = document.createElement('div');
-                card.className = 'bg-white border border-slate-200 rounded-xl shadow-md p-6 flex flex-col interactive-element card-animate';
-                card.style.animationDelay = `${index * 100}ms`;
+                card.className = 'bg-white/70 backdrop-blur-sm border border-slate-200/50 rounded-2xl shadow-lg hover:shadow-xl p-6 flex flex-col group transition-all duration-300 hover:-translate-y-1 h-full';
+                
                 card.innerHTML = `
-                    <div class="flex-grow mb-4 min-w-0">
-                        <div class="flex justify-between items-start mb-3">
-                           <span class="text-xs font-semibold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">${doc.subject}</span>
+                    <div class="flex-grow mb-5">
+                        <div class="flex justify-between items-center mb-4">
+                           <span class="text-xs font-bold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">${doc.subject}</span>
                            <span class="text-xs font-medium text-slate-500">Lớp ${doc.grade}</span>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 leading-snug truncate" title="${doc.title}">${doc.title}</h3>
+                        <h3 class="text-lg font-bold text-slate-800 leading-relaxed group-hover:text-indigo-600 transition-colors">${doc.title}</h3>
                     </div>
-                    <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="block text-center mt-auto w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-lg transition duration-300 shadow-sm hover:shadow-md interactive-element">
+                    <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="block text-center mt-auto w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg interactive-element">
                         <i class="fas fa-download mr-2"></i> Tải xuống
                     </a>`;
-                container.appendChild(card);
+
+                cardWrapper.appendChild(card);
+                container.appendChild(cardWrapper);
             });
         },
 
@@ -248,20 +278,12 @@
                     }
 
                     const normalizedQuery = this.normalizeString(query);
-                    const escapedQuery = normalizedQuery.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-                    const regex = new RegExp('\\b' + escapedQuery + '\\b', 'i');
-
-                    const results = gradeDocs.filter(doc => {
-                        const normalizedSubject = this.normalizeString(doc.subject || '');
-                        const normalizedTitle = this.normalizeString(doc.title || '');
-
-                        if (normalizedSubject === normalizedQuery) {
-                            return true;
-                        }
-                        return regex.test(normalizedTitle) || regex.test(normalizedSubject);
-                    });
+                    const results = gradeDocs.filter(doc => 
+                        this.normalizeString(doc.title).includes(normalizedQuery) || 
+                        this.normalizeString(doc.subject).includes(normalizedQuery)
+                    );
                     this.renderDocuments(results, 'gradeGrid');
-                }, 200);
+                }, 250);
             });
         },
         
@@ -286,18 +308,18 @@
                 title: 'Hướng dẫn sử dụng',
                 icon: 'fas fa-question-circle',
                 content: `
-                    <div class="space-y-6 text-sm">
+                    <div class="space-y-6 text-slate-700">
                         <p>Đây là trang tài liệu dành riêng cho <b>Lớp 10</b>.</p>
                         <div>
-                            <h3 class="font-bold text-lg mb-2">🔍 Cách tìm kiếm tài liệu</h3>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                            <h3 class="font-bold text-lg mb-2 text-slate-800">🔍 Cách tìm kiếm tài liệu</h3>
+                            <ol class="list-decimal list-inside space-y-2">
                                 <li>Sử dụng thanh tìm kiếm ở đầu trang để lọc nhanh các tài liệu trong lớp này.</li>
                                 <li>Nhấn "Tải xuống" để mở link tài liệu.</li>
                             </ol>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg mb-2">📤 Cách tải lên tài liệu</h3>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                            <h3 class="font-bold text-lg mb-2 text-slate-800">📤 Cách tải lên tài liệu</h3>
+                            <ol class="list-decimal list-inside space-y-2">
                                 <li>Quay về <b>Trang chủ</b> và nhấn vào nút "Tải lên tài liệu".</li>
                                 <li>Làm theo hướng dẫn để đóng góp tài liệu cho cộng đồng.</li>
                             </ol>
@@ -313,10 +335,10 @@
             modalElement.id = modalId;
             modalElement.className = 'fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4';
             modalElement.innerHTML = `
-                <div class="bg-white text-slate-800 rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200">
-                    <div class="flex justify-between items-center p-4 border-b border-slate-200">
+                <div class="bg-white text-slate-800 rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200">
+                    <div class="flex justify-between items-center p-5 border-b border-slate-200">
                         <h2 class="text-xl font-bold flex items-center"><i class="${modalData.icon} mr-3 text-indigo-600"></i> ${modalData.title}</h2>
-                        <button class="close-btn text-slate-500 hover:text-slate-800 text-2xl">&times;</button>
+                        <button class="close-btn text-slate-500 hover:text-slate-800 text-2xl transition-colors">&times;</button>
                     </div>
                     <div class="p-6 overflow-y-auto">${modalData.content}</div>
                 </div>`;
@@ -334,4 +356,3 @@
     </script>
 </body>
 </html>
-
