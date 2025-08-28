@@ -215,7 +215,6 @@
             }
         },
 
-        // *** ĐÃ CẬP NHẬT: Thêm bộ lọc dữ liệu trùng lặp ***
         async loadDocuments() {
             try {
                 const response = await fetch('tailieu.json', { cache: 'no-cache' });
@@ -314,9 +313,19 @@
                 if (container.children.length > 1) {
                     entryDiv.remove();
                 } else {
-                    alert("Bạn phải có ít nhất một mục tài liệu.");
+                    // Replace alert with a custom modal or a less intrusive notification
+                    console.warn("Bạn phải có ít nhất một mục tài liệu.");
                 }
             });
+        },
+
+        normalizeString(str) {
+            if (!str) return '';
+            return str
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .replace(/đ/g, "d");
         },
 
         attachEventListeners() {
@@ -328,11 +337,11 @@
                 menu.setAttribute('aria-hidden', expanded === 'false');
             });
 
-            // *** ĐÃ CẬP NHẬT: Logic tìm kiếm trang chủ thông minh hơn ***
+            // *** ĐÃ SỬA: Logic tìm kiếm chính xác hơn bằng Regex ***
             let searchTimer = null;
             document.getElementById('homeSearchInput').addEventListener('input', (e) => {
                 clearTimeout(searchTimer);
-                const query = e.target.value.trim().toLowerCase();
+                const query = e.target.value.trim();
                 
                 const resultsContainer = document.getElementById('homeSearchResults');
                 const heroTitle = document.getElementById('hero-title');
@@ -350,22 +359,23 @@
                 heroSubtitle.classList.add('hidden');
 
                 searchTimer = setTimeout(() => {
-                    // Tạo một biểu thức chính quy (regex) để tìm kiếm query như một từ hoàn chỉnh.
-                    // Điều này giúp phân biệt 'hóa' và 'khóa'.
-                    const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                    const normalizedQuery = this.normalizeString(query);
+                    // Thoát các ký tự đặc biệt trong regex để tránh lỗi
+                    const escapedQuery = normalizedQuery.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                    // Tạo regex để tìm kiếm từ hoàn chỉnh, không phân biệt chữ hoa/thường
                     const regex = new RegExp('\\b' + escapedQuery + '\\b', 'i');
 
                     const results = this.documents.filter(doc => {
-                        const subjectLower = (doc.subject || '').toLowerCase();
-                        const titleLower = (doc.title || '').toLowerCase();
+                        const normalizedSubject = this.normalizeString(doc.subject || '');
+                        const normalizedTitle = this.normalizeString(doc.title || '');
 
-                        // Ưu tiên 1: Môn học khớp chính xác với từ khóa tìm kiếm.
-                        if (subjectLower === query) {
+                        // Ưu tiên 1: Môn học khớp chính xác với từ khóa tìm kiếm (sau khi chuẩn hóa)
+                        if (normalizedSubject === normalizedQuery) {
                             return true;
                         }
 
-                        // Ưu tiên 2: Tiêu đề hoặc môn học chứa từ khóa tìm kiếm như một từ riêng biệt.
-                        return regex.test(titleLower) || regex.test(subjectLower);
+                        // Ưu tiên 2: Tiêu đề hoặc môn học chứa từ khóa tìm kiếm như một từ riêng biệt
+                        return regex.test(normalizedTitle) || regex.test(normalizedSubject);
                     });
 
                     resultsContainer.classList.remove('hidden');
@@ -373,13 +383,14 @@
                 }, 200);
             });
 
+
             window.addEventListener('hashchange', () => this.handleRouting());
 
             document.getElementById('add-entry-btn').addEventListener('click', () => this.addDocumentEntry());
 
             document.getElementById('uploadForm').addEventListener('submit', (e) => {
                 e.preventDefault();
-                const grade = parseInt(document.getElementById('docGrade').value);
+                const grade = document.getElementById('docGrade').value;
                 const subject = document.getElementById('docSubject').value;
                 
                 const newDocs = [];
@@ -392,7 +403,7 @@
                 });
 
                 if (newDocs.length === 0) {
-                    alert("Vui lòng điền đầy đủ thông tin cho ít nhất một tài liệu.");
+                     console.warn("Vui lòng điền đầy đủ thông tin cho ít nhất một tài liệu.");
                     return;
                 }
 
@@ -423,15 +434,20 @@
             const textarea = document.getElementById('jsonOutput');
             const text = textarea ? textarea.value : '';
             try {
+                // Modern clipboard API
                 await navigator.clipboard.writeText(text);
                 button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
-                setTimeout(() => {
-                    button.innerHTML = '<i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard';
-                }, 2000);
             } catch (err) {
-                textarea.select();
-                document.execCommand('copy');
-                button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
+                // Fallback for older browsers
+                try {
+                    textarea.select();
+                    document.execCommand('copy');
+                    button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
+                } catch (fallbackErr) {
+                    console.error('Không thể sao chép:', fallbackErr);
+                    button.innerHTML = '<i class="fas fa-times mr-2" aria-hidden="true"></i> Sao chép lỗi';
+                }
+            } finally {
                 setTimeout(() => {
                     button.innerHTML = '<i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard';
                 }, 2000);
