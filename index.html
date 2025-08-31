@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDYDOC - Thư viện tài liệu học tập</title>
-    <meta name="description" content="STUDYDOC - Kho tài liệu học tập miễn phí dành cho học sinh THPT. Tìm kiếm, tải xuống và đóng góp tài liệu dễ dàng.">
+    <title>STUDYDOC - Thư viện tài liệu học tập THPT</title>
+    <meta name="description" content="STUDYDOC - Kho tài liệu học tập miễn phí, chất lượng cao dành cho học sinh THPT. Tìm kiếm, tải xuống và đóng góp tài liệu dễ dàng.">
     <meta name="theme-color" content="#4f46e5">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1YRQ9N2W"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'G-0Q1YRQ9N2W');
+    gtag('config', 'G-0Q1YRQ9N2W');
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
+        html { scroll-behavior: smooth; }
         body { 
             font-family: 'Be Vietnam Pro', sans-serif; 
             background-color: #f8fafc;
         }
-        .hidden { display: none; }
+        .hidden { display: none !important; }
         
-        .hero-space {
-            background-color: #8EC5FC;
-            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
         .interactive-element {
             transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
         }
@@ -49,21 +40,13 @@
         .interactive-element:active {
             transform: translateY(0px) scale(0.98);
         }
-
         @keyframes card-fade-in {
-            from {
-                opacity: 0;
-                transform: translateY(25px) scale(0.98);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+            from { opacity: 0; transform: translateY(25px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
         }
         .card-animate {
             animation: card-fade-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
         }
-        
         @keyframes fade-in {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -72,45 +55,41 @@
             animation: fade-in 0.3s ease-out forwards;
         }
 
-        .stars {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .hero-space {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            position: relative;
             overflow: hidden;
-            pointer-events: none;
+        }
+        .stars {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            overflow: hidden; pointer-events: none;
         }
         .star {
-            position: absolute;
-            background: white;
-            border-radius: 50%;
+            position: absolute; background: white; border-radius: 50%;
             box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
             animation: shooting-star 5s linear infinite;
         }
         @keyframes shooting-star {
-            from {
-                transform: translate(0, 0);
-                opacity: 1;
-            }
-            to {
-                transform: translate(100vw, 100vh);
-                opacity: 0;
-            }
+            from { transform: translate(0, 0); opacity: 1; }
+            to { transform: translate(100vw, 100vh); opacity: 0; }
         }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .nav-link.active {
+            color: #4f46e5;
+            font-weight: 700;
+            border-bottom: 2px solid #4f46e5;
+            padding-bottom: 4px;
         }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
+        .nav-dropdown-link.active {
+            background-color: #eef2ff;
+            color: #4338ca;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -118,93 +97,189 @@
 
     <header class="bg-white/90 backdrop-blur-lg shadow-md sticky top-0 z-40 border-b border-slate-200/75">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
+            <a href="#home" class="flex items-center space-x-3">
                 <i class="fas fa-book-open text-3xl text-indigo-600" aria-hidden="true"></i>
-                <a href="index.html" class="text-2xl font-bold text-slate-800 cursor-pointer tracking-tight">STUDYDOC</a>
-            </div>
+                <span class="text-2xl font-bold text-slate-800 cursor-pointer tracking-tight">STUDYDOC</span>
+            </a>
             <nav class="hidden md:flex items-center space-x-6" role="navigation" aria-label="Main Navigation">
-                <a href="index.html" class="text-indigo-600 font-bold border-b-2 border-indigo-600 pb-1">Trang chủ</a>
-                <div class="relative group pt-4 pb-4 -my-4">
-                    <button class="text-slate-600 hover:text-indigo-600 font-medium flex items-center transition-colors" aria-haspopup="true" aria-expanded="false">
+                <a href="#home" class="nav-link text-slate-600 hover:text-indigo-600 font-medium transition-colors">Trang chủ</a>
+                <div class="relative group">
+                    <button class="nav-link text-slate-600 hover:text-indigo-600 font-medium flex items-center transition-colors" aria-haspopup="true" aria-expanded="false">
                         Thư viện <i class="fas fa-chevron-down ml-2 text-xs"></i>
                     </button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 z-50 border border-slate-100 top-full mt-0 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 ease-in-out" role="menu">
-                        <a href="lop10.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Lớp 10</a>
-                        <a href="lop11.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Lớp 11</a>
-                        <a href="lop12.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Lớp 12</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 z-50 border border-slate-100 top-full mt-2 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 ease-in-out" role="menu">
+                        <a href="https://docs.google.com/spreadsheets/d/1SeVw7fIoI8eX5t9xe7ff0x1Truj_l5QKRXoxSmSA0D8/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="nav-dropdown-link block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Khóa học free</a>
+                        <a href="#lop12" class="nav-dropdown-link block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Lớp 12</a>
+                        <a href="#lop11" class="nav-dropdown-link block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Lớp 11</a>
+                        <a href="#lop10" class="nav-dropdown-link block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Lớp 10</a>
+                        <div class="border-t my-1 border-slate-100"></div>
+                        <a href="#dgnl" class="nav-dropdown-link block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Ôn thi ĐGNL</a>
+                        <a href="#ngonngu" class="nav-dropdown-link block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md m-1" role="menuitem">Ngoại ngữ & Chứng chỉ</a>
                     </div>
                 </div>
                 <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Nhóm Zalo</a>
-                 <a href="#upload" onclick="app.showPage('page-upload')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full text-sm transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element">
+                 <a href="#upload" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full text-sm transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element">
                     <i class="fas fa-upload mr-2" aria-hidden="true"></i>Tải lên tài liệu
                 </a>
             </nav>
             <button class="md:hidden text-2xl" id="mobileMenuButton" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
         </div>
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200" role="menu" aria-hidden="true">
-             <a href="index.html" class="block px-4 py-3 text-indigo-700 bg-indigo-50 font-semibold">Trang chủ</a>
-             <a href="lop10.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 10</a>
-             <a href="lop11.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 11</a>
-             <a href="lop12.html" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Lớp 12</a>
+             <a href="#home" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Trang chủ</a>
+             <a href="https://docs.google.com/spreadsheets/d/1SeVw7fIoI8eX5t9xe7ff0x1Truj_l5QKRXoxSmSA0D8/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Khóa học free</a>
+             <a href="#lop12" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Lớp 12</a>
+             <a href="#lop11" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Lớp 11</a>
+             <a href="#lop10" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Lớp 10</a>
+             <a href="#dgnl" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Ôn thi ĐGNL</a>
+             <a href="#ngonngu" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Ngoại ngữ & Chứng chỉ</a>
              <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Nhóm Zalo</a>
-             <a href="#upload" onclick="app.showPage('page-upload')" class="block px-4 py-3 text-slate-600 hover:bg-slate-50">Tải lên tài liệu</a>
+             <a href="#upload" class="block px-4 py-3 text-slate-600 hover:bg-slate-50 nav-link">Tải lên tài liệu</a>
         </div>
     </header>
 
     <main>
-        <section id="page-home" class="hero-space flex flex-col min-h-[calc(100vh-69px)]">
-            <div class="stars" aria-hidden="true"></div>
-            <div class="container mx-auto px-4 text-center relative z-10 pt-20 pb-12 md:pt-28 md:pb-16">
-                <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold mb-4 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Tìm kiếm tài liệu học tập</h1>
-                <p id="hero-subtitle" class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Khám phá kho tàng kiến thức miễn phí dành cho học sinh THPT.</p>
-                <div class="search-box max-w-2xl mx-auto bg-white/20 rounded-full shadow-2xl p-2 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-white/50 transition-all duration-300">
-                    <i class="fas fa-search text-white/80 px-4 text-xl" aria-hidden="true"></i>
-                    <input type="text" id="homeSearchInput" aria-label="Tìm kiếm tài liệu" class="w-full bg-transparent text-white text-lg placeholder-white/80 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong toàn bộ thư viện...">
+        <section id="page-home" class="page-container">
+            <div class="hero-space">
+                <div class="stars" aria-hidden="true"></div>
+                <div class="container mx-auto px-4 text-center relative z-10 pt-20 pb-16 md:pt-28 md:pb-20">
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Thư viện tri thức THPT</h1>
+                    <p class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Khám phá kho tàng kiến thức miễn phí dành cho học sinh.</p>
+                    <div class="search-box max-w-2xl mx-auto bg-white/20 rounded-full shadow-2xl p-2 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-white/50 transition-all duration-300">
+                        <i class="fas fa-search text-white/80 px-4 text-xl" aria-hidden="true"></i>
+                        <input type="text" id="homeSearchInput" aria-label="Tìm kiếm tài liệu" class="w-full bg-transparent text-white text-lg placeholder-white/80 pr-4 py-2 focus:outline-none" placeholder="Tìm kiếm trong toàn bộ thư viện...">
+                    </div>
                 </div>
             </div>
             
-            <div id="homeSearchResults" class="hidden flex-grow overflow-y-auto pb-16">
-                 <div class="container mx-auto px-4">
+            <div id="homeContent" class="container mx-auto px-4 py-16">
+                 <div id="homeSearchResults" class="hidden">
+                    <h2 class="text-3xl font-bold mb-8 text-slate-800">Kết quả tìm kiếm</h2>
                     <div id="homeSearchGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
-                </div>
+                 </div>
+
+                 <div id="page-home-default-content">
+                    <div class="bg-indigo-50 border-2 border-indigo-200 p-6 rounded-2xl mb-12 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left animate-fade-in">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl text-indigo-500">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-slate-800">Tham gia cộng đồng học tập chia sẻ tài liệu!</h3>
+                                <p class="text-slate-600">Trao đổi tài liệu, hỏi đáp và học hỏi cùng các thành viên khác trong nhóm Zalo.</p>
+                            </div>
+                        </div>
+                        <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element whitespace-nowrap mt-4 md:mt-0">
+                            <i class="fas fa-sign-in-alt mr-2"></i> Tham gia ngay
+                        </a>
+                    </div>
+
+                    <div class="mb-16">
+                        <h2 class="text-3xl font-bold mb-8 text-slate-800">Khám phá Thư viện</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <a href="https://docs.google.com/spreadsheets/d/1SeVw7fIoI8eX5t9xe7ff0x1Truj_l5QKRXoxSmSA0D8/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="block p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 interactive-element text-center">
+                                <div class="text-5xl text-amber-500 mb-4"><i class="fas fa-gift"></i></div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Khóa học free</h3>
+                                <p class="text-slate-600">Tổng hợp các khóa học miễn phí chất lượng.</p>
+                            </a>
+                            <a href="#lop12" class="block p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 interactive-element text-center">
+                                <div class="text-5xl text-sky-500 mb-4"><i class="fas fa-layer-group"></i></div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Lớp 12</h3>
+                                <p class="text-slate-600">Tài liệu ôn thi tốt nghiệp THPT và chuyên sâu.</p>
+                            </a>
+                             <a href="#lop11" class="block p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 interactive-element text-center">
+                                <div class="text-5xl text-green-500 mb-4"><i class="fas fa-layer-group"></i></div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Lớp 11</h3>
+                                <p class="text-slate-600">Nguồn tài liệu phong phú cho các môn học lớp 11.</p>
+                            </a>
+                            <a href="#lop10" class="block p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 interactive-element text-center">
+                                <div class="text-5xl text-indigo-500 mb-4"><i class="fas fa-layer-group"></i></div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Lớp 10</h3>
+                                <p class="text-slate-600">Tài liệu, đề thi và chuyên đề cho lớp 10.</p>
+                            </a>
+                            <a href="#dgnl" class="block p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 interactive-element text-center">
+                                <div class="text-5xl text-rose-500 mb-4"><i class="fas fa-graduation-cap"></i></div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Ôn thi ĐGNL</h3>
+                                <p class="text-slate-600">Tài liệu cho các kỳ thi HSA, TSA, VACT.</p>
+                            </a>
+                            <a href="#ngonngu" class="block p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 interactive-element text-center">
+                                <div class="text-5xl text-cyan-500 mb-4"><i class="fas fa-language"></i></div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Ngoại ngữ & Chứng chỉ</h3>
+                                <p class="text-slate-600">Tài liệu IELTS, TOEIC, HSK, SAT và các ngoại ngữ khác.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="latestDocsSection">
+                        <h2 class="text-3xl font-bold mb-8 text-slate-800">Mới cập nhật</h2>
+                        <div id="latestGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+                    </div>
+                 </div>
             </div>
         </section>
 
-        <section id="page-upload" class="hidden py-16 bg-slate-100">
+        <section id="page-grade" class="page-container hidden">
+            <div class="hero-space">
+                <div class="stars" aria-hidden="true"></div>
+                <div class="container mx-auto px-4 py-16 relative z-10">
+                    <div class="text-center mb-12">
+                        <h1 id="grade-title" class="text-4xl md:text-5xl font-extrabold text-white mb-3" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);"></h1>
+                        <p class="text-lg text-indigo-100 max-w-2xl mx-auto">Sử dụng bộ lọc và thanh tìm kiếm để tìm tài liệu nhanh nhất.</p>
+                    </div>
+                    <div class="search-box max-w-2xl mx-auto bg-white/20 rounded-full shadow-2xl p-2 flex items-center border-2 border-transparent focus-within:ring-4 focus-within:ring-white/50 transition-all duration-300">
+                        <i class="fas fa-search text-white/80 px-4 text-xl"></i>
+                        <input type="text" id="gradeSearchInput" class="w-full bg-transparent text-white text-lg placeholder-white/80 pr-4 py-2 focus:outline-none">
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto px-4 py-12">
+                <div id="subject-filters" class="flex flex-wrap gap-3 justify-center mb-10"></div>
+                <div id="gradeGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+            </div>
+        </section>
+
+        <section id="page-upload" class="page-container hidden py-16 bg-slate-100">
             <div class="container mx-auto px-4 max-w-3xl">
                 <div class="text-center mb-10">
-                    <h1 class="text-4xl font-bold mb-3 text-slate-800">Tải lên tài liệu</h1>
-                    <p class="text-slate-600">Thêm nhiều tài liệu cùng một lúc cho một lớp và môn học cụ thể.</p>
+                    <h1 class="text-4xl font-bold mb-3 text-slate-800">Đóng góp tài liệu</h1>
+                    <p class="text-slate-600">Chia sẻ kiến thức, chung tay xây dựng cộng đồng học tập lớn mạnh.</p>
                 </div>
                 <form id="uploadForm" class="bg-white p-8 rounded-2xl shadow-lg border space-y-6" aria-label="Form tải lên">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b">
                         <div>
-                            <label for="docGrade" class="block text-sm font-medium text-gray-700 mb-2">Chọn lớp</label>
+                            <label for="docGrade" class="block text-sm font-medium text-gray-700 mb-2">Chọn Lớp/Chuyên mục</label>
                             <select id="docGrade" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
                                 <option value="10">Lớp 10</option>
                                 <option value="11">Lớp 11</option>
                                 <option value="12">Lớp 12</option>
+                                <option value="HSA">HSA (ĐGNL)</option>
+                                <option value="TSA">TSA (ĐGNL)</option>
+                                <option value="VACT">VACT (ĐGNL)</option>
+                                <option value="IELTS">IELTS (Ngôn ngữ)</option>
+                                <option value="TOEIC">TOEIC (Ngôn ngữ)</option>
+                                <option value="HSK">HSK (Ngôn ngữ)</option>
+                                <option value="SAT">SAT (Ngôn ngữ)</option>
                             </select>
                         </div>
                         <div>
                             <label for="docSubject" class="block text-sm font-medium text-gray-700 mb-2">Môn học</label>
                             <select id="docSubject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
                                 <option value="Toán">Toán</option>
+                                <option value="Vật Lý">Vật Lý</option>
+                                <option value="Hóa Học">Hóa Học</option>
+                                <option value="Sinh Học">Sinh Học</option>
                                 <option value="Tiếng Anh">Tiếng Anh</option>
                                 <option value="Ngữ Văn">Ngữ Văn</option>
-                                <option value="Vật Lý">Vật Lý</option>
                                 <option value="Lịch Sử">Lịch Sử</option>
-                                <option value="Hóa Học">Hóa Học</option>
-                                <option value="Giáo dục kinh tế pháp luật">Giáo dục kinh tế pháp luật</option>
-                                <option value="Sinh Học">Sinh Học</option>
+                                <option value="Địa Lý">Địa Lý</option>
+                                <option value="GDCD">GDCD/Kinh tế & Pháp luật</option>
                                 <option value="HSA">HSA</option>
                                 <option value="VACT">VACT</option>
+                                <option value="Tổng Hợp">Tổng Hợp</option>
                             </select>
                         </div>
                     </div>
 
-                    <div id="document-entries" class="space-y-4">
-                    </div>
+                    <div id="document-entries" class="space-y-4"></div>
 
                     <div class="flex items-center justify-between pt-4">
                         <button type="button" id="add-entry-btn" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-3 px-5 rounded-full transition-colors interactive-element">
@@ -218,8 +293,8 @@
             </div>
         </section>
     </main>
-
-    <footer class="bg-slate-800 text-slate-400 py-6">
+    
+    <footer class="bg-slate-800 text-slate-400 py-6 mt-12">
         <div class="container mx-auto px-4 text-center text-sm">
             <p>&copy; 2025 STUDYDOC. All Rights Reserved.</p>
             <p class="mt-2">Một sản phẩm dành cho cộng đồng học sinh THPT.</p>
@@ -229,50 +304,97 @@
     <button onclick="app.openModal('guideModal')" title="Hướng dẫn sử dụng" class="fixed bottom-5 right-5 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 transition-transform hover:scale-110 interactive-element" aria-label="Hướng dẫn">
         <i class="fas fa-question text-2xl" aria-hidden="true"></i>
     </button>
-
     <div id="modal-container" aria-live="polite"></div>
+    <div id="toast-container" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-2"></div>
+
 
     <script>
     const app = {
         documents: [],
+        state: {
+            currentPage: 'home',
+            currentGrade: null,
+            searchQuery: '',
+            activeFilter: 'Tất cả'
+        },
 
         async init() {
             await this.loadDocuments();
             this.attachEventListeners();
             this.handleRouting();
-            this.addDocumentEntry();
-            if (document.getElementById('page-home').classList.contains('hidden') === false) {
-                this.scheduleStars();
+            window.addEventListener('hashchange', () => this.handleRouting());
+        },
+
+        handleRouting() {
+            const hash = window.location.hash.slice(1) || 'home';
+            const routes = {
+                'home': () => this.showPage('home'),
+                'lop10': () => this.showPage('grade', 10),
+                'lop11': () => this.showPage('grade', 11),
+                'lop12': () => this.showPage('grade', 12),
+                'dgnl': () => this.showPage('grade', 'dgnl'),
+                'ngonngu': () => this.showPage('grade', 'ngonngu'),
+                'upload': () => this.showPage('upload')
+            };
+            
+            if (routes[hash]) {
+                routes[hash]();
+            } else {
+                window.location.hash = 'home';
             }
+            this.updateActiveNavLinks(hash);
+        },
+
+        showPage(pageId, grade = null) {
+            document.querySelectorAll('.page-container').forEach(page => page.classList.add('hidden'));
+            this.state.currentPage = pageId;
+            this.state.currentGrade = grade;
+
+            let pageElement;
+            if (pageId === 'grade') {
+                pageElement = document.getElementById('page-grade');
+                this.prepareGradePage(grade);
+            } else {
+                pageElement = document.getElementById(`page-${pageId}`);
+                if (pageId === 'home') this.prepareHomePage();
+                if (pageId === 'upload') this.prepareUploadPage();
+            }
+            
+            if (pageElement) pageElement.classList.remove('hidden');
+            window.scrollTo(0, 0);
+            
+            document.getElementById('mobileMenu').classList.add('hidden');
+            document.getElementById('mobileMenuButton').setAttribute('aria-expanded', 'false');
         },
 
         async loadDocuments() {
             try {
-                const response = await fetch('tailieu.json', { cache: 'no-cache' });
-                if (!response.ok) throw new Error('Network response was not ok.');
+                const response = await fetch(`tailieu.json?v=${new Date().getTime()}`);
+                if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
                 const data = await response.json();
                 
-                // Sử dụng Set để lưu các tên (title) đã xuất hiện, giúp lọc các tài liệu trùng lặp
                 const seenTitles = new Set();
-                const uniqueDocuments = (data.documents || []).filter(doc => {
-                    // Bỏ qua các tài liệu không có tiêu đề hoặc url hợp lệ
-                    if (!doc.title || doc.title.trim() === '' || !doc.url || doc.url.trim() === '') return false;
-                    
-                    // Chuẩn hóa tiêu đề để so sánh chính xác hơn (loại bỏ khoảng trắng thừa)
-                    const normalizedTitle = doc.title.trim();
-                    
-                    // Kiểm tra xem tiêu đề đã tồn tại trong Set hay chưa
-                    const isDuplicate = seenTitles.has(normalizedTitle);
-                    if (!isDuplicate) {
-                        // Nếu chưa tồn tại, thêm vào Set và giữ lại tài liệu này
-                        seenTitles.add(normalizedTitle);
-                        return true;
-                    }
-                    // Nếu đã tồn tại, loại bỏ tài liệu này
-                    return false;
-                });
+                const seenUrls = new Set();
+
+                const uniqueDocuments = (data.documents || [])
+                    .map(doc => this.normalizeDocument(doc))
+                    .filter(doc => {
+                        if (!doc.title || !doc.url) return false;
+                        const isTitleDuplicate = seenTitles.has(doc.title);
+                        const isUrlDuplicate = seenUrls.has(doc.url);
+                        if (!isTitleDuplicate && !isUrlDuplicate) {
+                            seenTitles.add(doc.title);
+                            seenUrls.add(doc.url);
+                            return true;
+                        }
+                        return false;
+                    });
                 
-                this.documents = uniqueDocuments;
+                const now = Date.now();
+                this.documents = uniqueDocuments.map((doc, index) => ({
+                    ...doc,
+                    timestamp: now - index
+                }));
 
             } catch (error) {
                 console.error('Không thể tải tệp tailieu.json:', error);
@@ -282,61 +404,211 @@
                 );
             }
         },
+        
+        normalizeDocument(doc) {
+            const subjectMap = {
+                "lí": "Vật Lý", "sử": "Lịch Sử", "địa": "Địa Lý",
+                "gdcd": "GDCD/Kinh tế & Pháp luật", "van": "Ngữ Văn", "anh": "Tiếng Anh"
+            };
+            const normalizedSubject = this.normalizeString(doc.subject);
+            const subject = subjectMap[normalizedSubject] || doc.subject;
 
-        showPage(pageId) {
-            document.querySelectorAll('main > section').forEach(page => page.classList.add('hidden'));
-            const page = document.getElementById(pageId);
-            if(page) page.classList.remove('hidden');
-            window.scrollTo(0, 0);
-            document.getElementById('mobileMenu').classList.add('hidden');
+            return { ...doc, title: doc.title.trim(), url: doc.url.trim(), subject: subject };
+        },
 
-            if (pageId === 'page-home') this.scheduleStars();
+        prepareHomePage() {
+            this.createShootingStars(document.querySelector('#page-home .hero-space'));
+            document.getElementById('homeSearchInput').value = '';
+            document.getElementById('homeSearchResults').classList.add('hidden');
+            document.getElementById('page-home-default-content').classList.remove('hidden');
+            const latestDocs = [...this.documents].sort((a, b) => b.timestamp - a.timestamp).slice(0, 8);
+            this.renderDocuments(latestDocs, 'latestGrid');
+        },
+
+        prepareGradePage(grade) {
+            this.state.activeFilter = 'Tất cả';
+            this.state.searchQuery = '';
+
+            const titles = {
+                10: 'Tài liệu Lớp 10', 11: 'Tài liệu Lớp 11', 12: 'Tài liệu Lớp 12',
+                'dgnl': 'Tài liệu Ôn thi ĐGNL',
+                'ngonngu': 'Ngoại ngữ & Chứng chỉ'
+            };
+            const placeholders = {
+                10: 'Tìm kiếm trong lớp 10...', 11: 'Tìm kiếm trong lớp 11...', 12: 'Tìm kiếm trong lớp 12...',
+                'dgnl': 'Tìm kiếm tài liệu ĐGNL...',
+                'ngonngu': 'Tìm kiếm tài liệu ngoại ngữ...'
+            };
+            
+            document.getElementById('grade-title').textContent = titles[grade] || 'Thư viện';
+            document.getElementById('gradeSearchInput').placeholder = placeholders[grade] || 'Tìm kiếm...';
+            
+            this.createShootingStars(document.querySelector('#page-grade .hero-space'));
+            this.updateGradePageContent();
         },
         
-        handleRouting() {
-            if (window.location.hash === '#upload') {
-                this.showPage('page-upload');
+        updateGradePageContent() {
+            if (this.state.currentPage !== 'grade') return;
+
+            const gradeIdentifier = this.state.currentGrade;
+            let filteredDocs;
+
+            const languageGrades = ['ielts', 'toeic', 'hsk', 'sat','tiếng trung'];
+            const dgnlGrades = ['tsa', 'hsa', 'vact'];
+
+            if (typeof gradeIdentifier === 'number') {
+                filteredDocs = this.documents.filter(doc => String(doc.grade) == gradeIdentifier);
+            } else if (gradeIdentifier === 'ngonngu') {
+                filteredDocs = this.documents.filter(doc => languageGrades.includes(String(doc.grade).toLowerCase()));
+            } else if (gradeIdentifier === 'dgnl') {
+                filteredDocs = this.documents.filter(doc => dgnlGrades.includes(String(doc.grade).toLowerCase()));
             } else {
-                this.showPage('page-home');
+                filteredDocs = [];
             }
+
+            this.renderSubjectFilters(filteredDocs);
+
+            if (this.state.activeFilter !== 'Tất cả') {
+                filteredDocs = filteredDocs.filter(doc => doc.subject === this.state.activeFilter);
+            }
+
+            if (this.state.searchQuery) {
+                const normalizedQuery = this.normalizeString(this.state.searchQuery);
+                filteredDocs = filteredDocs.filter(doc => 
+                    this.normalizeString(doc.title).includes(normalizedQuery) || 
+                    this.normalizeString(doc.subject).includes(normalizedQuery)
+                );
+            }
+            
+            this.renderDocuments(filteredDocs, 'gradeGrid');
+        },
+
+        renderSubjectFilters(docs) {
+            const filtersContainer = document.getElementById('subject-filters');
+            const subjects = ['Tất cả', ...new Set(docs.map(doc => doc.subject).sort())];
+            
+            filtersContainer.innerHTML = subjects.map(subject => {
+                const isActive = subject === this.state.activeFilter;
+                const baseClasses = 'px-4 py-2 rounded-full font-semibold text-sm cursor-pointer transition-all duration-200 interactive-element';
+                const activeClasses = 'bg-indigo-600 text-white shadow-lg';
+                const inactiveClasses = 'bg-white text-slate-700 hover:bg-indigo-100 hover:text-indigo-700 shadow-sm border';
+                return `<button class="${baseClasses} ${isActive ? activeClasses : inactiveClasses}" data-subject="${subject}">${subject}</button>`;
+            }).join('');
         },
 
         renderDocuments(docs, containerId) {
             const container = document.getElementById(containerId);
+            if (!container) return;
+            
             container.innerHTML = '';
             if (docs.length === 0) {
-                container.innerHTML = '<p class="text-slate-200 col-span-full text-center text-lg">Không tìm thấy tài liệu nào phù hợp.</p>';
+                container.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-box-open text-5xl text-slate-300 mb-4"></i>
+                        <p class="text-slate-500 text-lg">Không tìm thấy tài liệu nào phù hợp.</p>
+                    </div>`;
                 return;
             }
+
             docs.forEach((doc, index) => {
                 const cardWrapper = document.createElement('div');
                 cardWrapper.className = 'card-animate';
-                cardWrapper.style.animationDelay = `${index * 80}ms`;
+                cardWrapper.style.animationDelay = `${index * 70}ms`;
 
                 const card = document.createElement('div');
-                card.className = 'bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 flex flex-col group transition-all duration-300 hover:-translate-y-2 h-full border border-slate-200/50';
+                card.className = 'bg-white rounded-2xl shadow-lg hover:shadow-xl p-5 flex flex-col group transition-all duration-300 hover:-translate-y-1.5 h-full border border-slate-200/50';
                 
                 card.innerHTML = `
-                    <div class="flex-grow mb-5 flex flex-col">
-                        <div class="flex justify-between items-center mb-4">
-                           <span class="text-xs font-bold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">${doc.subject}</span>
-                           <span class="text-xs font-medium text-slate-500">Lớp ${doc.grade}</span>
+                    <div class="flex-grow mb-4 flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                           <span class="text-xs font-bold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full whitespace-nowrap">${doc.subject}</span>
+                           <span class="text-xs font-medium text-slate-500 text-right ml-2">Lớp ${doc.grade}</span>
                         </div>
-                        <h3 class="flex-grow text-lg font-bold text-slate-800 leading-relaxed group-hover:text-indigo-600 transition-colors" style="word-break: break-word;">${doc.title}</h3>
+                        <h3 class="flex-grow text-md font-bold text-slate-800 leading-snug group-hover:text-indigo-600 transition-colors" style="word-break: break-word;">${doc.title}</h3>
                     </div>
-                    <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="block text-center mt-auto w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg interactive-element">
-                        <i class="fas fa-download mr-2" aria-hidden="true"></i> Tải xuống
-                    </a>`;
+                    <div class="flex items-center gap-2 mt-auto pt-4 border-t border-slate-100">
+                        <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-3 rounded-lg transition duration-300 shadow-md hover:shadow-lg interactive-element text-sm">
+                            <i class="fas fa-download mr-1.5" aria-hidden="true"></i> Tải xuống
+                        </a>
+                        <button class="copy-link-btn flex-shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold w-10 h-10 rounded-lg transition duration-300 interactive-element" title="Sao chép liên kết" data-url="${doc.url}">
+                            <i class="fas fa-copy" aria-hidden="true"></i>
+                        </button>
+                    </div>`;
                 
                 cardWrapper.appendChild(card);
                 container.appendChild(cardWrapper);
             });
         },
         
+        attachEventListeners() {
+            document.getElementById('mobileMenuButton').addEventListener('click', (ev) => {
+                const menu = document.getElementById('mobileMenu');
+                const isHidden = menu.classList.toggle('hidden');
+                ev.currentTarget.setAttribute('aria-expanded', !isHidden);
+            });
+
+            let homeSearchTimer = null;
+            document.getElementById('homeSearchInput').addEventListener('input', (e) => {
+                clearTimeout(homeSearchTimer);
+                const query = e.target.value.trim();
+                const resultsContainer = document.getElementById('homeSearchResults');
+                const defaultContentContainer = document.getElementById('page-home-default-content');
+                
+                if (!query) {
+                    resultsContainer.classList.add('hidden');
+                    defaultContentContainer.classList.remove('hidden');
+                    return;
+                }
+                
+                defaultContentContainer.classList.add('hidden');
+                resultsContainer.classList.remove('hidden');
+                
+                homeSearchTimer = setTimeout(() => {
+                    const normalizedQuery = this.normalizeString(query);
+                    const results = this.documents.filter(doc => 
+                        this.normalizeString(doc.title).includes(normalizedQuery) || 
+                        this.normalizeString(doc.subject).includes(normalizedQuery)
+                    );
+                    this.renderDocuments(results, 'homeSearchGrid');
+                }, 300);
+            });
+
+            let gradeSearchTimer = null;
+            document.getElementById('gradeSearchInput').addEventListener('input', (e) => {
+                clearTimeout(gradeSearchTimer);
+                this.state.searchQuery = e.target.value.trim();
+                gradeSearchTimer = setTimeout(() => this.updateGradePageContent(), 300);
+            });
+
+            document.getElementById('subject-filters').addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    this.state.activeFilter = e.target.dataset.subject;
+                    this.updateGradePageContent();
+                }
+            });
+
+            document.body.addEventListener('click', (e) => {
+                const copyBtn = e.target.closest('.copy-link-btn');
+                if (copyBtn) {
+                    this.copyToClipboard(copyBtn.dataset.url, copyBtn);
+                }
+            });
+
+            document.getElementById('add-entry-btn').addEventListener('click', () => this.addDocumentEntry());
+            document.getElementById('uploadForm').addEventListener('submit', (e) => this.handleUploadFormSubmit(e));
+        },
+        
+        prepareUploadPage() {
+            const container = document.getElementById('document-entries');
+            if (container.children.length === 0) {
+                this.addDocumentEntry();
+            }
+        },
+
         addDocumentEntry() {
             const container = document.getElementById('document-entries');
             const entryDiv = document.createElement('div');
-            entryDiv.className = 'p-5 border rounded-lg bg-slate-50 relative document-entry';
+            entryDiv.className = 'p-5 border rounded-lg bg-slate-50 relative document-entry animate-fade-in';
             entryDiv.innerHTML = `
                 <button type="button" class="absolute top-3 right-3 text-slate-400 hover:text-red-500 remove-entry-btn transition-colors" title="Xóa mục này">
                     <i class="fas fa-times-circle text-lg" aria-hidden="true"></i>
@@ -357,148 +629,103 @@
                 if (container.children.length > 1) {
                     entryDiv.remove();
                 } else {
-                    this.openModal('warningModal', 'Không thể xóa', 'fas fa-exclamation-circle', 'Bạn phải có ít nhất một mục tài liệu.');
+                    this.showToast('Phải có ít nhất một mục tài liệu.', 'warning');
                 }
             });
+        },
+
+        handleUploadFormSubmit(e) {
+            e.preventDefault();
+            const grade = document.getElementById('docGrade').value;
+            const subject = document.getElementById('docSubject').value;
+            
+            const newDocs = [];
+            document.querySelectorAll('.document-entry').forEach(entry => {
+                const title = entry.querySelector('.doc-title').value.trim();
+                const url = entry.querySelector('.doc-url').value.trim();
+                if (title && url) {
+                    newDocs.push({ grade, subject, title, url });
+                }
+            });
+
+            if (newDocs.length === 0) {
+                 this.showToast('Vui lòng điền đủ thông tin.', 'warning');
+                return;
+            }
+
+            const jsonString = JSON.stringify(newDocs, null, 4);
+            this.showCopyModal(jsonString);
         },
 
         normalizeString(str) {
             if (!str) return '';
-            return str
-                .toLowerCase()
-                .normalize("NFD")
-                .replace(/[\u0300-\u036f]/g, "")
-                .replace(/đ/g, "d");
-        },
-
-        attachEventListeners() {
-            document.getElementById('mobileMenuButton').addEventListener('click', (ev) => {
-                const menu = document.getElementById('mobileMenu');
-                menu.classList.toggle('hidden');
-                const expanded = menu.classList.contains('hidden') ? 'false' : 'true';
-                ev.currentTarget.setAttribute('aria-expanded', expanded);
-                menu.setAttribute('aria-hidden', expanded === 'false');
-            });
-
-            let searchTimer = null;
-            document.getElementById('homeSearchInput').addEventListener('input', (e) => {
-                clearTimeout(searchTimer);
-                const query = e.target.value.trim();
-                
-                const resultsContainer = document.getElementById('homeSearchResults');
-                const heroTitle = document.getElementById('hero-title');
-                const heroSubtitle = document.getElementById('hero-subtitle');
-
-                if (!query) {
-                    resultsContainer.classList.add('hidden');
-                    heroTitle.classList.remove('hidden');
-                    heroSubtitle.classList.remove('hidden');
-                    document.getElementById('homeSearchGrid').innerHTML = '';
-                    return;
-                }
-                
-                heroTitle.classList.add('hidden');
-                heroSubtitle.classList.add('hidden');
-
-                searchTimer = setTimeout(() => {
-                    const normalizedQuery = this.normalizeString(query);
-                    const results = this.documents.filter(doc => 
-                        this.normalizeString(doc.title).includes(normalizedQuery) || 
-                        this.normalizeString(doc.subject).includes(normalizedQuery)
-                    );
-                    resultsContainer.classList.remove('hidden');
-                    this.renderDocuments(results, 'homeSearchGrid');
-                }, 250);
-            });
-
-
-            window.addEventListener('hashchange', () => this.handleRouting());
-
-            document.getElementById('add-entry-btn').addEventListener('click', () => this.addDocumentEntry());
-
-            document.getElementById('uploadForm').addEventListener('submit', (e) => {
-                e.preventDefault();
-                const grade = document.getElementById('docGrade').value;
-                const subject = document.getElementById('docSubject').value;
-                
-                const newDocs = [];
-                document.querySelectorAll('.document-entry').forEach(entry => {
-                    const title = entry.querySelector('.doc-title').value.trim();
-                    const url = entry.querySelector('.doc-url').value.trim();
-                    if (title && url) {
-                        newDocs.push({ grade, subject, title, url });
-                    }
-                });
-
-                if (newDocs.length === 0) {
-                     this.openModal('warningModal', 'Thiếu thông tin', 'fas fa-exclamation-circle', 'Vui lòng điền đầy đủ thông tin cho ít nhất một tài liệu.');
-                    return;
-                }
-
-                const jsonString = JSON.stringify(newDocs, null, 4);
-                this.showCopyModal(jsonString);
-            });
+            return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d");
         },
         
-        showCopyModal(jsonString) {
-            const content = `
-                <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-lg mb-4">
-                    <p class="font-bold">Tạo mã thành công!</p>
-                    <p>Sao chép đoạn mã dưới đây và dán vào cuối danh sách tài liệu trong tệp <code>tailieu.json</code> của bạn.</p>
-                </div>
-                <textarea readonly id="jsonOutput" class="w-full h-48 p-3 border rounded-md bg-slate-100 font-mono text-sm">${jsonString}</textarea>
-                <button id="copyJsonBtn" class="mt-4 w-full bg-indigo-600 text-white py-3 px-4 rounded-lg hover:bg-indigo-700 interactive-element">
-                    <i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard
-                </button>
-            `;
-            this.openModal('copyJsonModal', 'Mã JSON để cập nhật', 'fas fa-code', content);
-            setTimeout(() => {
-                const btn = document.getElementById('copyJsonBtn');
-                if (btn) btn.addEventListener('click', () => this.copyToClipboard(btn));
-            }, 50);
+        updateActiveNavLinks(hash) {
+            document.querySelectorAll('.nav-link, .nav-dropdown-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${hash}`) {
+                    link.classList.add('active');
+                }
+            });
+            const dropdownParent = document.querySelector('.relative.group');
+            const parentButton = dropdownParent.querySelector('button');
+            parentButton.classList.remove('active');
+            if (hash.startsWith('lop') || ['khoahocfree', 'dgnl', 'ngonngu'].includes(hash)) {
+                 parentButton.classList.add('active');
+            }
         },
 
-        async copyToClipboard(button) {
-            const textarea = document.getElementById('jsonOutput');
-            if (!textarea) return;
+        async copyToClipboard(text, buttonElement) {
             try {
-                await navigator.clipboard.writeText(textarea.value);
-                button.innerHTML = '<i class="fas fa-check mr-2" aria-hidden="true"></i> Đã sao chép!';
+                await navigator.clipboard.writeText(text);
+                this.showToast('Đã sao chép liên kết!', 'success');
+                if (buttonElement) {
+                    const icon = buttonElement.querySelector('i');
+                    icon.classList.remove('fa-copy');
+                    icon.classList.add('fa-check');
+                    setTimeout(() => {
+                        icon.classList.remove('fa-check');
+                        icon.classList.add('fa-copy');
+                    }, 2000);
+                }
             } catch (err) {
                 console.error('Lỗi sao chép:', err);
-                button.innerHTML = '<i class="fas fa-times mr-2" aria-hidden="true"></i> Sao chép lỗi';
-            } finally {
-                setTimeout(() => {
-                    button.innerHTML = '<i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard';
-                }, 2000);
+                this.showToast('Sao chép thất bại!', 'error');
             }
         },
         
-        scheduleStars() {
-            if (this._starsCreated) return;
-            const create = () => { this.createShootingStars(); this._starsCreated = true; };
-            if ('requestIdleCallback' in window) {
-                requestIdleCallback(create, { timeout: 2000 });
-            } else {
-                setTimeout(create, 500);
-            }
+        showToast(message, type = 'info') {
+            const colors = {
+                info: 'bg-slate-800 text-white', success: 'bg-green-600 text-white',
+                warning: 'bg-yellow-500 text-black', error: 'bg-red-600 text-white',
+            };
+            const toast = document.createElement('div');
+            toast.className = `px-4 py-2 rounded-full shadow-lg text-sm font-semibold animate-fade-in ${colors[type]}`;
+            toast.textContent = message;
+            document.getElementById('toast-container').appendChild(toast);
+            setTimeout(() => { toast.remove(); }, 3000);
         },
+        
+        createShootingStars(container) {
+            if (!container || container.dataset.starsCreated) return;
+            container.dataset.starsCreated = 'true';
+            const starsDiv = container.querySelector('.stars');
+            if (!starsDiv) return;
 
-        createShootingStars() {
-            const container = document.querySelector('.stars');
-            if (!container) return;
             const count = Math.min(12, Math.max(6, Math.floor(window.innerWidth / 120)));
             for (let i = 0; i < count; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
-                const size = (Math.random() * 3 + 1).toFixed(2);
+                const size = (Math.random() * 2.5 + 1).toFixed(2);
                 star.style.width = `${size}px`;
                 star.style.height = star.style.width;
                 star.style.top = `${Math.random() * 100}%`;
                 star.style.left = `${Math.random() * 100}%`;
                 star.style.animationDelay = `${Math.random() * 5}s`;
-                star.style.animationDuration = `${Math.random() * 3 + 2}s`;
-                container.appendChild(star);
+                star.style.animationDuration = `${Math.random() * 3 + 2.5}s`;
+                starsDiv.appendChild(star);
             }
         },
 
@@ -509,24 +736,33 @@
                 content: `
                     <div class="space-y-6 text-slate-700">
                         <div>
-                            <h3 class="font-bold text-lg mb-2 text-slate-800">🔍 Cách tìm kiếm tài liệu</h3>
+                            <h3 class="font-bold text-lg mb-2 text-slate-800">🔍 Tìm kiếm & Lọc</h3>
                             <ol class="list-decimal list-inside space-y-2">
-                                <li>Dùng thanh tìm kiếm ở trang chủ để tìm trong toàn bộ thư viện.</li>
-                                <li>Vào các trang Lớp 10, 11, 12 để xem tài liệu riêng cho từng lớp.</li>
-                            </ol>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2 text-slate-800">📤 Cách cập nhật dữ liệu</h3>
-                            <ol class="list-decimal list-inside space-y-2">
-                                <li>Nhấn vào nút "Tải lên tài liệu".</li>
-                                <li>Chọn Lớp và Môn học chung cho các tài liệu bạn sắp thêm.</li>
-                                <li>Điền thông tin và nhấn nút "+" để thêm nhiều tài liệu.</li>
-                                <li>Nhấn "Tạo mã JSON", sao chép đoạn mã và dán vào tệp <b>tailieu.json</b>.</li>
+                                <li>Dùng thanh tìm kiếm ở <b>Trang chủ</b> để tìm trong toàn bộ thư viện.</li>
+                                <li>Vào các trang <b>Lớp 10, 11, 12</b>, sử dụng các nút <b>lọc theo môn học</b> hoặc thanh tìm kiếm riêng để tìm tài liệu chính xác hơn.</li>
                             </ol>
                         </div>
                     </div>
                 `
             }
+        },
+        
+        showCopyModal(jsonString) {
+            const content = `
+                <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-lg mb-4">
+                    <p class="font-bold">Tạo mã thành công!</p>
+                    <p>Sao chép đoạn mã dưới đây và dán vào <b>trước dấu ]</b> cuối cùng trong tệp <code>tailieu.json</code> của bạn. Đừng quên thêm dấu phẩy <code>,</code> sau tài liệu cuối cùng trước đó.</p>
+                </div>
+                <textarea readonly id="jsonOutput" class="w-full h-48 p-3 border rounded-md bg-slate-100 font-mono text-sm">${jsonString.slice(1, -1)}</textarea>
+                <button id="copyJsonBtn" class="mt-4 w-full bg-indigo-600 text-white py-3 px-4 rounded-lg hover:bg-indigo-700 interactive-element">
+                    <i class="fas fa-copy mr-2" aria-hidden="true"></i> Sao chép vào Clipboard
+                </button>
+            `;
+            this.openModal('copyJsonModal', 'Mã JSON để cập nhật', 'fas fa-code', content);
+            setTimeout(() => {
+                const btn = document.getElementById('copyJsonBtn');
+                if (btn) btn.addEventListener('click', () => this.copyToClipboard(document.getElementById('jsonOutput').value, null));
+            }, 50);
         },
 
         openModal(modalId, title, icon, content) {
@@ -556,3 +792,4 @@
     </script>
 </body>
 </html>
+
