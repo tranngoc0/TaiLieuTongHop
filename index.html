@@ -154,19 +154,29 @@
                 </div>
 
                 <div id="page-home-default-content">
-                    <div class="bg-indigo-50 border-2 border-indigo-200 p-6 rounded-2xl mb-12 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left animate-fade-in">
-                        <div class="flex items-center gap-4">
-                            <div class="text-4xl text-indigo-500">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-800">Tham gia cộng đồng học tập chia sẻ tài liệu!</h3>
-                                <p class="text-slate-600">Trao đổi tài liệu, hỏi đáp và học hỏi cùng các thành viên khác trong nhóm Zalo.</p>
-                            </div>
+                    <div class="bg-indigo-50 border-2 border-indigo-200 p-6 rounded-2xl mb-12 animate-fade-in text-center">
+                        <div class="text-4xl text-indigo-500 mb-4">
+                            <i class="fas fa-users"></i>
                         </div>
-                        <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element whitespace-nowrap mt-4 md:mt-0">
-                            <i class="fas fa-sign-in-alt mr-2"></i> Tham gia ngay
-                        </a>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-800">Tham gia cộng đồng học tập chia sẻ tài liệu!</h3>
+                            <p class="text-slate-600 max-w-2xl mx-auto">Trao đổi tài liệu, hỏi đáp và học hỏi cùng các thành viên khác trong nhóm Zalo.</p>
+                            <p class="text-sm text-red-600 font-semibold mt-2">Lưu ý: Bạn chỉ nên tham gia <strong>MỘT</strong> Nhóm để nhận được hỗ trợ tốt nhất.</p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                            <a href="https://zalo.me/g/gjotxd016" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-full transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element text-center">
+                                Nhóm 1
+                            </a>
+                            <a href="https://zalo.me/g/xvqmbs807" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-full transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element text-center">
+                                Nhóm 2
+                            </a>
+                            <a href="https://zalo.me/g/eigqof675" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-full transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element text-center">
+                                Nhóm 3
+                            </a>
+                            <a href="https://zalo.me/g/vujaxn537" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-full transition-colors shadow-lg hover:shadow-indigo-500/50 interactive-element text-center">
+                                Nhóm 4
+                            </a>
+                        </div>
                     </div>
 
                     <div class="mb-16">
@@ -743,7 +753,7 @@
                         </div>
                     </div>
                     <div id="modal-footer-timer" class="p-4 bg-slate-50 border-t text-center text-sm font-medium text-slate-500 rounded-b-2xl">
-                        Vui lòng chờ <span id="countdown-timer" class="font-bold text-indigo-600">30</span> giây để chuyển đến phần khóa học...
+                        Vui lòng chờ <span id="countdown-timer" class="font-bold text-indigo-600">10</span> giây để chuyển đến phần khóa học...
                     </div>
                 </div>
             `;
@@ -754,7 +764,7 @@
             const countdownSpan = modalElement.querySelector('#countdown-timer');
             const timerFooter = modalElement.querySelector('#modal-footer-timer');
 
-            let countdown = 30;
+            let countdown = 10;
             
             const timer = setInterval(() => {
                 countdown--;
