@@ -55,6 +55,17 @@
             animation: fade-in 0.3s ease-out forwards;
         }
 
+        /* Added for password error animation */
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+        .animate-shake {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+
         .hero-space {
             background-color: #8EC5FC;
             background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
@@ -88,6 +99,10 @@
             background-color: #eef2ff;
             color: #4338ca;
             font-weight: 600;
+        }
+        .course-item.active {
+            background-color: #4f46e5;
+            color: white;
         }
     </style>
 </head>
@@ -298,6 +313,34 @@
             </div>
         </section>
 
+        <!-- New Courses Page -->
+        <section id="page-courses" class="page-container hidden py-16 bg-slate-100/75">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-4">Khóa Học Miễn Phí</h1>
+                    <p class="text-lg text-slate-600">Chọn một khóa học từ danh sách bên dưới để bắt đầu.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <!-- Course List Sidebar -->
+                    <div class="w-full md:w-1/4 lg:w-1/5">
+                        <h2 class="text-xl font-bold mb-4 text-slate-700">Danh sách khóa học</h2>
+                        <div id="course-list" class="space-y-2">
+                            <!-- Course items will be injected here by JS -->
+                        </div>
+                    </div>
+                    <!-- Course Content -->
+                    <div class="w-full md:w-3/4 lg:w-4/5">
+                        <div id="course-content" class="bg-white rounded-2xl shadow-lg p-2 md:p-4 min-h-[70vh] flex items-center justify-center">
+                             <div class="text-center text-slate-500">
+                                 <i class="fas fa-arrow-left text-4xl mb-4"></i>
+                                 <p class="font-semibold">Vui lòng chọn một khóa học từ danh sách để xem nội dung.</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     <footer class="bg-slate-800 text-slate-400 py-6 mt-12">
@@ -316,16 +359,28 @@
 
     <script>
     const app = {
+        // =================================================================
+        // == CHỈNH SỬA MẬT KHẨU KHÓA HỌC FREE TẠI ĐÂY ==
+        // =================================================================
+        passwords: {
+            pass1: "1234", // Thay "1234" bằng mật khẩu bạn muốn
+            pass2: "5678"  // Thay "5678" bằng mật khẩu bạn muốn
+        },
+        // =================================================================
+
         documents: [],
+        courses: [],
         state: {
             currentPage: 'home',
             currentGrade: null,
             searchQuery: '',
-            activeFilter: 'Tất cả'
+            activeFilter: 'Tất cả',
+            isFreeCourseAuthenticated: false
         },
 
         async init() {
             await this.loadDocuments();
+            await this.loadCourses();
             this.attachEventListeners();
             this.handleRouting();
             window.addEventListener('hashchange', () => this.handleRouting());
@@ -340,7 +395,8 @@
                 'lop12': () => this.showPage('grade', 12),
                 'dgnl': () => this.showPage('grade', 'dgnl'),
                 'ngonngu': () => this.showPage('grade', 'ngonngu'),
-                'vip': () => this.showPage('vip')
+                'vip': () => this.showPage('vip'),
+                'free-courses': () => this.showPage('courses'),
             };
             
             if (routes[hash]) {
@@ -362,6 +418,17 @@
                 this.prepareGradePage(grade);
             } else if (pageId === 'vip') {
                 pageElement = document.getElementById('page-vip');
+            } else if (pageId === 'courses') {
+                pageElement = document.getElementById('page-courses');
+                // Check for authentication before showing the page
+                if (!this.state.isFreeCourseAuthenticated) {
+                    pageElement.classList.remove('hidden'); // Show the container
+                    // Clear previous content and show modal. Add a placeholder to maintain layout.
+                    pageElement.innerHTML = '<div class="h-screen w-full"></div>'; 
+                    this.showPasswordModal();
+                    return; // Stop execution to wait for password
+                }
+                this.prepareCoursesPage();
             }
             else {
                 pageElement = document.getElementById(`page-${pageId}`);
@@ -413,6 +480,18 @@
             }
         },
         
+        async loadCourses() {
+            try {
+                const response = await fetch(`khoahoc.json?v=${new Date().getTime()}`);
+                if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
+                const data = await response.json();
+                this.courses = data.documents || [];
+            } catch (error) {
+                console.error('Không thể tải tệp khoahoc.json:', error);
+                this.courses = [];
+            }
+        },
+        
         normalizeDocument(doc) {
             const subjectMap = {
                 "lí": "Vật Lý", "sử": "Lịch Sử", "địa": "Địa Lý",
@@ -455,6 +534,46 @@
             this.updateGradePageContent();
         },
         
+        prepareCoursesPage() {
+            // Restore original page content
+            const pageElement = document.getElementById('page-courses');
+            pageElement.innerHTML = `
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-4">Khóa Học Miễn Phí</h1>
+                        <p class="text-lg text-slate-600">Chọn một khóa học từ danh sách bên dưới để bắt đầu.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="w-full md:w-1/4 lg:w-1/5">
+                            <h2 class="text-xl font-bold mb-4 text-slate-700">Danh sách khóa học</h2>
+                            <div id="course-list" class="space-y-2"></div>
+                        </div>
+                        <div class="w-full md:w-3/4 lg:w-4/5">
+                            <div id="course-content" class="bg-white rounded-2xl shadow-lg p-2 md:p-4 min-h-[70vh] flex items-center justify-center">
+                                <div class="text-center text-slate-500">
+                                    <i class="fas fa-arrow-left text-4xl mb-4"></i>
+                                    <p class="font-semibold">Vui lòng chọn một khóa học từ danh sách để xem nội dung.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+
+            const listContainer = document.getElementById('course-list');
+            if (this.courses.length === 0) {
+                listContainer.innerHTML = `<p class="text-slate-500 text-sm">Không có khóa học nào hoặc đang tải...</p>`;
+                return;
+            }
+
+            this.courses.forEach((course, index) => {
+                const courseItem = document.createElement('button');
+                courseItem.className = 'w-full text-left px-4 py-3 rounded-lg font-medium text-slate-700 hover:bg-indigo-100 hover:text-indigo-700 transition-colors course-item';
+                courseItem.textContent = course.name;
+                courseItem.dataset.index = index;
+                listContainer.appendChild(courseItem);
+            });
+        },
+
         updateGradePageContent() {
             if (this.state.currentPage !== 'grade') return;
 
@@ -562,6 +681,17 @@
             });
         },
         
+        displayCourse(index) {
+            const course = this.courses[index];
+            if (!course || !course.Script) return;
+
+            const contentContainer = document.getElementById('course-content');
+            
+            contentContainer.innerHTML = `
+                ${course.Script.replace('<iframe', '<iframe class="w-full h-full min-h-[70vh] border-0"')}
+            `;
+        },
+
         attachEventListeners() {
             document.getElementById('mobileMenuButton').addEventListener('click', (ev) => {
                 const menu = document.getElementById('mobileMenu');
@@ -643,6 +773,13 @@
             });
 
             document.body.addEventListener('click', (e) => {
+                const button = e.target.closest('.course-item');
+                if (button) {
+                    document.querySelectorAll('#course-list .course-item').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    this.displayCourse(button.dataset.index);
+                }
+
                 const copyBtn = e.target.closest('.copy-link-btn');
                 if (copyBtn) {
                     this.copyToClipboard(copyBtn.dataset.url, copyBtn);
@@ -726,70 +863,7 @@
         },
         
         showCourseNoticeModal() {
-            if (document.getElementById('course-notice-modal')) return;
-
-            const modalId = 'course-notice-modal';
-            const modalElement = document.createElement('div');
-            modalElement.id = modalId;
-            modalElement.className = 'fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in';
-            
-            modalElement.innerHTML = `
-                <div class="bg-white text-slate-800 rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] flex flex-col border border-slate-200" role="dialog" aria-modal="true" aria-labelledby="${modalId}-title">
-                    <div class="flex justify-between items-center p-5 border-b border-slate-200">
-                        <h2 id="${modalId}-title" class="text-xl font-bold flex items-center"><i class="fas fa-info-circle mr-3 text-indigo-600"></i> Lưu ý quan trọng</h2>
-                        <button class="close-btn text-slate-400 hover:text-slate-800 text-2xl transition-colors" aria-label="Đóng" disabled>&times;</button>
-                    </div>
-                    <div class="p-6 overflow-y-auto space-y-4">
-                        <div class="text-sm text-slate-600">
-                            <p class="mb-3">Các em chỉ nên coi khóa học chui trên mạng như một <strong>bản xem thử</strong> để tìm giáo viên phù hợp trước khi đăng ký khóa học gốc.</p>
-                            <p class="font-semibold text-slate-700">Điểm bất lợi so với khóa gốc:</p>
-                            <ul class="list-disc list-inside pl-2 mt-2 space-y-1">
-                                <li>Không được hỗ trợ bài tập.</li>
-                                <li>Không được hỏi đáp 1-1 với giáo viên.</li>
-                                <li>Thiếu các tính năng của web gốc.</li>
-                                <li>Dễ chán nản, thiếu động lực....</li>
-                            </ul>
-                            <p class="mt-3 font-semibold text-indigo-700">Hãy đầu tư đúng cách cho tương lai của mình!</p>
-                        </div>
-                    </div>
-                    <div id="modal-footer-timer" class="p-4 bg-slate-50 border-t text-center text-sm font-medium text-slate-500 rounded-b-2xl">
-                        Vui lòng chờ <span id="countdown-timer" class="font-bold text-indigo-600">10</span> giây để chuyển đến phần khóa học...
-                    </div>
-                </div>
-            `;
-            
-            document.getElementById('modal-container').appendChild(modalElement);
-            
-            const closeBtn = modalElement.querySelector('.close-btn');
-            const countdownSpan = modalElement.querySelector('#countdown-timer');
-            const timerFooter = modalElement.querySelector('#modal-footer-timer');
-
-            let countdown = 10;
-            
-            const timer = setInterval(() => {
-                countdown--;
-                if (countdownSpan) {
-                    countdownSpan.textContent = countdown;
-                }
-                if (countdown <= 0) {
-                    clearInterval(timer);
-                    closeBtn.disabled = false;
-                    closeBtn.classList.remove('text-slate-400');
-                    closeBtn.classList.add('text-slate-600');
-                    if (timerFooter) {
-                        timerFooter.innerHTML = 'Tắt thông báo này để chuyển đến phần khóa học.';
-                        timerFooter.classList.add('text-green-600');
-                    }
-                }
-            }, 1000);
-
-            const closeModalAction = () => {
-                clearInterval(timer); 
-                this.closeModal(modalId);
-                this.showCourseChoiceModal();
-            };
-            
-            closeBtn.addEventListener('click', closeModalAction);
+            this.showCourseChoiceModal();
         },
 
         showCourseChoiceModal() {
@@ -798,11 +872,11 @@
                 <div class="text-center space-y-4">
                     <p class="text-slate-600">Vui lòng chọn loại khóa học bạn muốn truy cập:</p>
                     <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <a href="https://shorturl.at/n40mq" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3 px-5 rounded-lg transition-colors interactive-element">
-                            <i class="fas fa-gift mr-2"></i>Khóa Chui Free
+                        <a href="#free-courses" id="free-course-link" class="w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3 px-5 rounded-lg transition-colors interactive-element">
+                            <i class="fas fa-gift mr-2"></i>Khóa Học Free
                         </a>
-                        <a href="#vip" class="choice-vip-link w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-5 rounded-lg transition-colors interactive-element">
-                            <i class="fas fa-crown mr-2"></i>Khóa chui VIP
+                        <a href="#vip" class="modal-choice-link w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-5 rounded-lg transition-colors interactive-element">
+                            <i class="fas fa-crown mr-2"></i>Khóa học VIP
                         </a>
                     </div>
                 </div>
@@ -810,15 +884,76 @@
             this.openModal(modalId, 'Lựa chọn Khóa học', 'fas fa-book-open', content);
 
             setTimeout(() => {
-                const vipChoiceLink = document.querySelector(`#${modalId} .choice-vip-link`);
-                if(vipChoiceLink) {
-                    vipChoiceLink.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        this.closeModal(modalId);
-                        window.location.hash = 'vip';
-                    });
+                const freeLink = document.getElementById('free-course-link');
+                if(freeLink) {
+                    freeLink.addEventListener('click', () => this.closeModal(modalId));
+                }
+
+                const vipLink = document.querySelector(`#${modalId} a[href="#vip"]`);
+                if(vipLink) {
+                    vipLink.addEventListener('click', () => this.closeModal(modalId));
                 }
             }, 0);
+        },
+        
+        showPasswordModal() {
+            const modalId = 'password-modal';
+            const content = `
+                <div class="space-y-4" id="password-form">
+                    <p class="text-slate-600 text-center">Để truy cập, vui lòng nhập mật khẩu được cung cấp trong 2 link bên dưới.</p>
+                    <div>
+                        <label for="pass1" class="font-semibold text-slate-700">Mật khẩu 1</label>
+                        <input type="password" id="pass1" class="mt-1 w-full px-3 py-2 bg-slate-100 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div>
+                        <label for="pass2" class="font-semibold text-slate-700">Mật khẩu 2</label>
+                        <input type="password" id="pass2" class="mt-1 w-full px-3 py-2 bg-slate-100 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div id="password-error" class="text-red-500 text-sm font-semibold text-center h-5"></div>
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <a href="https://docs.google.com/document/d/1Ht66AVbP79yqCsGvvTH4_CgqEVMj5mZtq13VqYt1bi4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-sky-100 hover:bg-sky-200 text-sky-800 font-bold py-2 px-4 rounded-lg transition-colors">
+                            <i class="fas fa-key mr-2"></i>Lấy Mật khẩu 1
+                        </a>
+                        <a href="https://docs.google.com/document/d/1Zj77gRnvRw7Q5r2K0Uo88aAk0fe5GrmRjni03eOnW3k/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-rose-100 hover:bg-rose-200 text-rose-800 font-bold py-2 px-4 rounded-lg transition-colors">
+                            <i class="fas fa-key mr-2"></i>Lấy Mật khẩu 2
+                        </a>
+                    </div>
+                    <button id="submit-password-btn" class="w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-5 rounded-lg transition-colors interactive-element mt-4">
+                        Xác nhận
+                    </button>
+                </div>
+            `;
+            this.openModal(modalId, 'Yêu cầu Mật khẩu', 'fas fa-lock', content);
+
+            setTimeout(() => {
+                const pass1Input = document.getElementById('pass1');
+                const pass2Input = document.getElementById('pass2');
+                document.getElementById('submit-password-btn').addEventListener('click', () => this.checkPassword());
+                pass1Input.addEventListener('keypress', (e) => { if(e.key === 'Enter') this.checkPassword() });
+                pass2Input.addEventListener('keypress', (e) => { if(e.key === 'Enter') this.checkPassword() });
+                pass1Input.focus();
+            }, 0);
+        },
+
+        checkPassword() {
+            const pass1 = document.getElementById('pass1').value;
+            const pass2 = document.getElementById('pass2').value;
+            const errorDiv = document.getElementById('password-error');
+
+            if (pass1 === this.passwords.pass1 && pass2 === this.passwords.pass2) {
+                this.state.isFreeCourseAuthenticated = true;
+                this.closeModal('password-modal');
+                // Re-render the courses page now that we are authenticated
+                this.showPage('courses');
+            } else {
+                errorDiv.textContent = 'Mật khẩu không chính xác. Vui lòng thử lại.';
+                const form = document.getElementById('password-form');
+                form.classList.add('animate-shake');
+                setTimeout(() => {
+                    form.classList.remove('animate-shake');
+                    errorDiv.textContent = '';
+                }, 1000);
+            }
         },
 
         modalsData: {
